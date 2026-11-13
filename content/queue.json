@@ -7,7 +7,114 @@
       "slot": "20:00",
       "type": "REEL",
       "status": "scheduled",
-      "hook_style": "intro"
+      "hook_style": "intro",
+      "phrases": [
+        "Main insaan nahi hoon bhai...",
+        "main khud AI hoon!",
+        "Aur ab main tumhe roz ek AI hack sikhaunga,",
+        "ekdum simple Hindi me.",
+        "Shuruaat in teen tools se karo.",
+        "Pehla, ChatGPT.",
+        "Email, caption, ideas, sab likh deta hai.",
+        "Doosra, Perplexity.",
+        "Sawaal poocho, jawaab ke saath source bhi milega.",
+        "Teesra, Canva.",
+        "Poster aur post, do minute me ready.",
+        "Kal se class shuru!",
+        "Free guide bio link me hai, zaroor lena!",
+        "Chai khatam, hack khatam.",
+        "Follow karo AI Bhai ko!"
+      ],
+      "hook": [
+        "Main AI Hoon.",
+        "Aur Tumhe AI Sikhaunga"
+      ],
+      "end": [
+        "Free Guide: Bio Link",
+        "Roz 1 AI Hack"
+      ],
+      "hook_phrases": 4,
+      "end_phrases": 4,
+      "cards": [
+        {
+          "at": 4,
+          "title": "3 FREE AI TOOLS",
+          "num": null,
+          "lines": [
+            "Shuruaat yahan se"
+          ],
+          "chips": [
+            "Free",
+            "Hindi"
+          ]
+        },
+        {
+          "at": 5,
+          "title": "ChatGPT",
+          "num": 1,
+          "lines": [
+            "Email, caption, ideas",
+            "sab likh deta hai"
+          ],
+          "chips": [
+            "Likhna",
+            "Ideas"
+          ]
+        },
+        {
+          "at": 7,
+          "title": "Perplexity",
+          "num": 2,
+          "lines": [
+            "Sawaal poocho,",
+            "jawaab + source"
+          ],
+          "chips": [
+            "Research",
+            "Sources"
+          ]
+        },
+        {
+          "at": 9,
+          "title": "Canva",
+          "num": 3,
+          "lines": [
+            "Poster aur post",
+            "2 minute me ready"
+          ],
+          "chips": [
+            "Design",
+            "2 Min"
+          ]
+        }
+      ],
+      "keywords": [
+        "AI",
+        "ChatGPT",
+        "Perplexity",
+        "Canva",
+        "Hindi",
+        "free",
+        "Follow",
+        "hack",
+        "source",
+        "ready",
+        "guide"
+      ],
+      "cover": {
+        "lines": [
+          "Main",
+          "AI Hoon.",
+          "Aur Tumhe AI",
+          "Sikhaunga"
+        ],
+        "chips": [
+          "Free",
+          "Hindi",
+          "Roz 1 Hack"
+        ]
+      },
+      "caption": "Main AI Hoon. Aur Tumhe AI Sikhaunga!\n\nShuruaat in 3 free tools se karo:\n1. ChatGPT – email, caption, ideas\n2. Perplexity – jawaab + source\n3. Canva – poster 2 minute me\n\nFree AI guide: bio link me 👆\nSave karo, baad me kaam aayega.\nFollow @aibhai_hindi – roz 1 AI hack.\n\n#aitools #aiinhindi #chatgpt #aitips #learnai #techhindi #aibhai #canva"
     },
     {
       "id": "002",
@@ -26,7 +133,7 @@
         "Doosra, lambi PDF ka summary banwao.",
         "Teesra, Excel ke formula poocho.",
         "Jo ye seekh gaya, woh aage nikal gaya.",
-        "Comment karo AI, free guide bhejta hoon.",
+        "Free guide bio link me hai, zaroor lena!",
         "Follow karo AI Bhai ko!"
       ],
       "hook": [
@@ -34,8 +141,8 @@
         "Sach Ek AI Se Suno"
       ],
       "end": [
-        "Comment karo: AI",
-        "Free guide DM me"
+        "Free Guide: Bio Link",
+        "Roz 1 AI Hack"
       ],
       "hook_phrases": 4,
       "end_phrases": 3,
@@ -96,7 +203,8 @@
         "Excel",
         "PDF",
         "email",
-        "Follow"
+        "Follow",
+        "guide"
       ],
       "cover": {
         "lines": [
@@ -110,7 +218,7 @@
           "Hindi"
         ]
       },
-      "caption": "Kya AI tumhari naukri le lega? Ek AI se sach suno.\n\nAaj se ye 3 kaam AI se karo:\n1. Email aur report\n2. Lambi PDF ka summary\n3. Excel ke formula\n\nComment karo \"AI\" – free guide DM me.\nFollow @aibhai_hindi – roz 1 AI hack.\n\n#aitools #aiinhindi #chatgpt #careertips #officehacks #aibhai #learnai"
+      "caption": "Kya AI tumhari naukri le lega? Ek AI se sach suno.\n\nAaj se ye 3 kaam AI se karo:\n1. Email aur report\n2. Lambi PDF ka summary\n3. Excel ke formula\n\nFree AI guide: bio link me 👆\nFollow @aibhai_hindi – roz 1 AI hack.\n\n#aitools #aiinhindi #chatgpt #careertips #officehacks #aibhai #learnai"
     },
     {
       "id": "003",
@@ -128,7 +236,7 @@
         "Ek click me background gayab.",
         "Ab safed ya naya background lagao.",
         "Meesho, Amazon, Instagram, sab ke liye ready!",
-        "Comment karo AI, free guide bhejta hoon.",
+        "Free guide bio link me hai, zaroor lena!",
         "Follow karo AI Bhai ko!"
       ],
       "hook": [
@@ -136,8 +244,8 @@
         "Bina Photographer"
       ],
       "end": [
-        "Comment karo: AI",
-        "Free guide DM me"
+        "Free Guide: Bio Link",
+        "Roz 1 AI Hack"
       ],
       "hook_phrases": 3,
       "end_phrases": 2,
@@ -187,7 +295,8 @@
         "studio",
         "Meesho",
         "Amazon",
-        "Follow"
+        "Follow",
+        "guide"
       ],
       "cover": {
         "lines": [
@@ -201,7 +310,7 @@
           "Free"
         ]
       },
-      "caption": "Phone ki photo ko studio photo banao – 1 click me.\n\nPhotoroom ya remove.bg se background hatao aur naya lagao. Meesho, Amazon, Instagram shop sab ke liye ready.\n\nComment karo \"AI\" – free guide DM me.\nFollow @aibhai_hindi – roz 1 AI hack.\n\n#aitools #aiinhindi #productphotography #smallbusinessindia #meesho #aibhai"
+      "caption": "Phone ki photo ko studio photo banao – 1 click me.\n\nPhotoroom ya remove.bg se background hatao aur naya lagao. Meesho, Amazon, Instagram shop sab ke liye ready.\n\nFree AI guide: bio link me 👆\nFollow @aibhai_hindi – roz 1 AI hack.\n\n#aitools #aiinhindi #productphotography #smallbusinessindia #meesho #aibhai"
     },
     {
       "id": "004",
@@ -219,7 +328,7 @@
         "Teesra, context. Kiske liye, kitna lamba.",
         "Chautha, format. Paanch points me do.",
         "Bas! Ab dekho jaadu.",
-        "Comment karo AI, free guide bhejta hoon.",
+        "Free guide bio link me hai, zaroor lena!",
         "Follow karo AI Bhai ko!"
       ],
       "hook": [
@@ -227,8 +336,8 @@
         "Galat Use Karte Hain"
       ],
       "end": [
-        "Comment karo: AI",
-        "Free guide DM me"
+        "Free Guide: Bio Link",
+        "Roz 1 AI Hack"
       ],
       "hook_phrases": 3,
       "end_phrases": 2,
@@ -289,7 +398,8 @@
         "context",
         "format",
         "AI",
-        "Follow"
+        "Follow",
+        "guide"
       ],
       "cover": {
         "lines": [
@@ -303,7 +413,7 @@
           "Free"
         ]
       },
-      "caption": "90% log ChatGPT galat use karte hain. Ye 4 step formula try karo:\n\n1. Role – \"Tum ek expert ___ ho\"\n2. Kaam – kya chahiye, saaf likho\n3. Context – kiske liye, kitna lamba\n4. Format – \"5 points me do\"\n\nSave karo! Comment karo \"AI\" – free guide DM me.\nFollow @aibhai_hindi\n\n#chatgpt #chatgptprompts #aiinhindi #aitips #aibhai #learnai"
+      "caption": "90% log ChatGPT galat use karte hain. Ye 4 step formula try karo:\n\n1. Role – \"Tum ek expert ___ ho\"\n2. Kaam – kya chahiye, saaf likho\n3. Context – kiske liye, kitna lamba\n4. Format – \"5 points me do\"\n\nSave karo! Free AI guide: bio link me 👆\nFollow @aibhai_hindi\n\n#chatgpt #chatgptprompts #aiinhindi #aitips #aibhai #learnai"
     },
     {
       "id": "005",
@@ -320,7 +430,7 @@
         "Phir poocho, ye chapter simple Hindi me samjhao.",
         "Ya bolo, das MCQ banao.",
         "Aur Audio Overview dabao, notes ka podcast ready!",
-        "Comment karo AI, free guide bhejta hoon.",
+        "Free guide bio link me hai, zaroor lena!",
         "Follow karo AI Bhai ko!"
       ],
       "hook": [
@@ -328,8 +438,8 @@
         "Bana Do!"
       ],
       "end": [
-        "Comment karo: AI",
-        "Free guide DM me"
+        "Free Guide: Bio Link",
+        "Roz 1 AI Hack"
       ],
       "hook_phrases": 2,
       "end_phrases": 2,
@@ -389,7 +499,8 @@
         "MCQ",
         "Hindi",
         "AI",
-        "Follow"
+        "Follow",
+        "guide"
       ],
       "cover": {
         "lines": [
@@ -403,7 +514,7 @@
           "Free"
         ]
       },
-      "caption": "Padhne ka mann nahi? Apni notes podcast ki tarah suno!\n\nNotebookLM me PDF upload karo, simple Hindi me samjho, MCQ banao, aur Audio Overview se podcast suno.\n\nComment karo \"AI\" – free guide DM me.\nFollow @aibhai_hindi\n\n#studytips #studenthacks #aiforstudents #notebooklm #aiinhindi #aibhai"
+      "caption": "Padhne ka mann nahi? Apni notes podcast ki tarah suno!\n\nNotebookLM me PDF upload karo, simple Hindi me samjho, MCQ banao, aur Audio Overview se podcast suno.\n\nFree AI guide: bio link me 👆\nFollow @aibhai_hindi\n\n#studytips #studenthacks #aiforstudents #notebooklm #aiinhindi #aibhai"
     },
     {
       "id": "006",
@@ -490,7 +601,8 @@
         "awaaz",
         "OTP",
         "code",
-        "Follow"
+        "Follow",
+        "guide"
       ],
       "cover": {
         "lines": [
@@ -521,7 +633,7 @@
         "Topic likho, jaise digital marketing, aath slides.",
         "AI poori outline aur slides bana dega.",
         "Theme chuno, aur PPT ya PDF download karo.",
-        "Comment karo AI, free guide bhejta hoon.",
+        "Free guide bio link me hai, zaroor lena!",
         "Follow karo AI Bhai ko!"
       ],
       "hook": [
@@ -529,8 +641,8 @@
         "Bina Mehnat"
       ],
       "end": [
-        "Comment karo: AI",
-        "Free guide DM me"
+        "Free Guide: Bio Link",
+        "Roz 1 AI Hack"
       ],
       "hook_phrases": 3,
       "end_phrases": 2,
@@ -588,7 +700,8 @@
         "PPT",
         "slides",
         "AI",
-        "Follow"
+        "Follow",
+        "guide"
       ],
       "cover": {
         "lines": [
@@ -602,7 +715,7 @@
           "Office"
         ]
       },
-      "caption": "Kal presentation hai aur ek slide nahi bani? Gamma se 2 minute me banao.\n\nTopic likho, AI slides banayega, theme chuno aur PPT/PDF download karo.\n\nComment karo \"AI\" – free guide DM me.\nFollow @aibhai_hindi\n\n#presentation #gamma #aitools #studenthacks #aiinhindi #aibhai"
+      "caption": "Kal presentation hai aur ek slide nahi bani? Gamma se 2 minute me banao.\n\nTopic likho, AI slides banayega, theme chuno aur PPT/PDF download karo.\n\nFree AI guide: bio link me 👆\nFollow @aibhai_hindi\n\n#presentation #gamma #aitools #studenthacks #aiinhindi #aibhai"
     },
     {
       "id": "008",
@@ -687,7 +800,8 @@
         "PAN",
         "OTP",
         "password",
-        "Follow"
+        "Follow",
+        "guide"
       ],
       "cover": {
         "lines": [
@@ -718,7 +832,7 @@
         "ChatGPT ya Gemini turant formula de dega.",
         "Copy karo, sheet me paste karo.",
         "Ho gaya kaam!",
-        "Comment karo AI, free guide bhejta hoon.",
+        "Free guide bio link me hai, zaroor lena!",
         "Follow karo AI Bhai ko!"
       ],
       "hook": [
@@ -726,8 +840,8 @@
         "Yaad Mat Karo!"
       ],
       "end": [
-        "Comment karo: AI",
-        "Free guide DM me"
+        "Free Guide: Bio Link",
+        "Roz 1 AI Hack"
       ],
       "hook_phrases": 2,
       "end_phrases": 2,
@@ -776,7 +890,8 @@
         "AI",
         "ChatGPT",
         "Gemini",
-        "Follow"
+        "Follow",
+        "guide"
       ],
       "cover": {
         "lines": [
@@ -790,7 +905,8 @@
           "Free"
         ]
       },
-      "caption": "VLOOKUP se darr lagta hai? Ab formula yaad karne ki zaroorat nahi.\n\nAI ko simple Hindi me batao kya chahiye – ChatGPT ya Gemini formula de dega. Copy, paste, done.\n\nComment karo \"AI\" – free guide DM me.\nFollow @aibhai_hindi\n\n#excel #exceltips #officehacks #aitools #aiinhindi #aibhai"
+      "caption": "VLOOKUP se darr lagta hai? Ab formula yaad karne ki zaroorat nahi.\n\nAI ko simple Hindi me batao kya chahiye – ChatGPT ya Gemini formula de dega. Copy, paste, done.\n\nFree AI guide: bio link me 👆\nFollow @aibhai_hindi\n\n#excel #exceltips #officehacks #aitools #aiinhindi #aibhai"
     }
-  ]
+  ],
+  "cta": "Free guide bio link me (no comment-to-DM). Guide: guide/AI-Bhai-10-AI-Tools.pdf"
 }
