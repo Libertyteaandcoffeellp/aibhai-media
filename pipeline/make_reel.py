@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""AI Bhai reel maker (motion version).
+"""AI Bhai reel maker (v2, motion edition).
 
 Usage:
     python3 pipeline/make_reel.py reels/<id>/spec.json reels/<id>/vo.mp3 reels/<id>/
@@ -12,18 +12,18 @@ Spec JSON fields:
     hook_phrases  how many phrases belong to the opening section (AI Bhai full screen)
     end_phrases   how many phrases belong to the closing section
     cards         list of {"at": phrase index, "title", "num" (or null), "lines": [..], "chips": [..]}
-                  shown in the middle section (AI Bhai small in the corner)
     keywords      words highlighted yellow in captions
     cover         {"lines": [l1, l2, highlight, l4], "chips": [..]}
 
-Motion: animated background (gradient, moving grid, glow, particles), beat bounce on the
-character, punch-zoom + flash + whoosh on every section/card change, pop-in hook text,
-pop captions, bouncy card slide-ins, progress bar, soft background beat.
+Motion: animated glowing background with floating particles, a punch-zoom on AI Bhai at every
+phrase, a pop-in + shake on the hook, word-by-word karaoke captions, cards that slide in with a
+bounce, white flash + whoosh at every section change, a progress bar, and pop sound effects.
 Outputs reel.mp4 (1080x1920, 30fps) and cover.jpg. Needs: ffmpeg, Pillow, numpy.
 """
 import json, math, os, re, subprocess, sys, tempfile, wave
+from functools import lru_cache
 import numpy as np
-from PIL import Image, ImageDraw, ImageFont, ImageFilter
+from PIL import Image, ImageDraw, ImageFont
 
 HERE = os.path.dirname(os.path.abspath(__file__))
 ASSETS = os.path.join(HERE, "assets")
@@ -33,15 +33,15 @@ YEL = (250, 204, 21)
 WHITE = (255, 255, 255)
 PURPLE = (124, 58, 237)
 CARD = (15, 32, 82)
-KEEP = 0.25
+KEEP = 0.25  # pause length kept between phrases (seconds)
 SR = 44100
 
 
 def font_path(bold=True):
     cands = [os.path.join(ASSETS, "Poppins-ExtraBold.ttf") if bold else "",
              "/usr/share/fonts/truetype/google-fonts/Poppins-ExtraBold.ttf" if bold else "",
-             "/usr/share/fonts/truetype/google-fonts/Poppins-Bold.ttf",
              os.path.join(ASSETS, "Poppins-Bold.ttf"),
+             "/usr/share/fonts/truetype/google-fonts/Poppins-Bold.ttf",
              "/usr/share/fonts/truetype/dejavu/DejaVuSans-Bold.ttf"]
     for c in cands:
         if c and os.path.exists(c):
@@ -50,29 +50,24 @@ def font_path(bold=True):
 
 
 FX, FB = font_path(True), font_path(False)
-_fc = {}
 
 
-def F(s, bold=True):
-    k = (s, bold)
-    if k not in _fc:
-        _fc[k] = ImageFont.truetype(FX if bold else FB, s)
-    return _fc[k]
-
-
-def ease_out_back(t):
-    t = min(max(t, 0.0), 1.0)
-    c1 = 1.70158; c3 = c1 + 1
-    return 1 + c3 * (t - 1) ** 3 + c1 * (t - 1) ** 2
-
-
-def ease_out(t):
-    t = min(max(t, 0.0), 1.0)
-    return 1 - (1 - t) ** 3
+@lru_cache(maxsize=512)
+def F(size, bold=True):
+    return ImageFont.truetype(FX if bold else FB, max(8, int(size)))
 
 
 def run(cmd):
     return subprocess.run(cmd, check=True, capture_output=True, text=True)
+
+
+def ease_out(x):
+    x = min(1, max(0, x)); return 1 - (1 - x) ** 3
+
+
+def ease_back(x):
+    x = min(1, max(0, x)); c1 = 1.70158; c3 = c1 + 1
+    return 1 + c3 * (x - 1) ** 3 + c1 * (x - 1) ** 2
 
 
 def silences(path, noise="-35dB", d=0.35):
@@ -89,6 +84,7 @@ def duration(path):
 
 
 def tighten(src, dst):
+    """Cut every long pause down to KEEP seconds; return speech segments in the new timeline."""
     dur = duration(src)
     sil = [(s, e) for s, e in silences(src) if s > 0.05 and e < dur - 0.05]
     lead = [e for s, e in silences(src) if s <= 0.05]
@@ -136,73 +132,60 @@ def align(phrases, segs, total):
     return out
 
 
-# ---------------- audio: soft beat + whooshes ----------------
-def synth_bed(total, hits, seed=7):
-    rng = np.random.default_rng(seed)
-    n = int(total * SR) + SR
-    out = np.zeros(n, np.float32)
-    bpm = 96.0; beat = 60.0 / bpm
-    tk = np.arange(int(0.18 * SR)) / SR
-    kick = np.sin(2 * np.pi * (45 + 80 * np.exp(-tk * 30)) * tk) * np.exp(-tk * 18)
-    th = np.arange(int(0.05 * SR)) / SR
-    hat = rng.standard_normal(len(th)) * np.exp(-th * 90)
-    hat = np.diff(np.concatenate([[0], hat]))  # crude high-pass
-    t = 0.0; k = 0
-    while t < total:
-        i = int(t * SR)
-        if k % 2 == 0:
-            out[i:i + len(kick)] += 0.55 * kick[: n - i]
-        j = int((t + beat / 2) * SR)
-        if j < n:
-            out[j:j + len(hat)] += 0.12 * hat[: n - j]
-        t += beat; k += 1
-    # soft pad (two detuned sines, slow swell)
-    tt = np.arange(n) / SR
-    pad = (np.sin(2 * np.pi * 110 * tt) + np.sin(2 * np.pi * 164.8 * tt) * 0.6 + np.sin(2 * np.pi * 220.5 * tt) * 0.3)
-    pad *= 0.035 * (0.6 + 0.4 * np.sin(2 * np.pi * tt / (beat * 8)))
-    out += pad.astype(np.float32)
-    out *= 0.35  # keep the bed well under the voice
-    tw = np.arange(int(0.35 * SR)) / SR
-    noise = rng.standard_normal(len(tw))
-    env = np.sin(np.pi * tw / tw[-1]) ** 2
-    whoosh = np.convolve(noise, np.ones(12) / 12, mode="same") * env * 0.5
-    tp = np.arange(int(0.08 * SR)) / SR
-    pop = np.sin(2 * np.pi * (900 - 500 * tp / tp[-1]) * tp) * np.exp(-tp * 45) * 0.35
-    for h, kind in hits:
-        i = max(0, int((h - (0.18 if kind == "whoosh" else 0)) * SR))
-        snd = whoosh if kind == "whoosh" else pop
-        out[i:i + len(snd)] += snd[: max(0, n - i)]
-    out = out[: int(total * SR)]
-    return np.clip(out, -1, 1)
+# ---------- sound effects (synthesised, royalty free) ----------
+def sfx_whoosh(dur=0.45):
+    n = int(SR * dur); t = np.arange(n) / SR
+    noise = np.random.default_rng(1).standard_normal(n)
+    # sweep a simple one-pole low-pass cutoff up then down
+    cut = 300 + 5000 * np.sin(np.pi * t / dur) ** 2
+    out = np.zeros(n); y = 0.0
+    for i in range(n):
+        a = math.exp(-2 * math.pi * cut[i] / SR); y = (1 - a) * noise[i] + a * y; out[i] = y
+    env = np.sin(np.pi * t / dur) ** 1.5
+    out = out * env
+    return out / (np.abs(out).max() + 1e-9) * 0.55
 
 
-def write_wav(path, data):
+def sfx_pop(freq=880, dur=0.09):
+    n = int(SR * dur); t = np.arange(n) / SR
+    f = freq * (1 + 0.6 * np.exp(-t * 60))
+    out = np.sin(2 * np.pi * np.cumsum(f) / SR) * np.exp(-t * 45)
+    return out * 0.5
+
+
+def write_wav(path, x):
+    x = np.clip(x, -1, 1)
     with wave.open(path, "wb") as w:
         w.setnchannels(1); w.setsampwidth(2); w.setframerate(SR)
-        w.writeframes((data * 32767).astype(np.int16).tobytes())
+        w.writeframes((x * 32767).astype(np.int16).tobytes())
 
 
-# ---------------- visuals ----------------
+# ---------- drawing helpers ----------
 def make_background():
-    yy, xx = np.mgrid[0:H, 0:W]
-    r = np.sqrt(((xx - W / 2) / W) ** 2 + ((yy - H * 0.42) / H) ** 2)
-    c0 = np.array([14, 44, 112.0]); c1 = np.array([2, 10, 36.0])
-    k = np.clip(r / 0.75, 0, 1)[..., None]
-    base = (c0 * (1 - k) + c1 * k).astype(np.uint8)
-    base = Image.fromarray(base, "RGB")
-    grid = Image.new("RGBA", (W, H + 120), (0, 0, 0, 0))
-    g = ImageDraw.Draw(grid)
-    for x in range(0, W + 1, 120):
-        g.line([(x, 0), (x, H + 120)], fill=(90, 130, 255, 22), width=2)
-    for y in range(0, H + 121, 120):
-        g.line([(0, y), (W, y)], fill=(90, 130, 255, 22), width=2)
-    glow = Image.new("RGBA", (700, 700), (0, 0, 0, 0))
-    ImageDraw.Draw(glow).ellipse((150, 150, 550, 550), fill=(250, 204, 21, 70))
-    glow = glow.filter(ImageFilter.GaussianBlur(110))
-    glow2 = Image.new("RGBA", (700, 700), (0, 0, 0, 0))
-    ImageDraw.Draw(glow2).ellipse((150, 150, 550, 550), fill=(124, 58, 237, 90))
-    glow2 = glow2.filter(ImageFilter.GaussianBlur(110))
-    return base, grid, glow, glow2
+    g = np.linspace(0, 1, H)[:, None]
+    top, bot = np.array([10, 30, 92]), np.array([2, 10, 36])
+    img = (top * (1 - g) + bot * g)[:, None, :].repeat(W, axis=1)
+    base = Image.fromarray(img.astype(np.uint8)[:, :, :3].reshape(H, W, 3), "RGB")
+    return base
+
+
+def make_glow(size, color, strength):
+    yy, xx = np.mgrid[0:size, 0:size]
+    r = np.sqrt((xx - size / 2) ** 2 + (yy - size / 2) ** 2) / (size / 2)
+    a = np.clip(1 - r, 0, 1) ** 2 * strength
+    arr = np.zeros((size, size, 4), np.uint8)
+    arr[..., 0], arr[..., 1], arr[..., 2] = color
+    arr[..., 3] = (a * 255).astype(np.uint8)
+    return Image.fromarray(arr, "RGBA")
+
+
+def star(d, cx, cy, r, color):
+    pts = []
+    for k in range(8):
+        ang = math.pi / 4 * k - math.pi / 2
+        rr = r if k % 2 == 0 else r * 0.32
+        pts.append((cx + rr * math.cos(ang), cy + rr * math.sin(ang)))
+    d.polygon(pts, fill=color)
 
 
 def build(spec_path, vo_path, outdir):
@@ -213,7 +196,9 @@ def build(spec_path, vo_path, outdir):
     vo = os.path.join(tmp, "vo.wav")
     segs, total = tighten(vo_path, vo)
     times = align(phrases, segs, total)
+    nfr = int(math.ceil(total * FPS))
 
+    # caption chunks (<=3 words) with per-word timing
     chunks = []
     for (a, b), ph in zip(times, phrases):
         words = ph.split()
@@ -224,86 +209,108 @@ def build(spec_path, vo_path, outdir):
         tt = a
         for g in groups:
             dd = (b - a) * len(" ".join(g)) / tl
-            chunks.append((tt, tt + dd, g)); tt += dd
+            wt, acc = [], tt
+            wl = sum(len(w) + 1 for w in g)
+            for w in g:
+                wd = dd * (len(w) + 1) / wl; wt.append((acc, acc + wd)); acc += wd
+            chunks.append((tt, tt + dd, g, wt)); tt += dd
 
-    # loudness -> mouth state + bounce envelope
-    raw = np.frombuffer(wave.open(vo).readframes(10 ** 9), dtype=np.int16).astype(np.float32) / 32768
+    # mouth states from loudness
+    with wave.open(vo) as wv:
+        raw = np.frombuffer(wv.readframes(wv.getnframes()), dtype=np.int16).astype(np.float32) / 32768
     spf = SR // FPS
-    nfr = int(math.ceil(total * FPS))
-    rms = np.array([np.sqrt(np.mean(raw[i * spf:(i + 1) * spf] ** 2) + 1e-12) if i * spf < len(raw) else 1e-6
-                    for i in range(nfr)])
+    rms = np.array([np.sqrt(np.mean(raw[i * spf:(i + 1) * spf] ** 2) + 1e-12) for i in range(nfr)])
     db = 20 * np.log10(rms + 1e-9)
     peak = np.percentile(db, 95)
     state = np.where(db < peak - 22, 0, np.where(db < peak - 5, 1, 2))
     for i in range(1, nfr - 1):
         if state[i - 1] == state[i + 1] != state[i]:
             state[i] = state[i - 1]
-    env = np.clip((db - (peak - 25)) / 25, 0, 1)
-    sm = np.zeros_like(env)
-    for i in range(nfr):
-        sm[i] = max(env[i], sm[i - 1] * 0.82 if i else 0)
 
-    cut = [Image.open(os.path.join(ASSETS, f"cut_{k}.png")).convert("RGBA") for k in "ABC"]
-    sc = lambda h: [m.resize((int(m.width * h / m.height), h), Image.LANCZOS) for m in cut]
-    BIG, SMALL = sc(1380), sc(700)
-    def glow_of(img):
-        a = img.getchannel("A").filter(ImageFilter.GaussianBlur(28))
-        g = Image.new("RGBA", img.size, YEL + (0,)); g.putalpha(a.point(lambda v: int(v * 0.45)))
-        return g
-    BIG_GLOW, SMALL_GLOW = glow_of(BIG[0]), glow_of(SMALL[0])
-    bg_base, bg_grid, glow_y, glow_p = make_background()
-    rng = np.random.default_rng(3)
-    parts = [(rng.uniform(0, W), rng.uniform(0, H), rng.uniform(2, 6), rng.uniform(20, 70)) for _ in range(28)]
+    cut_path = lambda k: os.path.join(ASSETS, f"cut_{k}.png")
+    src = [Image.open(cut_path(k)).convert("RGBA") if os.path.exists(cut_path(k))
+           else Image.open(os.path.join(ASSETS, f"frame_{k}.png")).convert("RGBA") for k in "ABC"]
+    sc = lambda h: [m.resize((int(m.width * h / m.height), h), Image.LANCZOS) for m in src]
+    BIG, SMALL = sc(1500), sc(760)
 
     nh, ne = spec["hook_phrases"], spec["end_phrases"]
     T_MID = times[nh][0] - 0.12 if nh < len(times) else total
     T_END = times[len(times) - ne][0] - 0.12 if ne else total + 1
     cards = [(times[c["at"]][0] - 0.12, c) for c in spec.get("cards", [])]
-    has_mid = bool(cards)
-    events = [0.0] + ([T_MID] if has_mid else []) + [ct for ct, _ in cards[1:]] + ([T_END] if T_END < total else [])
-    hits = [(e, "whoosh") for e in events[1:]] + [(ct + 0.15, "pop") for ct, c in cards if c.get("num")]
+    phrase_starts = [a for a, _ in times]
+    flashes = sorted(set([T_MID, T_END] + [ct for ct, _ in cards]))
 
-    def text_img(s, f, fill, sw=8):
-        d0 = ImageDraw.Draw(Image.new("RGB", (1, 1)))
-        l, t, r, b = d0.textbbox((0, 0), s, font=f, stroke_width=sw)
-        im = Image.new("RGBA", (r - l + 20, b - t + 20), (0, 0, 0, 0))
-        ImageDraw.Draw(im).text((10 - l, 10 - t), s, font=f, fill=fill, stroke_width=sw, stroke_fill=(0, 0, 0))
-        return im
+    base_bg = make_background()
+    glows = [make_glow(1100, (124, 58, 237), 0.55), make_glow(900, (250, 204, 21), 0.22), make_glow(800, (56, 189, 248), 0.25)]
+    rng = np.random.default_rng(7)
+    parts = [(rng.uniform(0, W), rng.uniform(0, H), rng.uniform(3, 8), rng.uniform(25, 70), rng.uniform(0, 6.28)) for _ in range(34)]
 
-    def fit(s, size, maxw=960, bold=True):
-        f = F(size, bold)
-        d0 = ImageDraw.Draw(Image.new("RGB", (1, 1)))
-        while d0.textlength(s, font=f) > maxw and f.size > 40:
-            f = F(f.size - 4, bold)
-        return f
+    def background(t):
+        img = base_bg.copy()
+        for k, gl in enumerate(glows):
+            gx = W / 2 + math.sin(t * (0.35 + 0.17 * k) + k * 2.1) * 380 - gl.width / 2
+            gy = H * (0.25 + 0.3 * k) + math.cos(t * (0.28 + 0.11 * k) + k) * 260 - gl.height / 2
+            img.paste(gl, (int(gx), int(gy)), gl)
+        d = ImageDraw.Draw(img)
+        for (x, y, r, sp, ph) in parts:
+            yy = (y - t * sp) % H
+            xx = x + math.sin(t * 0.8 + ph) * 18
+            a = 0.35 + 0.35 * math.sin(t * 2 + ph)
+            c = tuple(int(BG[i] * (1 - a) + (255, 255, 255)[i] * a) for i in range(3))
+            d.ellipse((xx - r, yy - r, xx + r, yy + r), fill=c)
+        return img
 
-    hook_imgs = [text_img(spec["hook"][0], fit(spec["hook"][0], 100), YEL), text_img(spec["hook"][1], fit(spec["hook"][1], 86), WHITE)]
-    end_imgs = [text_img(spec["end"][0], fit(spec["end"][0], 96), YEL), text_img(spec["end"][1], fit(spec["end"][1], 84), WHITE),
-                text_img("Follow @aibhai_hindi", F(58, False), WHITE, 6)]
+    def punch(t):
+        last = max([s for s in phrase_starts if s <= t] or [0])
+        p = (t - last) / 0.28
+        return 1 + 0.07 * (1 - ease_out(p)) if p < 1 else 1.0
 
-    def paste_pop(img, layer, cx, cy, k):
-        if k <= 0.02:
-            return
-        w2, h2 = max(1, int(layer.width * k)), max(1, int(layer.height * k))
-        l2 = layer.resize((w2, h2), Image.BILINEAR)
-        img.paste(l2, (int(cx - w2 / 2), int(cy - h2 / 2)), l2)
-
-    def caption_layer(words):
-        f = F(80)
-        d0 = ImageDraw.Draw(Image.new("RGB", (1, 1)))
+    def caption(img, chunk, t, y):
+        a, b, words, wt = chunk
+        pop = 0.82 + 0.18 * ease_back((t - a) / 0.14)
+        d = ImageDraw.Draw(img)
+        act = None
+        for k, (wa, wb) in enumerate(wt):
+            if wa <= t < wb:
+                act = k
+        if act is None:
+            act = len(words) - 1 if t >= wt[-1][0] else 0
+        size = 80
         while True:
-            tw = sum(d0.textlength(w, font=f) for w in words) + d0.textlength(" ", font=f) * (len(words) - 1)
-            if tw <= 960 or f.size <= 50:
+            fonts = [F(size * pop * (1.12 if k == act else 1.0)) for k in range(len(words))]
+            widths = [d.textlength(w, font=f) for w, f in zip(words, fonts)]
+            gap = 22
+            tw = sum(widths) + gap * (len(words) - 1) + 32
+            if tw <= 980 or size <= 46:
                 break
-            f = F(f.size - 4)
-        im = Image.new("RGBA", (int(tw) + 40, f.size + 60), (0, 0, 0, 0))
-        d = ImageDraw.Draw(im); x = 20; sp = d.textlength(" ", font=f)
-        for w in words:
-            c = YEL if re.sub(r"[^\w@]", "", w) in keywords else WHITE
-            d.text((x, im.height / 2), w, font=f, fill=c, stroke_width=8, stroke_fill=(0, 0, 0), anchor="lm")
-            x += d.textlength(w, font=f) + sp
-        return im
-    cap_cache = {}
+            size -= 4
+        x = (W - tw) / 2 + 16
+        for k, (w, f, ww) in enumerate(zip(words, fonts, widths)):
+            cx = x + ww / 2
+            key = re.sub(r"[^\w@]", "", w) in keywords
+            if k == act:
+                d.rounded_rectangle((cx - ww / 2 - 14, y - 56, cx + ww / 2 + 14, y + 54), 18, fill=YEL if not key else WHITE)
+                d.text((cx, y), w, font=f, fill=BG, anchor="mm")
+            else:
+                d.text((cx, y), w, font=f, fill=YEL if key else WHITE, stroke_width=7, stroke_fill=(0, 0, 0), anchor="mm")
+            x += ww + gap
+
+    def header(img, top, bottom, t0, t, y=160):
+        d = ImageDraw.Draw(img)
+        p = ease_back((t - t0) / 0.38)
+        shake = math.sin((t - t0) * 70) * 12 * max(0, 1 - (t - t0) / 0.5)
+        s1 = 96
+        while d.textlength(top, font=F(s1)) > 960 and s1 > 50: s1 -= 4
+        s2 = 84
+        while d.textlength(bottom, font=F(s2)) > 960 and s2 > 44: s2 -= 4
+        d.text((W / 2 + shake, y), top, font=F(s1 * max(0.3, p)), fill=YEL, stroke_width=8, stroke_fill=(0, 0, 0), anchor="mm")
+        p2 = ease_back((t - t0 - 0.12) / 0.38)
+        if p2 > 0:
+            d.text((W / 2 - shake, y + 122), bottom, font=F(s2 * max(0.3, p2)), fill=WHITE, stroke_width=8, stroke_fill=(0, 0, 0), anchor="mm")
+        # sparkles
+        for k, (sx, sy) in enumerate([(110, y - 40), (W - 110, y + 10), (170, y + 150), (W - 170, y + 175)]):
+            pulse = 0.6 + 0.4 * math.sin(t * 6 + k * 1.7)
+            star(d, sx, sy, 26 * pulse * min(1, p), YEL if k % 2 == 0 else WHITE)
 
     def chip(d, x, y, s):
         f = F(40, False); w = d.textlength(s, font=f) + 56
@@ -311,144 +318,141 @@ def build(spec_path, vo_path, outdir):
         d.text((x + w / 2, y + 35), s, font=f, fill=WHITE, anchor="mm")
         return w
 
-    def card_img(c):
-        img = Image.new("RGBA", (W - 140, 850), (0, 0, 0, 0)); d = ImageDraw.Draw(img)
-        x1, y1 = img.width - 1, img.height - 1
-        d.rounded_rectangle((0, 0, x1, y1), 48, fill=CARD + (245,), outline=YEL, width=6)
-        cy = 150
+    def card_image(c):
+        img = Image.new("RGBA", (W, H), (0, 0, 0, 0)); d = ImageDraw.Draw(img)
+        x0, y0, x1, y1 = 70, 230, W - 70, 1080
+        d.rounded_rectangle((x0 + 12, y0 + 16, x1 + 12, y1 + 16), 48, fill=(0, 0, 0, 110))
+        d.rounded_rectangle((x0, y0, x1, y1), 48, fill=CARD + (255,), outline=YEL, width=6)
+        cy = y0 + 150
         if c.get("num"):
-            d.ellipse((60, cy - 70, 200, cy + 70), fill=YEL)
-            d.text((130, cy), str(c["num"]), font=F(96), fill=BG, anchor="mm")
-            d.text((240, cy), c["title"], font=fit(c["title"], 112, 620), fill=WHITE, anchor="lm")
+            d.ellipse((x0 + 60, cy - 70, x0 + 200, cy + 70), fill=YEL)
+            d.text((x0 + 130, cy), str(c["num"]), font=F(96), fill=BG, anchor="mm")
+            s = 112
+            while d.textlength(c["title"], font=F(s)) > 640 and s > 50: s -= 4
+            d.text((x0 + 240, cy), c["title"], font=F(s), fill=WHITE, anchor="lm")
         else:
-            d.text((img.width / 2, cy), c["title"], font=fit(c["title"], 96, 840), fill=YEL, anchor="mm")
-        ly = 360
+            s = 96
+            while d.textlength(c["title"], font=F(s)) > 860 and s > 50: s -= 4
+            d.text((W / 2, cy), c["title"], font=F(s), fill=YEL, anchor="mm")
+        ly = y0 + 360
         for ln in c.get("lines", []):
-            d.text((img.width / 2, ly), ln, font=fit(ln, 64, 840, False), fill=WHITE, anchor="mm"); ly += 100
-        cx = 70
+            s = 64
+            while d.textlength(ln, font=F(s, False)) > 860 and s > 36: s -= 4
+            d.text((W / 2, ly), ln, font=F(s, False), fill=WHITE, anchor="mm"); ly += 100
+        cx = x0 + 70
         for chp in c.get("chips", []):
             cx += chip(d, cx, y1 - 150, chp) + 24
         return img
-    card_imgs = [card_img(c) for _, c in cards]
 
-    def section_start(t):
-        return max([e for e in events if e <= t] or [0.0])
+    card_imgs = [card_image(c) for _, c in cards]
 
     os.makedirs(outdir, exist_ok=True)
-    silent = os.path.join(tmp, "v.mp4")
+    silent_mp4 = os.path.join(tmp, "v.mp4")
     p = subprocess.Popen(["ffmpeg", "-hide_banner", "-loglevel", "error", "-y", "-f", "rawvideo", "-pix_fmt", "rgb24",
                           "-s", f"{W}x{H}", "-r", str(FPS), "-i", "-", "-c:v", "libx264", "-preset", "veryfast",
-                          "-crf", "20", "-pix_fmt", "yuv420p", silent], stdin=subprocess.PIPE)
-    stills = {}
+                          "-crf", "20", "-pix_fmt", "yuv420p", silent_mp4], stdin=subprocess.PIPE)
     for i in range(nfr):
         t = i / FPS
-        s0 = section_start(t); dt = t - s0
-        punch = (1 - ease_out(dt / 0.35)) if s0 > 0 or dt < 0.35 else 0.0
-        # background
-        img = bg_base.copy()
-        off = int((t * 40) % 120)
-        img.paste(bg_grid.crop((0, 120 - off, W, 120 - off + H)), (0, 0), bg_grid.crop((0, 120 - off, W, 120 - off + H)))
-        img.paste(glow_y, (int(W * 0.55 + 160 * math.sin(t * 0.7)) - 350, int(H * 0.35 + 120 * math.cos(t * 0.5)) - 350), glow_y)
-        img.paste(glow_p, (int(W * 0.2 + 140 * math.cos(t * 0.6)) - 350, int(H * 0.7 + 150 * math.sin(t * 0.45)) - 350), glow_p)
-        d = ImageDraw.Draw(img)
-        for (px, py, pr, spd) in parts:
-            yy = (py - t * spd) % H
-            d.ellipse((px - pr, yy - pr, px + pr, yy + pr), fill=(120, 150, 230))
+        img = background(t)
         s = state[i]
-        bounce = 1 + 0.035 * sm[i] + 0.10 * punch
-        shake = (rng.integers(-9, 10), rng.integers(-9, 10)) if t < 0.35 else (0, 0)
-        mid = has_mid and T_MID <= t < T_END
+        mid = T_MID <= t < T_END and cards
+        pz = punch(t)
         if not mid:
-            ch, gl = BIG[s], BIG_GLOW
-            k = bounce
-            w2, h2 = int(ch.width * k), int(ch.height * k)
-            chs = ch.resize((w2, h2), Image.BILINEAR); gls = gl.resize((w2, h2), Image.BILINEAR)
-            x = (W - w2) // 2 + shake[0]; y = H - h2 + 40 + int(8 * math.sin(t * 2.4)) + shake[1]
-            img.paste(gls, (x, y), gls); img.paste(chs, (x, y), chs)
+            start = 0 if t < T_MID else T_END
+            z = ease_out((t - start) / 0.45)
+            ch = BIG[s]
+            scale = (0.9 + 0.1 * z) * pz * (1 + 0.015 * math.sin(t * 1.3))
+            cw, chh = int(ch.width * scale), int(ch.height * scale)
+            chs = ch.resize((cw, chh), Image.BILINEAR)
+            sway = int(math.sin(t * 1.7) * 14)
+            img.paste(chs, ((W - cw) // 2 + sway, H - chh + 90 + int(8 * math.sin(t * 2.4))), chs)
             if t < T_MID:
-                paste_pop(img, hook_imgs[0], W / 2 + shake[0], 160 + shake[1], ease_out_back(t / 0.3))
-                paste_pop(img, hook_imgs[1], W / 2 + shake[0], 280 + shake[1], ease_out_back((t - 0.2) / 0.3))
+                header(img, *spec["hook"], 0.0, t)
             else:
-                e0 = t - T_END
-                paste_pop(img, end_imgs[0], W / 2, 160, ease_out_back(e0 / 0.3))
-                paste_pop(img, end_imgs[1], W / 2, 280, ease_out_back((e0 - 0.15) / 0.3))
-                paste_pop(img, end_imgs[2], W / 2, 400, ease_out_back((e0 - 0.3) / 0.3))
+                header(img, *spec["end"], T_END, t)
+                d = ImageDraw.Draw(img)
+                pulse = 1 + 0.06 * math.sin(t * 6)
+                d.text((W / 2, 430), "Follow @aibhai_hindi", font=F(58 * pulse, False), fill=WHITE, stroke_width=6, stroke_fill=(0, 0, 0), anchor="mm")
             cap_y = 1440
         else:
-            idx = max([k2 for k2, (ct, _) in enumerate(cards) if t >= ct] or [0])
-            ct, c = cards[idx]
-            ci = card_imgs[idx]
-            ch, gl = SMALL[s], SMALL_GLOW
-            k = 1 + 0.05 * sm[i]
-            w2, h2 = int(ch.width * k), int(ch.height * k)
-            chs = ch.resize((w2, h2), Image.BILINEAR); gls = gl.resize((w2, h2), Image.BILINEAR)
-            x = W - w2 + 50; y = H - h2 + 30 + int(6 * math.sin(t * 2.4))
-            img.paste(gls, (x, y), gls); img.paste(chs, (x, y), chs)
-            pr = ease_out_back((t - ct) / 0.4)
-            ang = (1 - min(1, (t - ct) / 0.4)) * 7
-            cl = ci.rotate(ang, resample=Image.BILINEAR, expand=True) if ang > 0.2 else ci
-            cx = int(70 + (1 - pr) * 1100) - (cl.width - ci.width) // 2
-            img.paste(cl, (cx, 230 - (cl.height - ci.height) // 2), cl)
-            cap_y = 1165
-        for a, b, g in chunks:
-            if a <= t < b:
-                key = " ".join(g)
-                if key not in cap_cache:
-                    cap_cache[key] = caption_layer(g)
-                paste_pop(img, cap_cache[key], W / 2, cap_y, 1.0 + 0.25 * (1 - ease_out((t - a) / 0.12)))
-                break
+            idx = max([k for k, (ct, _) in enumerate(cards) if t >= ct] or [0])
+            ct = cards[idx][0]
+            pr = (t - ct) / 0.42
+            ch = SMALL[s]
+            scale = pz
+            chs = ch.resize((int(ch.width * scale), int(ch.height * scale)), Image.BILINEAR)
+            img.paste(chs, (W - chs.width + 120, H - chs.height + 40 + int(5 * math.sin(t * 2.4))), chs)
+            off = int((1 - ease_back(pr)) * W * 1.05)
+            if pr < 1 and idx > 0:  # previous card slides out to the left
+                prev_off = -int(ease_out(pr) * W * 1.05)
+                img.paste(card_imgs[idx - 1], (prev_off, 0), card_imgs[idx - 1])
+            img.paste(card_imgs[idx], (off, int(8 * math.sin(t * 2))), card_imgs[idx])
+            cap_y = 1180
+        for chunk in chunks:
+            if chunk[0] <= t < chunk[1]:
+                caption(img, chunk, t, cap_y); break
         # progress bar
         d = ImageDraw.Draw(img)
-        d.rectangle((0, 0, W, 10), fill=(20, 40, 90)); d.rectangle((0, 0, int(W * t / total), 10), fill=YEL)
-        # flash on section change
-        if s0 > 0 and dt < 0.1:
-            a = int(150 * (1 - dt / 0.1))
-            img = Image.blend(img, Image.new("RGB", (W, H), WHITE), a / 255)
+        d.rectangle((0, 0, W, 10), fill=(255, 255, 255, 0))
+        d.rectangle((0, 0, int(W * t / total), 10), fill=YEL)
+        # flash on section changes
+        for fl in flashes:
+            if 0 <= t - fl < 0.16:
+                a = 0.55 * (1 - (t - fl) / 0.16)
+                img = Image.blend(img, Image.new("RGB", (W, H), WHITE), a)
         p.stdin.write(img.tobytes())
-        for name, tt in (("hook", 1.2), ("mid", (T_MID + 1.0) if has_mid else 0), ("end", T_END + 0.8)):
-            if name not in stills and t >= tt:
-                stills[name] = img.copy()
     p.stdin.close(); p.wait()
 
-    bed = os.path.join(tmp, "bed.wav")
-    write_wav(bed, synth_bed(total, hits))
+    # sound effects track
+    n = int(total * SR) + SR
+    fx = np.zeros(n)
+    wh, pop, pop2 = sfx_whoosh(), sfx_pop(900), sfx_pop(1300, 0.07)
+
+    def add(snd, t0):
+        a = int(max(0, t0) * SR); b = min(n, a + len(snd)); fx[a:b] += snd[:b - a]
+
+    add(pop2, 0.02)
+    for fl in flashes:
+        add(wh, fl - 0.2)
+    for ct, _ in cards:
+        add(pop, ct + 0.32)
+    add(pop2, T_END + 0.3)
+    fxp = os.path.join(tmp, "fx.wav"); write_wav(fxp, fx * 0.45)
+
     out_mp4 = os.path.join(outdir, "reel.mp4")
-    run(["ffmpeg", "-hide_banner", "-loglevel", "error", "-y", "-i", silent, "-i", vo, "-i", bed,
+    run(["ffmpeg", "-hide_banner", "-loglevel", "error", "-y", "-i", silent_mp4, "-i", vo, "-i", fxp,
          "-filter_complex", "[1:a][2:a]amix=inputs=2:duration=first:normalize=0,alimiter=limit=0.95[a]",
-         "-map", "0:v", "-map", "[a]", "-c:v", "copy", "-c:a", "aac", "-b:a", "192k", "-ac", "2",
-         "-movflags", "+faststart", "-shortest", out_mp4])
-    for name, im in stills.items():
-        im.resize((360, 640)).save(os.path.join(tmp, f"still_{name}.png"))
+         "-map", "0:v", "-map", "[a]", "-c:v", "copy", "-c:a", "aac", "-b:a", "192k", "-ar", str(SR),
+         "-shortest", "-movflags", "+faststart", out_mp4])
 
     # cover
     cv = spec.get("cover", {})
     lines = cv.get("lines") or [spec["hook"][0], "", spec["hook"][1], ""]
-    img = bg_base.copy()
-    img.paste(glow_y, (W - 650, H - 900), glow_y)
-    chc = cut[2].resize((int(cut[2].width * 1060 / cut[2].height), 1060), Image.LANCZOS)
-    gl = glow_of(chc)
-    img.paste(gl, ((W - chc.width) // 2 + 170, H - chc.height), gl)
-    img.paste(chc, ((W - chc.width) // 2 + 170, H - chc.height), chc)
+    img = background(1.0)
+    ch = src[2].resize((int(src[2].width * 1060 / src[2].height), 1060), Image.LANCZOS)
+    img.paste(ch, ((W - ch.width) // 2 + 150, H - ch.height), ch)
     d = ImageDraw.Draw(img)
     y = 260
-    for k2, ln in enumerate(lines):
+    for k, ln in enumerate(lines):
         if not ln:
             continue
-        if k2 == 2:
-            f = fit(ln, 84, 940)
-            d.rounded_rectangle((60, y - 60, 60 + d.textlength(ln, font=f) + 50, y + 60), 24, fill=YEL)
-            d.text((85, y), ln, font=f, fill=BG, anchor="lm"); y += 130
+        if k == 2:
+            s = 84
+            while d.textlength(ln, font=F(s)) > 940 and s > 40: s -= 4
+            d.rounded_rectangle((60, y - 60, 60 + d.textlength(ln, font=F(s)) + 50, y + 60), 24, fill=YEL)
+            d.text((85, y), ln, font=F(s), fill=BG, anchor="lm"); y += 130
         else:
-            f = fit(ln, 150 if k2 < 2 else 110, 940)
-            d.text((70, y), ln, font=f, fill=YEL if k2 == 1 else WHITE, stroke_width=8, stroke_fill=(0, 0, 0), anchor="lm")
-            y += 160 if k2 < 2 else 130
+            s = 150 if k < 2 else 110
+            while d.textlength(ln, font=F(s)) > 940 and s > 40: s -= 4
+            d.text((70, y), ln, font=F(s), fill=YEL if k == 1 else WHITE, stroke_width=8, stroke_fill=(0, 0, 0), anchor="lm")
+            y += 160 if k < 2 else 130
     x = 70
     for c in cv.get("chips", []):
         fc = F(44, False); w = d.textlength(c, font=fc) + 60
         d.rounded_rectangle((x, y, x + w, y + 76), 38, fill=PURPLE)
         d.text((x + w / 2, y + 38), c, font=fc, fill=WHITE, anchor="mm"); x += w + 22
     img.save(os.path.join(outdir, "cover.jpg"), quality=92)
-    print(json.dumps({"reel": out_mp4, "seconds": round(total, 2), "phrases": len(phrases), "segments": len(segs), "stills": tmp}))
+    print(json.dumps({"reel": out_mp4, "seconds": round(total, 2), "phrases": len(phrases), "segments": len(segs)}))
 
 
 if __name__ == "__main__":
