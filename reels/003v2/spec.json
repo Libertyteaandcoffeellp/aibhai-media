@@ -1,0 +1,86 @@
+{
+ "phrases": [
+  "Product ki photo kharab hai?",
+  "Photographer ko paise mat do!",
+  "Phone ki photo ko studio photo banao.",
+  "Pehle, saaf roshni me photo lo.",
+  "Phir Photoroom ya remove bg kholo.",
+  "Ek click me background gayab.",
+  "Ab safed ya naya background lagao.",
+  "Meesho, Amazon, Instagram, sab ke liye ready!",
+  "Free guide bio link me hai, zaroor lena!",
+  "Follow karo AI Bhai ko!"
+ ],
+ "hook": [
+  "Phone Photo = Studio Photo",
+  "Bina Photographer"
+ ],
+ "end": [
+  "Free Guide: Bio Link",
+  "Roz 1 AI Hack"
+ ],
+ "hook_phrases": 3,
+ "end_phrases": 2,
+ "cards": [
+  {
+   "at": 3,
+   "title": "Roshni",
+   "num": 1,
+   "lines": [
+    "Saaf roshni me",
+    "photo lo"
+   ],
+   "chips": [
+    "Phone"
+   ]
+  },
+  {
+   "at": 4,
+   "title": "Photoroom",
+   "num": 2,
+   "lines": [
+    "Ya remove.bg",
+    "1 click background gayab"
+   ],
+   "chips": [
+    "Free",
+    "1 Click"
+   ]
+  },
+  {
+   "at": 6,
+   "title": "Naya BG",
+   "num": 3,
+   "lines": [
+    "Safed ya naya background",
+    "store ke liye ready"
+   ],
+   "chips": [
+    "Meesho",
+    "Amazon"
+   ]
+  }
+ ],
+ "keywords": [
+  "AI",
+  "Photoroom",
+  "studio",
+  "Meesho",
+  "Amazon",
+  "Follow",
+  "guide"
+ ],
+ "cover": {
+  "lines": [
+   "Phone Photo",
+   "= Studio",
+   "Bina Photographer",
+   "1 Click"
+  ],
+  "chips": [
+   "Business",
+   "Free"
+  ]
+ },
+ "id": "003v2"
+}

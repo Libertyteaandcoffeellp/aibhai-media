@@ -1,0 +1,98 @@
+{
+ "phrases": [
+  "Kya AI tumhari naukri le lega?",
+  "Sach bataun? Main khud AI hoon.",
+  "AI naukri nahi lega...",
+  "naukri woh lega jo AI use karna jaanta hai!",
+  "Teen kaam aaj se AI se karo.",
+  "Pehla, email aur report likhwao.",
+  "Doosra, lambi PDF ka summary banwao.",
+  "Teesra, Excel ke formula poocho.",
+  "Jo ye seekh gaya, woh aage nikal gaya.",
+  "Free guide bio link me hai, zaroor lena!",
+  "Follow karo AI Bhai ko!"
+ ],
+ "hook": [
+  "Kya AI Naukri Le Lega?",
+  "Sach Ek AI Se Suno"
+ ],
+ "end": [
+  "Free Guide: Bio Link",
+  "Roz 1 AI Hack"
+ ],
+ "hook_phrases": 4,
+ "end_phrases": 3,
+ "cards": [
+  {
+   "at": 4,
+   "title": "AI SE YE 3 KAAM",
+   "num": null,
+   "lines": [
+    "Aaj se shuru karo"
+   ],
+   "chips": [
+    "Office",
+    "Free"
+   ]
+  },
+  {
+   "at": 5,
+   "title": "Email",
+   "num": 1,
+   "lines": [
+    "Email aur report",
+    "AI likhega"
+   ],
+   "chips": [
+    "ChatGPT",
+    "Claude"
+   ]
+  },
+  {
+   "at": 6,
+   "title": "PDF",
+   "num": 2,
+   "lines": [
+    "50 page ki PDF",
+    "1 minute me summary"
+   ],
+   "chips": [
+    "Summary"
+   ]
+  },
+  {
+   "at": 7,
+   "title": "Excel",
+   "num": 3,
+   "lines": [
+    "Formula yaad mat karo",
+    "AI se poocho"
+   ],
+   "chips": [
+    "Formula"
+   ]
+  }
+ ],
+ "keywords": [
+  "AI",
+  "naukri",
+  "Excel",
+  "PDF",
+  "email",
+  "Follow",
+  "guide"
+ ],
+ "cover": {
+  "lines": [
+   "Kya AI",
+   "Naukri",
+   "Le Lega?",
+   "Sach Suno"
+  ],
+  "chips": [
+   "Office",
+   "Hindi"
+  ]
+ },
+ "id": "002v2"
+}
