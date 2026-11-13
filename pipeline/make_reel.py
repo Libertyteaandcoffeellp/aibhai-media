@@ -250,6 +250,10 @@ def build(spec_path, vo_path, outdir):
     for i in range(1, nfr - 1):  # drop single-frame flicker
         if state[i - 1] == state[i + 1] != state[i]:
             state[i] = state[i - 1]
+    os.makedirs(outdir, exist_ok=True)
+    json.dump({"fps": FPS, "seconds": total, "phrase_times": times,
+               "mouth_states": state.tolist(), "voiced": voiced.tolist()},
+              open(os.path.join(outdir, "qa_meta.json"), "w"))
 
     cut_path = lambda k: os.path.join(ASSETS, f"cut_{k}.png")
     src = [Image.open(cut_path(k)).convert("RGBA") for k in "ABCDE"]
