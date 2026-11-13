@@ -2,6 +2,14 @@
   "about": "AI Bhai sprint queue. type: REEL = normal reel, TRIAL_REEL = shown to non-followers first. status: queued | voiced | rendered | scheduled | posted. One voice (ElevenLabs 'Bunty - Fun Podcast Host', model eleven_v3).",
   "reels": [
     {
+      "id": "001",
+      "day": 1,
+      "slot": "20:00",
+      "type": "REEL",
+      "status": "scheduled",
+      "hook_style": "intro"
+    },
+    {
       "id": "002",
       "day": 1,
       "slot": "13:00",
@@ -109,7 +117,7 @@
       "day": 1,
       "slot": "16:00",
       "type": "TRIAL_REEL",
-      "status": "rendered",
+      "status": "scheduled",
       "hook_style": "magic",
       "phrases": [
         "Product ki photo kharab hai?",
