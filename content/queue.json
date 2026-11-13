@@ -6,7 +6,7 @@
       "day": 1,
       "slot": "13:00",
       "type": "TRIAL_REEL",
-      "status": "rendered",
+      "status": "scheduled",
       "hook_style": "fear",
       "phrases": [
         "Kya AI tumhari naukri le lega?",
@@ -109,7 +109,7 @@
       "day": 1,
       "slot": "16:00",
       "type": "TRIAL_REEL",
-      "status": "queued",
+      "status": "rendered",
       "hook_style": "magic",
       "phrases": [
         "Product ki photo kharab hai?",
