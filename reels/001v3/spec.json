@@ -1,0 +1,109 @@
+{
+ "phrases": [
+  "Main insaan nahi hoon bhai...",
+  "main khud AI hoon!",
+  "Aur ab main tumhe roz ek AI hack sikhaunga,",
+  "ekdum simple Hindi me.",
+  "Shuruaat in teen tools se karo.",
+  "Pehla, ChatGPT.",
+  "Email, caption, ideas, sab likh deta hai.",
+  "Doosra, Perplexity.",
+  "Sawaal poocho, jawaab ke saath source bhi milega.",
+  "Teesra, Canva.",
+  "Poster aur post, do minute me ready.",
+  "Kal se class shuru!",
+  "Free guide bio link me hai, zaroor lena!",
+  "Chai khatam, hack khatam.",
+  "Follow karo AI Bhai ko!"
+ ],
+ "hook": [
+  "Main AI Hoon.",
+  "Aur Tumhe AI Sikhaunga"
+ ],
+ "end": [
+  "Free Guide: Bio Link",
+  "Roz 1 AI Hack"
+ ],
+ "hook_phrases": 4,
+ "end_phrases": 4,
+ "cards": [
+  {
+   "at": 4,
+   "title": "3 FREE AI TOOLS",
+   "num": null,
+   "lines": [
+    "Shuruaat yahan se"
+   ],
+   "chips": [
+    "Free",
+    "Hindi"
+   ]
+  },
+  {
+   "at": 5,
+   "title": "ChatGPT",
+   "num": 1,
+   "lines": [
+    "Email, caption, ideas",
+    "sab likh deta hai"
+   ],
+   "chips": [
+    "Likhna",
+    "Ideas"
+   ]
+  },
+  {
+   "at": 7,
+   "title": "Perplexity",
+   "num": 2,
+   "lines": [
+    "Sawaal poocho,",
+    "jawaab + source"
+   ],
+   "chips": [
+    "Research",
+    "Sources"
+   ]
+  },
+  {
+   "at": 9,
+   "title": "Canva",
+   "num": 3,
+   "lines": [
+    "Poster aur post",
+    "2 minute me ready"
+   ],
+   "chips": [
+    "Design",
+    "2 Min"
+   ]
+  }
+ ],
+ "keywords": [
+  "AI",
+  "ChatGPT",
+  "Perplexity",
+  "Canva",
+  "Hindi",
+  "free",
+  "Follow",
+  "hack",
+  "source",
+  "ready",
+  "guide"
+ ],
+ "cover": {
+  "lines": [
+   "Main",
+   "AI Hoon.",
+   "Aur Tumhe AI",
+   "Sikhaunga"
+  ],
+  "chips": [
+   "Free",
+   "Hindi",
+   "Roz 1 Hack"
+  ]
+ },
+ "id": "001v3"
+}
