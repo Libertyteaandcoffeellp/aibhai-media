@@ -215,21 +215,44 @@ def build(spec_path, vo_path, outdir):
                 wd = dd * (len(w) + 1) / wl; wt.append((acc, acc + wd)); acc += wd
             chunks.append((tt, tt + dd, g, wt)); tt += dd
 
-    # mouth states from loudness
+    # mouth states (lip-sync): 0 closed, 1 small, 2 medium, 3 wide, 4 "O"
     with wave.open(vo) as wv:
         raw = np.frombuffer(wv.readframes(wv.getnframes()), dtype=np.int16).astype(np.float32) / 32768
     spf = SR // FPS
-    rms = np.array([np.sqrt(np.mean(raw[i * spf:(i + 1) * spf] ** 2) + 1e-12) for i in range(nfr)])
+    rms = np.zeros(nfr); cen = np.zeros(nfr)
+    freqs = np.fft.rfftfreq(spf, 1 / SR)
+    win = np.hanning(spf)
+    for i in range(nfr):
+        seg = raw[i * spf:(i + 1) * spf]
+        if len(seg) < spf:
+            seg = np.pad(seg, (0, spf - len(seg)))
+        rms[i] = np.sqrt(np.mean(seg ** 2) + 1e-12)
+        mag = np.abs(np.fft.rfft(seg * win))
+        band = (freqs > 150) & (freqs < 4000)
+        cen[i] = (freqs[band] * mag[band]).sum() / (mag[band].sum() + 1e-9)
     db = 20 * np.log10(rms + 1e-9)
     peak = np.percentile(db, 95)
-    state = np.where(db < peak - 22, 0, np.where(db < peak - 5, 1, 2))
-    for i in range(1, nfr - 1):
+    w = int(0.6 * FPS)
+    local_max = np.array([rms[max(0, i - w):i + w + 1].max() for i in range(nfr)])
+    lvl = rms / (local_max + 1e-9)
+    voiced = db > peak - 26
+    cen_lo = np.percentile(cen[voiced], 30) if voiced.any() else 0
+    state = np.zeros(nfr, dtype=int)
+    for i in range(nfr):
+        if not voiced[i] or lvl[i] < 0.22:
+            state[i] = 0
+        elif lvl[i] < 0.45:
+            state[i] = 1
+        elif lvl[i] < 0.75:
+            state[i] = 2
+        else:
+            state[i] = 4 if cen[i] < cen_lo else 3
+    for i in range(1, nfr - 1):  # drop single-frame flicker
         if state[i - 1] == state[i + 1] != state[i]:
             state[i] = state[i - 1]
 
     cut_path = lambda k: os.path.join(ASSETS, f"cut_{k}.png")
-    src = [Image.open(cut_path(k)).convert("RGBA") if os.path.exists(cut_path(k))
-           else Image.open(os.path.join(ASSETS, f"frame_{k}.png")).convert("RGBA") for k in "ABC"]
+    src = [Image.open(cut_path(k)).convert("RGBA") for k in "ABCDE"]
     sc = lambda h: [m.resize((int(m.width * h / m.height), h), Image.LANCZOS) for m in src]
     BIG, SMALL = sc(1500), sc(760)
 
