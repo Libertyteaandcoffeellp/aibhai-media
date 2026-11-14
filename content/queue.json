@@ -317,7 +317,7 @@
       "day": 2,
       "slot": "13:00",
       "type": "REEL",
-      "status": "rendered",
+      "status": "scheduled",
       "hook_style": "secret",
       "phrases": [
         "ChatGPT ka jawaab bekaar aata hai?",
@@ -420,7 +420,7 @@
       "day": 2,
       "slot": "16:00",
       "type": "REEL",
-      "status": "rendered",
+      "status": "scheduled",
       "hook_style": "student",
       "phrases": [
         "Padhne ka mann nahi karta?",
@@ -521,7 +521,7 @@
       "day": 2,
       "slot": "20:00",
       "type": "REEL",
-      "status": "rendered",
+      "status": "scheduled",
       "hook_style": "warning",
       "phrases": [
         "Mummy ka phone aaye...",
@@ -908,6 +908,308 @@
         ]
       },
       "caption": "VLOOKUP se darr lagta hai? Ab formula yaad karne ki zaroorat nahi.\n\nAI ko simple Hindi me batao kya chahiye – ChatGPT ya Gemini formula de dega. Copy, paste, done.\n\nFree AI guide: bio link me 👆\nFollow @aibhai_hindi – roz 1 AI hack.\n\n#excel #exceltips #officehacks #aitools #aiinhindi #aibhai"
+    },
+    {
+      "id": "010",
+      "day": 4,
+      "slot": "13:00",
+      "type": "REEL",
+      "status": "queued",
+      "hook_style": "fear",
+      "phrases": [
+        "Resume bhejte ho, reply nahi aata?",
+        "Shayad resume har job ke liye same hai.",
+        "AI se use job ke hisaab se badlo.",
+        "Pehle, job description copy karo.",
+        "Phir ChatGPT me resume aur JD paste karo.",
+        "Bolo, JD ke keywords mere resume me daalo.",
+        "Number hata do, jhooth mat likhwana.",
+        "Ab resume job se match karega!",
+        "Free guide bio link me hai, zaroor lena!",
+        "Follow karo AI Bhai ko!"
+      ],
+      "hook": [
+        "Resume Bhejte Ho,",
+        "Reply Nahi Aata?"
+      ],
+      "end": [
+        "Free Guide: Bio Link",
+        "Roz 1 AI Hack"
+      ],
+      "hook_phrases": 2,
+      "end_phrases": 2,
+      "cards": [
+        {
+          "at": 3,
+          "title": "JD Copy",
+          "num": 1,
+          "lines": [
+            "Job description",
+            "copy karo"
+          ],
+          "chips": [
+            "Step 1"
+          ]
+        },
+        {
+          "at": 4,
+          "title": "ChatGPT",
+          "num": 2,
+          "lines": [
+            "Resume + JD",
+            "dono paste karo"
+          ],
+          "chips": [
+            "Step 2"
+          ]
+        },
+        {
+          "at": 5,
+          "title": "Keywords",
+          "num": 3,
+          "lines": [
+            "JD ke keywords",
+            "resume me daalo"
+          ],
+          "chips": [
+            "Step 3"
+          ]
+        },
+        {
+          "at": 6,
+          "title": "Dhyan",
+          "num": null,
+          "lines": [
+            "Number hatao,",
+            "jhooth nahi"
+          ],
+          "chips": [
+            "Tip"
+          ]
+        }
+      ],
+      "keywords": [
+        "Resume",
+        "ChatGPT",
+        "job",
+        "keywords",
+        "AI",
+        "Follow",
+        "guide"
+      ],
+      "cover": {
+        "lines": [
+          "Resume",
+          "Reject?",
+          "AI Se Fix Karo",
+          "Free Trick"
+        ],
+        "chips": [
+          "Jobs",
+          "Free"
+        ]
+      },
+      "caption": "Resume bhejte ho par reply nahi aata? Har job ke liye resume AI se match karo.\n\n1. Job description copy karo\n2. ChatGPT me resume + JD paste karo\n3. Bolo: \"Is job ke keywords mere resume me daalo\"\n4. Phone number hatao, sirf sach likho\n\nSave karo! Free AI guide: bio link me 👆\nFollow @aibhai_hindi – roz 1 AI hack.\n\n#resume #jobsearch #chatgpt #careertips #aiinhindi #aibhai"
+    },
+    {
+      "id": "011",
+      "day": 4,
+      "slot": "16:00",
+      "type": "REEL",
+      "status": "queued",
+      "hook_style": "magic",
+      "phrases": [
+        "Phone camera me chhupa hai AI jaadu!",
+        "Naam hai Google Lens, bilkul free.",
+        "Pehla, English board pe camera rakho, Translate dabao.",
+        "Doosra, kisi paudhe ya cheez ki photo lo, naam pata chalega.",
+        "Teesra, kaagaz ka text copy karo, aur WhatsApp pe paste karo.",
+        "Android aur iPhone, dono pe chalta hai.",
+        "Free guide bio link me hai, zaroor lena!",
+        "Follow karo AI Bhai ko!"
+      ],
+      "hook": [
+        "Phone Camera Ka",
+        "AI Jaadu!"
+      ],
+      "end": [
+        "Free Guide: Bio Link",
+        "Roz 1 AI Hack"
+      ],
+      "hook_phrases": 2,
+      "end_phrases": 2,
+      "cards": [
+        {
+          "at": 2,
+          "title": "Translate",
+          "num": 1,
+          "lines": [
+            "English board?",
+            "Hindi me padho"
+          ],
+          "chips": [
+            "Step 1"
+          ]
+        },
+        {
+          "at": 3,
+          "title": "Pehchano",
+          "num": 2,
+          "lines": [
+            "Paudha ya cheez,",
+            "naam pata karo"
+          ],
+          "chips": [
+            "Step 2"
+          ]
+        },
+        {
+          "at": 4,
+          "title": "Copy Text",
+          "num": 3,
+          "lines": [
+            "Kaagaz ka text",
+            "copy-paste karo"
+          ],
+          "chips": [
+            "Step 3"
+          ]
+        },
+        {
+          "at": 5,
+          "title": "Google Lens",
+          "num": null,
+          "lines": [
+            "Android + iPhone"
+          ],
+          "chips": [
+            "Free"
+          ]
+        }
+      ],
+      "keywords": [
+        "Google",
+        "Lens",
+        "Translate",
+        "Hindi",
+        "AI",
+        "Follow",
+        "guide"
+      ],
+      "cover": {
+        "lines": [
+          "Phone Camera",
+          "Ka AI Jaadu",
+          "Google Lens",
+          "Free"
+        ],
+        "chips": [
+          "Phone",
+          "Free"
+        ]
+      },
+      "caption": "Phone camera me chhupa AI jaadu – Google Lens!\n\n1. English board ya menu ko Hindi me translate karo\n2. Paudhe ya cheez ki photo se naam jaano\n3. Kaagaz ka text copy karke WhatsApp pe bhejo\n\nFree hai, Android aur iPhone dono pe.\nFree AI guide: bio link me 👆\nFollow @aibhai_hindi – roz 1 AI hack.\n\n#googlelens #aitools #phonetricks #aiinhindi #techhindi #aibhai"
+    },
+    {
+      "id": "012",
+      "day": 4,
+      "slot": "20:00",
+      "type": "REEL",
+      "status": "queued",
+      "hook_style": "warning",
+      "phrases": [
+        "Ye photo asli hai ya AI ne banayi?",
+        "WhatsApp pe AI wali fake photos bhi aati hain.",
+        "Pakadne ke teen tareeke.",
+        "Pehla, haath, ungliyan aur chehra dhyan se dekho.",
+        "Doosra, peeche likha text ajeeb ho to shak karo.",
+        "Teesra, photo ko Google pe search karo, asli source dhoondo.",
+        "Shak ho to forward mat karo!",
+        "Free guide bio link me hai, zaroor lena!",
+        "Follow karo AI Bhai ko!"
+      ],
+      "hook": [
+        "Asli Ya AI?",
+        "Fake Photo Pakdo!"
+      ],
+      "end": [
+        "Free Guide: Bio Link",
+        "Roz 1 AI Hack"
+      ],
+      "hook_phrases": 2,
+      "end_phrases": 2,
+      "cards": [
+        {
+          "at": 3,
+          "title": "Haath",
+          "num": 1,
+          "lines": [
+            "Haath, ungliyan,",
+            "chehra dekho"
+          ],
+          "chips": [
+            "Check"
+          ]
+        },
+        {
+          "at": 4,
+          "title": "Text",
+          "num": 2,
+          "lines": [
+            "Ajeeb text",
+            "matlab shak"
+          ],
+          "chips": [
+            "Check"
+          ]
+        },
+        {
+          "at": 5,
+          "title": "Search",
+          "num": 3,
+          "lines": [
+            "Google pe photo search,",
+            "asli source dhoondo"
+          ],
+          "chips": [
+            "Check"
+          ]
+        },
+        {
+          "at": 6,
+          "title": "No Forward",
+          "num": null,
+          "lines": [
+            "Shak ho to",
+            "forward mat karo"
+          ],
+          "chips": [
+            "Safe"
+          ]
+        }
+      ],
+      "keywords": [
+        "AI",
+        "photo",
+        "fake",
+        "Google",
+        "WhatsApp",
+        "Follow",
+        "guide"
+      ],
+      "cover": {
+        "lines": [
+          "Asli Ya AI?",
+          "Fake Photo",
+          "Kaise Pakde",
+          "3 Tarike"
+        ],
+        "chips": [
+          "Alert",
+          "Safety"
+        ]
+      },
+      "caption": "Ye photo asli hai ya AI ki? Forward karne se pehle check karo.\n\n1. Haath, ungliyan aur chehra dhyan se dekho\n2. Background ka text ajeeb ho to shak karo\n3. Photo ko Google pe search karke asli source dhoondo\n\nShak ho to forward mat karo.\nFree AI guide: bio link me 👆\nFollow @aibhai_hindi – roz 1 AI hack.\n\n#fakenews #aiimages #factcheck #cybersafety #aiinhindi #aibhai"
     }
   ],
   "cta": "Free guide bio link me (no comment-to-DM). Guide: guide/AI-Bhai-10-AI-Tools.pdf"
