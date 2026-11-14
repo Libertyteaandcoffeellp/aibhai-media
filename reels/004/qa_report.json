@@ -1,0 +1,165 @@
+{
+ "verdict": "PASS",
+ "checks": [
+  {
+   "level": "PASS",
+   "area": "video",
+   "msg": "resolution 1080x1920"
+  },
+  {
+   "level": "PASS",
+   "area": "video",
+   "msg": "fps 30.00"
+  },
+  {
+   "level": "PASS",
+   "area": "video",
+   "msg": "codec h264"
+  },
+  {
+   "level": "PASS",
+   "area": "video",
+   "msg": "pix_fmt yuv420p"
+  },
+  {
+   "level": "PASS",
+   "area": "video",
+   "msg": "duration 23.2s"
+  },
+  {
+   "level": "PASS",
+   "area": "video",
+   "msg": "size 5.8 MB"
+  },
+  {
+   "level": "PASS",
+   "area": "video",
+   "msg": "no black stretches"
+  },
+  {
+   "level": "PASS",
+   "area": "video",
+   "msg": "no frozen stretches"
+  },
+  {
+   "level": "PASS",
+   "area": "audio",
+   "msg": "codec aac"
+  },
+  {
+   "level": "PASS",
+   "area": "audio",
+   "msg": "mean volume -13.9 dB"
+  },
+  {
+   "level": "PASS",
+   "area": "audio",
+   "msg": "peak -0.4 dB"
+  },
+  {
+   "level": "PASS",
+   "area": "audio",
+   "msg": "speech pace 2.54 words/s (script vs voice match)"
+  },
+  {
+   "level": "PASS",
+   "area": "lipsync",
+   "msg": "mouth open on 83% of speech frames"
+  },
+  {
+   "level": "PASS",
+   "area": "lipsync",
+   "msg": "9.6 mouth changes/s"
+  },
+  {
+   "level": "PASS",
+   "area": "lipsync",
+   "msg": "mouth closed on 100% of pauses"
+  },
+  {
+   "level": "PASS",
+   "area": "lipsync",
+   "msg": "5 mouth shapes used"
+  },
+  {
+   "level": "PASS",
+   "area": "text",
+   "msg": "all on-screen text in Roman Hinglish"
+  },
+  {
+   "level": "PASS",
+   "area": "text",
+   "msg": "cards in order"
+  },
+  {
+   "level": "PASS",
+   "area": "cta",
+   "msg": "voice CTA 'bio link'"
+  },
+  {
+   "level": "PASS",
+   "area": "cta",
+   "msg": "voice 'Follow' line"
+  },
+  {
+   "level": "PASS",
+   "area": "cta",
+   "msg": "no comment/DM CTA in voice (automation not live yet)"
+  },
+  {
+   "level": "PASS",
+   "area": "caption",
+   "msg": "bio-link line"
+  },
+  {
+   "level": "PASS",
+   "area": "caption",
+   "msg": "@aibhai_hindi mention"
+  },
+  {
+   "level": "PASS",
+   "area": "caption",
+   "msg": "6 hashtags"
+  },
+  {
+   "level": "PASS",
+   "area": "caption",
+   "msg": "no duplicate hashtags"
+  },
+  {
+   "level": "PASS",
+   "area": "caption",
+   "msg": "length 358"
+  },
+  {
+   "level": "PASS",
+   "area": "caption",
+   "msg": "Roman script only"
+  },
+  {
+   "level": "PASS",
+   "area": "caption",
+   "msg": "no comment/DM CTA"
+  },
+  {
+   "level": "PASS",
+   "area": "caption",
+   "msg": "no placeholders"
+  },
+  {
+   "level": "PASS",
+   "area": "caption",
+   "msg": "first line 83 chars"
+  },
+  {
+   "level": "PASS",
+   "area": "cover",
+   "msg": "cover 1080x1920"
+  },
+  {
+   "level": "PASS",
+   "area": "review",
+   "msg": "contact_sheet.jpg written - LOOK AT IT before scheduling"
+  }
+ ]
+}

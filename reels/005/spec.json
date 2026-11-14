@@ -1,0 +1,95 @@
+{
+ "phrases": [
+  "Padhne ka mann nahi karta?",
+  "To apni notes sun lo, podcast jaisa!",
+  "Tool ka naam hai NotebookLM.",
+  "Pehle, apni PDF ya notes upload karo.",
+  "Phir poocho, ye chapter simple Hindi me samjhao.",
+  "Ya bolo, das MCQ banao.",
+  "Aur Audio Overview dabao, notes ka podcast ready!",
+  "Free guide bio link me hai, zaroor lena!",
+  "Follow karo AI Bhai ko!"
+ ],
+ "hook": [
+  "Notes Ko Podcast",
+  "Bana Do!"
+ ],
+ "end": [
+  "Free Guide: Bio Link",
+  "Roz 1 AI Hack"
+ ],
+ "hook_phrases": 2,
+ "end_phrases": 2,
+ "cards": [
+  {
+   "at": 2,
+   "title": "NotebookLM",
+   "num": null,
+   "lines": [
+    "Google ka free tool"
+   ],
+   "chips": [
+    "Free",
+    "Students"
+   ]
+  },
+  {
+   "at": 3,
+   "title": "Upload",
+   "num": 1,
+   "lines": [
+    "PDF ya notes",
+    "upload karo"
+   ],
+   "chips": [
+    "Step 1"
+   ]
+  },
+  {
+   "at": 4,
+   "title": "Poocho",
+   "num": 2,
+   "lines": [
+    "Simple Hindi me samjhao",
+    "ya 10 MCQ banao"
+   ],
+   "chips": [
+    "Step 2"
+   ]
+  },
+  {
+   "at": 6,
+   "title": "Podcast",
+   "num": 3,
+   "lines": [
+    "Audio Overview",
+    "notes suno"
+   ],
+   "chips": [
+    "Step 3"
+   ]
+  }
+ ],
+ "keywords": [
+  "NotebookLM",
+  "podcast",
+  "MCQ",
+  "Hindi",
+  "AI",
+  "Follow",
+  "guide"
+ ],
+ "cover": {
+  "lines": [
+   "Notes Ko",
+   "Podcast",
+   "Bana Do",
+   "Free Tool"
+  ],
+  "chips": [
+   "Students",
+   "Free"
+  ]
+ },
+ "id": "005"
+}

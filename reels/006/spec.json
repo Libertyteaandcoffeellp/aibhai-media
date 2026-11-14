@@ -1,0 +1,97 @@
+{
+ "phrases": [
+  "Mummy ka phone aaye...",
+  "awaaz bilkul unki ho...",
+  "aur woh paise maange.",
+  "Ruko! Ye AI scam ho sakta hai.",
+  "AI ab kisi ki awaaz copy kar sakta hai.",
+  "Bachne ke teen tareeke.",
+  "Pehla, phone kaato, khud wapas call karo.",
+  "Doosra, ghar me ek code word rakho.",
+  "Teesra, jaldi me paise ya OTP mat bhejo.",
+  "Family ko bhi batao.",
+  "Free guide bio link me hai, zaroor lena!",
+  "Follow karo AI Bhai ko!"
+ ],
+ "hook": [
+  "Awaaz Mummy Ki...",
+  "Par Call AI Ka!"
+ ],
+ "end": [
+  "Free Guide: Bio Link",
+  "Roz 1 AI Hack"
+ ],
+ "hook_phrases": 4,
+ "end_phrases": 2,
+ "cards": [
+  {
+   "at": 4,
+   "title": "AI VOICE SCAM",
+   "num": null,
+   "lines": [
+    "Awaaz copy ho sakti hai"
+   ],
+   "chips": [
+    "Alert"
+   ]
+  },
+  {
+   "at": 6,
+   "title": "Call Back",
+   "num": 1,
+   "lines": [
+    "Phone kaato,",
+    "khud wapas call karo"
+   ],
+   "chips": [
+    "Safe"
+   ]
+  },
+  {
+   "at": 7,
+   "title": "Code Word",
+   "num": 2,
+   "lines": [
+    "Family ka ek",
+    "code word rakho"
+   ],
+   "chips": [
+    "Safe"
+   ]
+  },
+  {
+   "at": 8,
+   "title": "No OTP",
+   "num": 3,
+   "lines": [
+    "OTP aur paise",
+    "jaldi me mat bhejo"
+   ],
+   "chips": [
+    "Safe"
+   ]
+  }
+ ],
+ "keywords": [
+  "AI",
+  "scam",
+  "awaaz",
+  "OTP",
+  "code",
+  "Follow",
+  "guide"
+ ],
+ "cover": {
+  "lines": [
+   "Awaaz Mummy Ki",
+   "Call AI Ka!",
+   "Ye Scam Jaano",
+   "Family Ko Bhejo"
+  ],
+  "chips": [
+   "Alert",
+   "Safety"
+  ]
+ },
+ "id": "006"
+}

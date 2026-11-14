@@ -1,0 +1,97 @@
+{
+ "phrases": [
+  "ChatGPT ka jawaab bekaar aata hai?",
+  "Galti prompt ki hai!",
+  "Ye chaar cheezein likho, jawaab better aayega.",
+  "Pehla, role. Tum ek expert teacher ho.",
+  "Doosra, kaam. Kya chahiye, saaf likho.",
+  "Teesra, context. Kiske liye, kitna lamba.",
+  "Chautha, format. Paanch points me do.",
+  "Bas! Ab dekho jaadu.",
+  "Free guide bio link me hai, zaroor lena!",
+  "Follow karo AI Bhai ko!"
+ ],
+ "hook": [
+  "ChatGPT Ka Jawaab",
+  "Bekaar Aata Hai?"
+ ],
+ "end": [
+  "Free Guide: Bio Link",
+  "Roz 1 AI Hack"
+ ],
+ "hook_phrases": 3,
+ "end_phrases": 2,
+ "cards": [
+  {
+   "at": 3,
+   "title": "Role",
+   "num": 1,
+   "lines": [
+    "Tum ek expert",
+    "teacher ho"
+   ],
+   "chips": [
+    "Step 1"
+   ]
+  },
+  {
+   "at": 4,
+   "title": "Kaam",
+   "num": 2,
+   "lines": [
+    "Kya chahiye,",
+    "saaf likho"
+   ],
+   "chips": [
+    "Step 2"
+   ]
+  },
+  {
+   "at": 5,
+   "title": "Context",
+   "num": 3,
+   "lines": [
+    "Kiske liye,",
+    "kitna lamba"
+   ],
+   "chips": [
+    "Step 3"
+   ]
+  },
+  {
+   "at": 6,
+   "title": "Format",
+   "num": 4,
+   "lines": [
+    "5 points me do",
+    "ya table me"
+   ],
+   "chips": [
+    "Step 4"
+   ]
+  }
+ ],
+ "keywords": [
+  "ChatGPT",
+  "role",
+  "kaam",
+  "context",
+  "format",
+  "AI",
+  "Follow",
+  "guide"
+ ],
+ "cover": {
+  "lines": [
+   "ChatGPT",
+   "Ka Secret",
+   "4 Step Formula",
+   "Better Jawaab"
+  ],
+  "chips": [
+   "Prompt",
+   "Free"
+  ]
+ },
+ "id": "004"
+}
