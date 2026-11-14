@@ -316,15 +316,15 @@
       "id": "004",
       "day": 2,
       "slot": "13:00",
-      "type": "TRIAL_REEL",
+      "type": "REEL",
       "status": "queued",
       "hook_style": "secret",
       "phrases": [
-        "Nabbe percent log ChatGPT galat use karte hain.",
-        "Tum bhi?",
-        "Ye chaar cheezein likho, jawaab das guna better.",
+        "ChatGPT ka jawaab bekaar aata hai?",
+        "Galti prompt ki hai!",
+        "Ye chaar cheezein likho, jawaab better aayega.",
         "Pehla, role. Tum ek expert teacher ho.",
-        "Doosra, kaam. Mujhe kya chahiye, saaf likho.",
+        "Doosra, kaam. Kya chahiye, saaf likho.",
         "Teesra, context. Kiske liye, kitna lamba.",
         "Chautha, format. Paanch points me do.",
         "Bas! Ab dekho jaadu.",
@@ -332,8 +332,8 @@
         "Follow karo AI Bhai ko!"
       ],
       "hook": [
-        "90% Log ChatGPT",
-        "Galat Use Karte Hain"
+        "ChatGPT Ka Jawaab",
+        "Bekaar Aata Hai?"
       ],
       "end": [
         "Free Guide: Bio Link",
@@ -406,20 +406,20 @@
           "ChatGPT",
           "Ka Secret",
           "4 Step Formula",
-          "10x Better"
+          "Better Jawaab"
         ],
         "chips": [
           "Prompt",
           "Free"
         ]
       },
-      "caption": "90% log ChatGPT galat use karte hain. Ye 4 step formula try karo:\n\n1. Role – \"Tum ek expert ___ ho\"\n2. Kaam – kya chahiye, saaf likho\n3. Context – kiske liye, kitna lamba\n4. Format – \"5 points me do\"\n\nSave karo! Free AI guide: bio link me 👆\nFollow @aibhai_hindi\n\n#chatgpt #chatgptprompts #aiinhindi #aitips #aibhai #learnai"
+      "caption": "ChatGPT ka jawaab bekaar aata hai? Galti prompt ki hai. Ye 4 step formula try karo:\n\n1. Role – \"Tum ek expert ___ ho\"\n2. Kaam – kya chahiye, saaf likho\n3. Context – kiske liye, kitna lamba\n4. Format – \"5 points me do\"\n\nSave karo! Free AI guide: bio link me 👆\nFollow @aibhai_hindi – roz 1 AI hack.\n\n#chatgpt #chatgptprompts #aiinhindi #aitips #aibhai #learnai"
     },
     {
       "id": "005",
       "day": 2,
       "slot": "16:00",
-      "type": "TRIAL_REEL",
+      "type": "REEL",
       "status": "queued",
       "hook_style": "student",
       "phrases": [
@@ -514,7 +514,7 @@
           "Free"
         ]
       },
-      "caption": "Padhne ka mann nahi? Apni notes podcast ki tarah suno!\n\nNotebookLM me PDF upload karo, simple Hindi me samjho, MCQ banao, aur Audio Overview se podcast suno.\n\nFree AI guide: bio link me 👆\nFollow @aibhai_hindi\n\n#studytips #studenthacks #aiforstudents #notebooklm #aiinhindi #aibhai"
+      "caption": "Padhne ka mann nahi? Apni notes podcast ki tarah suno!\n\nNotebookLM me PDF upload karo, simple Hindi me samjho, MCQ banao, aur Audio Overview se podcast suno.\n\nFree AI guide: bio link me 👆\nFollow @aibhai_hindi – roz 1 AI hack.\n\n#studytips #studenthacks #aiforstudents #notebooklm #aiinhindi #aibhai"
     },
     {
       "id": "006",
@@ -524,16 +524,17 @@
       "status": "queued",
       "hook_style": "warning",
       "phrases": [
-        "Tumhari mummy ka phone aaye...",
+        "Mummy ka phone aaye...",
         "awaaz bilkul unki ho...",
         "aur woh paise maange.",
         "Ruko! Ye AI scam ho sakta hai.",
-        "AI ab kisi ki bhi awaaz copy kar sakta hai.",
+        "AI ab kisi ki awaaz copy kar sakta hai.",
         "Bachne ke teen tareeke.",
-        "Pehla, phone kaato aur khud wapas call karo.",
-        "Doosra, ghar me ek secret code word rakho.",
-        "Teesra, OTP aur paise jaldi me kabhi mat bhejo.",
-        "Ye video family ko zaroor bhejo!",
+        "Pehla, phone kaato, khud wapas call karo.",
+        "Doosra, ghar me ek code word rakho.",
+        "Teesra, jaldi me paise ya OTP mat bhejo.",
+        "Family ko bhi batao.",
+        "Free guide bio link me hai, zaroor lena!",
         "Follow karo AI Bhai ko!"
       ],
       "hook": [
@@ -541,8 +542,8 @@
         "Par Call AI Ka!"
       ],
       "end": [
-        "Family Ko Bhejo",
-        "Sab Safe Raho"
+        "Free Guide: Bio Link",
+        "Roz 1 AI Hack"
       ],
       "hook_phrases": 4,
       "end_phrases": 2,
@@ -576,7 +577,7 @@
           "num": 2,
           "lines": [
             "Family ka ek",
-            "secret word rakho"
+            "code word rakho"
           ],
           "chips": [
             "Safe"
@@ -616,13 +617,13 @@
           "Safety"
         ]
       },
-      "caption": "Awaaz mummy ki... par call AI ka? Ye naya scam jaano.\n\nBachne ke 3 tareeke:\n1. Phone kaato, khud wapas call karo\n2. Family me ek secret code word rakho\n3. OTP aur paise jaldi me kabhi mat bhejo\n\nYe video family group me zaroor bhejo.\nFollow @aibhai_hindi\n\n#aiscam #cybersafety #scamalert #aiinhindi #aibhai #staysafe"
+      "caption": "Awaaz mummy ki... par call AI ka? Ye naya scam jaano.\n\nBachne ke 3 tareeke:\n1. Phone kaato, khud wapas call karo\n2. Family me ek code word rakho\n3. Jaldi me paise ya OTP kabhi mat bhejo\n\nYe video family group me bhejo.\nFree AI guide: bio link me 👆\nFollow @aibhai_hindi – roz 1 AI hack.\n\n#aiscam #cybersafety #scamalert #aiinhindi #aibhai #staysafe"
     },
     {
       "id": "007",
       "day": 3,
       "slot": "13:00",
-      "type": "TRIAL_REEL",
+      "type": "REEL",
       "status": "queued",
       "hook_style": "speed",
       "phrases": [
@@ -715,13 +716,13 @@
           "Office"
         ]
       },
-      "caption": "Kal presentation hai aur ek slide nahi bani? Gamma se 2 minute me banao.\n\nTopic likho, AI slides banayega, theme chuno aur PPT/PDF download karo.\n\nFree AI guide: bio link me 👆\nFollow @aibhai_hindi\n\n#presentation #gamma #aitools #studenthacks #aiinhindi #aibhai"
+      "caption": "Kal presentation hai aur ek slide nahi bani? Gamma se 2 minute me banao.\n\nTopic likho, AI slides banayega, theme chuno aur PPT/PDF download karo.\n\nFree AI guide: bio link me 👆\nFollow @aibhai_hindi – roz 1 AI hack.\n\n#presentation #gamma #aitools #studenthacks #aiinhindi #aibhai"
     },
     {
       "id": "008",
       "day": 3,
       "slot": "16:00",
-      "type": "TRIAL_REEL",
+      "type": "REEL",
       "status": "queued",
       "hook_style": "warning",
       "phrases": [
@@ -732,6 +733,7 @@
         "Teesra, company ka secret data.",
         "Kuch poochna hai to naam aur number hata ke poocho.",
         "Smart bano, safe raho!",
+        "Free guide bio link me hai, zaroor lena!",
         "Follow karo AI Bhai ko!"
       ],
       "hook": [
@@ -739,8 +741,8 @@
         "Kabhi Mat Batana!"
       ],
       "end": [
-        "Save Karo",
-        "Sabko Bhejo"
+        "Free Guide: Bio Link",
+        "Roz 1 AI Hack"
       ],
       "hook_phrases": 2,
       "end_phrases": 2,
@@ -815,7 +817,7 @@
           "Safety"
         ]
       },
-      "caption": "Main AI hoon, phir bhi bol raha hoon – ye 3 cheezein AI ko kabhi mat batana:\n\n1. Aadhaar, PAN, bank details\n2. Password aur OTP\n3. Company ka secret data\n\nSave karo aur sabko bhejo.\nFollow @aibhai_hindi\n\n#aisafety #privacy #cybersafety #aiinhindi #aibhai #chatgpt"
+      "caption": "Main AI hoon, phir bhi bol raha hoon – ye 3 cheezein AI ko kabhi mat batana:\n\n1. Aadhaar, PAN, bank details\n2. Password aur OTP\n3. Company ka secret data\n\nSave karo aur sabko bhejo.\nFree AI guide: bio link me 👆\nFollow @aibhai_hindi – roz 1 AI hack.\n\n#aisafety #privacy #cybersafety #aiinhindi #aibhai #chatgpt"
     },
     {
       "id": "009",
@@ -905,7 +907,7 @@
           "Free"
         ]
       },
-      "caption": "VLOOKUP se darr lagta hai? Ab formula yaad karne ki zaroorat nahi.\n\nAI ko simple Hindi me batao kya chahiye – ChatGPT ya Gemini formula de dega. Copy, paste, done.\n\nFree AI guide: bio link me 👆\nFollow @aibhai_hindi\n\n#excel #exceltips #officehacks #aitools #aiinhindi #aibhai"
+      "caption": "VLOOKUP se darr lagta hai? Ab formula yaad karne ki zaroorat nahi.\n\nAI ko simple Hindi me batao kya chahiye – ChatGPT ya Gemini formula de dega. Copy, paste, done.\n\nFree AI guide: bio link me 👆\nFollow @aibhai_hindi – roz 1 AI hack.\n\n#excel #exceltips #officehacks #aitools #aiinhindi #aibhai"
     }
   ],
   "cta": "Free guide bio link me (no comment-to-DM). Guide: guide/AI-Bhai-10-AI-Tools.pdf"
