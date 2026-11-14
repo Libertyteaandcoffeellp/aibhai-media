@@ -1,1216 +1,1216 @@
 {
-  "about": "AI Bhai sprint queue. type: REEL = normal reel, TRIAL_REEL = shown to non-followers first. status: queued | voiced | rendered | scheduled | posted. One voice (ElevenLabs 'Bunty - Fun Podcast Host', model eleven_v3).",
-  "reels": [
+ "about": "AI Bhai sprint queue. type: REEL = normal reel, TRIAL_REEL = shown to non-followers first. status: queued | voiced | rendered | scheduled | posted. One voice (ElevenLabs 'Bunty - Fun Podcast Host', model eleven_v3).",
+ "reels": [
+  {
+   "id": "001",
+   "day": 1,
+   "slot": "20:00",
+   "type": "REEL",
+   "status": "scheduled",
+   "hook_style": "intro",
+   "phrases": [
+    "Main insaan nahi hoon bhai...",
+    "main khud AI hoon!",
+    "Aur ab main tumhe roz ek AI hack sikhaunga,",
+    "ekdum simple Hindi me.",
+    "Shuruaat in teen tools se karo.",
+    "Pehla, ChatGPT.",
+    "Email, caption, ideas, sab likh deta hai.",
+    "Doosra, Perplexity.",
+    "Sawaal poocho, jawaab ke saath source bhi milega.",
+    "Teesra, Canva.",
+    "Poster aur post, do minute me ready.",
+    "Kal se class shuru!",
+    "Free guide bio link me hai, zaroor lena!",
+    "Chai khatam, hack khatam.",
+    "Follow karo AI Bhai ko!"
+   ],
+   "hook": [
+    "Main AI Hoon.",
+    "Aur Tumhe AI Sikhaunga"
+   ],
+   "end": [
+    "Free Guide: Bio Link",
+    "Roz 1 AI Hack"
+   ],
+   "hook_phrases": 4,
+   "end_phrases": 4,
+   "cards": [
     {
-      "id": "001",
-      "day": 1,
-      "slot": "20:00",
-      "type": "REEL",
-      "status": "scheduled",
-      "hook_style": "intro",
-      "phrases": [
-        "Main insaan nahi hoon bhai...",
-        "main khud AI hoon!",
-        "Aur ab main tumhe roz ek AI hack sikhaunga,",
-        "ekdum simple Hindi me.",
-        "Shuruaat in teen tools se karo.",
-        "Pehla, ChatGPT.",
-        "Email, caption, ideas, sab likh deta hai.",
-        "Doosra, Perplexity.",
-        "Sawaal poocho, jawaab ke saath source bhi milega.",
-        "Teesra, Canva.",
-        "Poster aur post, do minute me ready.",
-        "Kal se class shuru!",
-        "Free guide bio link me hai, zaroor lena!",
-        "Chai khatam, hack khatam.",
-        "Follow karo AI Bhai ko!"
-      ],
-      "hook": [
-        "Main AI Hoon.",
-        "Aur Tumhe AI Sikhaunga"
-      ],
-      "end": [
-        "Free Guide: Bio Link",
-        "Roz 1 AI Hack"
-      ],
-      "hook_phrases": 4,
-      "end_phrases": 4,
-      "cards": [
-        {
-          "at": 4,
-          "title": "3 FREE AI TOOLS",
-          "num": null,
-          "lines": [
-            "Shuruaat yahan se"
-          ],
-          "chips": [
-            "Free",
-            "Hindi"
-          ]
-        },
-        {
-          "at": 5,
-          "title": "ChatGPT",
-          "num": 1,
-          "lines": [
-            "Email, caption, ideas",
-            "sab likh deta hai"
-          ],
-          "chips": [
-            "Likhna",
-            "Ideas"
-          ]
-        },
-        {
-          "at": 7,
-          "title": "Perplexity",
-          "num": 2,
-          "lines": [
-            "Sawaal poocho,",
-            "jawaab + source"
-          ],
-          "chips": [
-            "Research",
-            "Sources"
-          ]
-        },
-        {
-          "at": 9,
-          "title": "Canva",
-          "num": 3,
-          "lines": [
-            "Poster aur post",
-            "2 minute me ready"
-          ],
-          "chips": [
-            "Design",
-            "2 Min"
-          ]
-        }
-      ],
-      "keywords": [
-        "AI",
-        "ChatGPT",
-        "Perplexity",
-        "Canva",
-        "Hindi",
-        "free",
-        "Follow",
-        "hack",
-        "source",
-        "ready",
-        "guide"
-      ],
-      "cover": {
-        "lines": [
-          "Main",
-          "AI Hoon.",
-          "Aur Tumhe AI",
-          "Sikhaunga"
-        ],
-        "chips": [
-          "Free",
-          "Hindi",
-          "Roz 1 Hack"
-        ]
-      },
-      "caption": "Main AI Hoon. Aur Tumhe AI Sikhaunga!\n\nShuruaat in 3 free tools se karo:\n1. ChatGPT – email, caption, ideas\n2. Perplexity – jawaab + source\n3. Canva – poster 2 minute me\n\nFree AI guide: bio link me 👆\nSave karo, baad me kaam aayega.\nFollow @aibhai_hindi – roz 1 AI hack.\n\n#aitools #aiinhindi #chatgpt #aitips #learnai #techhindi #aibhai #canva"
+     "at": 4,
+     "title": "3 FREE AI TOOLS",
+     "num": null,
+     "lines": [
+      "Shuruaat yahan se"
+     ],
+     "chips": [
+      "Free",
+      "Hindi"
+     ]
     },
     {
-      "id": "002",
-      "day": 1,
-      "slot": "13:00",
-      "type": "TRIAL_REEL",
-      "status": "scheduled",
-      "hook_style": "fear",
-      "phrases": [
-        "Kya AI tumhari naukri le lega?",
-        "Sach bataun? Main khud AI hoon.",
-        "AI naukri nahi lega...",
-        "naukri woh lega jo AI use karna jaanta hai!",
-        "Teen kaam aaj se AI se karo.",
-        "Pehla, email aur report likhwao.",
-        "Doosra, lambi PDF ka summary banwao.",
-        "Teesra, Excel ke formula poocho.",
-        "Jo ye seekh gaya, woh aage nikal gaya.",
-        "Free guide bio link me hai, zaroor lena!",
-        "Follow karo AI Bhai ko!"
-      ],
-      "hook": [
-        "Kya AI Naukri Le Lega?",
-        "Sach Ek AI Se Suno"
-      ],
-      "end": [
-        "Free Guide: Bio Link",
-        "Roz 1 AI Hack"
-      ],
-      "hook_phrases": 4,
-      "end_phrases": 3,
-      "cards": [
-        {
-          "at": 4,
-          "title": "AI SE YE 3 KAAM",
-          "num": null,
-          "lines": [
-            "Aaj se shuru karo"
-          ],
-          "chips": [
-            "Office",
-            "Free"
-          ]
-        },
-        {
-          "at": 5,
-          "title": "Email",
-          "num": 1,
-          "lines": [
-            "Email aur report",
-            "AI likhega"
-          ],
-          "chips": [
-            "ChatGPT",
-            "Claude"
-          ]
-        },
-        {
-          "at": 6,
-          "title": "PDF",
-          "num": 2,
-          "lines": [
-            "50 page ki PDF",
-            "1 minute me summary"
-          ],
-          "chips": [
-            "Summary"
-          ]
-        },
-        {
-          "at": 7,
-          "title": "Excel",
-          "num": 3,
-          "lines": [
-            "Formula yaad mat karo",
-            "AI se poocho"
-          ],
-          "chips": [
-            "Formula"
-          ]
-        }
-      ],
-      "keywords": [
-        "AI",
-        "naukri",
-        "Excel",
-        "PDF",
-        "email",
-        "Follow",
-        "guide"
-      ],
-      "cover": {
-        "lines": [
-          "Kya AI",
-          "Naukri",
-          "Le Lega?",
-          "Sach Suno"
-        ],
-        "chips": [
-          "Office",
-          "Hindi"
-        ]
-      },
-      "caption": "Kya AI tumhari naukri le lega? Ek AI se sach suno.\n\nAaj se ye 3 kaam AI se karo:\n1. Email aur report\n2. Lambi PDF ka summary\n3. Excel ke formula\n\nFree AI guide: bio link me 👆\nFollow @aibhai_hindi – roz 1 AI hack.\n\n#aitools #aiinhindi #chatgpt #careertips #officehacks #aibhai #learnai"
+     "at": 5,
+     "title": "ChatGPT",
+     "num": 1,
+     "lines": [
+      "Email, caption, ideas",
+      "sab likh deta hai"
+     ],
+     "chips": [
+      "Likhna",
+      "Ideas"
+     ]
     },
     {
-      "id": "003",
-      "day": 1,
-      "slot": "16:00",
-      "type": "TRIAL_REEL",
-      "status": "scheduled",
-      "hook_style": "magic",
-      "phrases": [
-        "Product ki photo kharab hai?",
-        "Photographer ko paise mat do!",
-        "Phone ki photo ko studio photo banao.",
-        "Pehle, saaf roshni me photo lo.",
-        "Phir Photoroom ya remove bg kholo.",
-        "Ek click me background gayab.",
-        "Ab safed ya naya background lagao.",
-        "Meesho, Amazon, Instagram, sab ke liye ready!",
-        "Free guide bio link me hai, zaroor lena!",
-        "Follow karo AI Bhai ko!"
-      ],
-      "hook": [
-        "Phone Photo = Studio Photo",
-        "Bina Photographer"
-      ],
-      "end": [
-        "Free Guide: Bio Link",
-        "Roz 1 AI Hack"
-      ],
-      "hook_phrases": 3,
-      "end_phrases": 2,
-      "cards": [
-        {
-          "at": 3,
-          "title": "Roshni",
-          "num": 1,
-          "lines": [
-            "Saaf roshni me",
-            "photo lo"
-          ],
-          "chips": [
-            "Phone"
-          ]
-        },
-        {
-          "at": 4,
-          "title": "Photoroom",
-          "num": 2,
-          "lines": [
-            "Ya remove.bg",
-            "1 click background gayab"
-          ],
-          "chips": [
-            "Free",
-            "1 Click"
-          ]
-        },
-        {
-          "at": 6,
-          "title": "Naya BG",
-          "num": 3,
-          "lines": [
-            "Safed ya naya background",
-            "store ke liye ready"
-          ],
-          "chips": [
-            "Meesho",
-            "Amazon"
-          ]
-        }
-      ],
-      "keywords": [
-        "AI",
-        "Photoroom",
-        "studio",
-        "Meesho",
-        "Amazon",
-        "Follow",
-        "guide"
-      ],
-      "cover": {
-        "lines": [
-          "Phone Photo",
-          "= Studio",
-          "Bina Photographer",
-          "1 Click"
-        ],
-        "chips": [
-          "Business",
-          "Free"
-        ]
-      },
-      "caption": "Phone ki photo ko studio photo banao – 1 click me.\n\nPhotoroom ya remove.bg se background hatao aur naya lagao. Meesho, Amazon, Instagram shop sab ke liye ready.\n\nFree AI guide: bio link me 👆\nFollow @aibhai_hindi – roz 1 AI hack.\n\n#aitools #aiinhindi #productphotography #smallbusinessindia #meesho #aibhai"
+     "at": 7,
+     "title": "Perplexity",
+     "num": 2,
+     "lines": [
+      "Sawaal poocho,",
+      "jawaab + source"
+     ],
+     "chips": [
+      "Research",
+      "Sources"
+     ]
     },
     {
-      "id": "004",
-      "day": 2,
-      "slot": "13:00",
-      "type": "REEL",
-      "status": "scheduled",
-      "hook_style": "secret",
-      "phrases": [
-        "ChatGPT ka jawaab bekaar aata hai?",
-        "Galti prompt ki hai!",
-        "Ye chaar cheezein likho, jawaab better aayega.",
-        "Pehla, role. Tum ek expert teacher ho.",
-        "Doosra, kaam. Kya chahiye, saaf likho.",
-        "Teesra, context. Kiske liye, kitna lamba.",
-        "Chautha, format. Paanch points me do.",
-        "Bas! Ab dekho jaadu.",
-        "Free guide bio link me hai, zaroor lena!",
-        "Follow karo AI Bhai ko!"
-      ],
-      "hook": [
-        "ChatGPT Ka Jawaab",
-        "Bekaar Aata Hai?"
-      ],
-      "end": [
-        "Free Guide: Bio Link",
-        "Roz 1 AI Hack"
-      ],
-      "hook_phrases": 3,
-      "end_phrases": 2,
-      "cards": [
-        {
-          "at": 3,
-          "title": "Role",
-          "num": 1,
-          "lines": [
-            "Tum ek expert",
-            "teacher ho"
-          ],
-          "chips": [
-            "Step 1"
-          ]
-        },
-        {
-          "at": 4,
-          "title": "Kaam",
-          "num": 2,
-          "lines": [
-            "Kya chahiye,",
-            "saaf likho"
-          ],
-          "chips": [
-            "Step 2"
-          ]
-        },
-        {
-          "at": 5,
-          "title": "Context",
-          "num": 3,
-          "lines": [
-            "Kiske liye,",
-            "kitna lamba"
-          ],
-          "chips": [
-            "Step 3"
-          ]
-        },
-        {
-          "at": 6,
-          "title": "Format",
-          "num": 4,
-          "lines": [
-            "5 points me do",
-            "ya table me"
-          ],
-          "chips": [
-            "Step 4"
-          ]
-        }
-      ],
-      "keywords": [
-        "ChatGPT",
-        "role",
-        "kaam",
-        "context",
-        "format",
-        "AI",
-        "Follow",
-        "guide"
-      ],
-      "cover": {
-        "lines": [
-          "ChatGPT",
-          "Ka Secret",
-          "4 Step Formula",
-          "Better Jawaab"
-        ],
-        "chips": [
-          "Prompt",
-          "Free"
-        ]
-      },
-      "caption": "ChatGPT ka jawaab bekaar aata hai? Galti prompt ki hai. Ye 4 step formula try karo:\n\n1. Role – \"Tum ek expert ___ ho\"\n2. Kaam – kya chahiye, saaf likho\n3. Context – kiske liye, kitna lamba\n4. Format – \"5 points me do\"\n\nSave karo! Free AI guide: bio link me 👆\nFollow @aibhai_hindi – roz 1 AI hack.\n\n#chatgpt #chatgptprompts #aiinhindi #aitips #aibhai #learnai"
-    },
-    {
-      "id": "005",
-      "day": 2,
-      "slot": "16:00",
-      "type": "REEL",
-      "status": "scheduled",
-      "hook_style": "student",
-      "phrases": [
-        "Padhne ka mann nahi karta?",
-        "To apni notes sun lo, podcast jaisa!",
-        "Tool ka naam hai NotebookLM.",
-        "Pehle, apni PDF ya notes upload karo.",
-        "Phir poocho, ye chapter simple Hindi me samjhao.",
-        "Ya bolo, das MCQ banao.",
-        "Aur Audio Overview dabao, notes ka podcast ready!",
-        "Free guide bio link me hai, zaroor lena!",
-        "Follow karo AI Bhai ko!"
-      ],
-      "hook": [
-        "Notes Ko Podcast",
-        "Bana Do!"
-      ],
-      "end": [
-        "Free Guide: Bio Link",
-        "Roz 1 AI Hack"
-      ],
-      "hook_phrases": 2,
-      "end_phrases": 2,
-      "cards": [
-        {
-          "at": 2,
-          "title": "NotebookLM",
-          "num": null,
-          "lines": [
-            "Google ka free tool"
-          ],
-          "chips": [
-            "Free",
-            "Students"
-          ]
-        },
-        {
-          "at": 3,
-          "title": "Upload",
-          "num": 1,
-          "lines": [
-            "PDF ya notes",
-            "upload karo"
-          ],
-          "chips": [
-            "Step 1"
-          ]
-        },
-        {
-          "at": 4,
-          "title": "Poocho",
-          "num": 2,
-          "lines": [
-            "Simple Hindi me samjhao",
-            "ya 10 MCQ banao"
-          ],
-          "chips": [
-            "Step 2"
-          ]
-        },
-        {
-          "at": 6,
-          "title": "Podcast",
-          "num": 3,
-          "lines": [
-            "Audio Overview",
-            "notes suno"
-          ],
-          "chips": [
-            "Step 3"
-          ]
-        }
-      ],
-      "keywords": [
-        "NotebookLM",
-        "podcast",
-        "MCQ",
-        "Hindi",
-        "AI",
-        "Follow",
-        "guide"
-      ],
-      "cover": {
-        "lines": [
-          "Notes Ko",
-          "Podcast",
-          "Bana Do",
-          "Free Tool"
-        ],
-        "chips": [
-          "Students",
-          "Free"
-        ]
-      },
-      "caption": "Padhne ka mann nahi? Apni notes podcast ki tarah suno!\n\nNotebookLM me PDF upload karo, simple Hindi me samjho, MCQ banao, aur Audio Overview se podcast suno.\n\nFree AI guide: bio link me 👆\nFollow @aibhai_hindi – roz 1 AI hack.\n\n#studytips #studenthacks #aiforstudents #notebooklm #aiinhindi #aibhai"
-    },
-    {
-      "id": "006",
-      "day": 2,
-      "slot": "20:00",
-      "type": "REEL",
-      "status": "scheduled",
-      "hook_style": "warning",
-      "phrases": [
-        "Mummy ka phone aaye...",
-        "awaaz bilkul unki ho...",
-        "aur woh paise maange.",
-        "Ruko! Ye AI scam ho sakta hai.",
-        "AI ab kisi ki awaaz copy kar sakta hai.",
-        "Bachne ke teen tareeke.",
-        "Pehla, phone kaato, khud wapas call karo.",
-        "Doosra, ghar me ek code word rakho.",
-        "Teesra, jaldi me paise ya OTP mat bhejo.",
-        "Family ko bhi batao.",
-        "Free guide bio link me hai, zaroor lena!",
-        "Follow karo AI Bhai ko!"
-      ],
-      "hook": [
-        "Awaaz Mummy Ki...",
-        "Par Call AI Ka!"
-      ],
-      "end": [
-        "Free Guide: Bio Link",
-        "Roz 1 AI Hack"
-      ],
-      "hook_phrases": 4,
-      "end_phrases": 2,
-      "cards": [
-        {
-          "at": 4,
-          "title": "AI VOICE SCAM",
-          "num": null,
-          "lines": [
-            "Awaaz copy ho sakti hai"
-          ],
-          "chips": [
-            "Alert"
-          ]
-        },
-        {
-          "at": 6,
-          "title": "Call Back",
-          "num": 1,
-          "lines": [
-            "Phone kaato,",
-            "khud wapas call karo"
-          ],
-          "chips": [
-            "Safe"
-          ]
-        },
-        {
-          "at": 7,
-          "title": "Code Word",
-          "num": 2,
-          "lines": [
-            "Family ka ek",
-            "code word rakho"
-          ],
-          "chips": [
-            "Safe"
-          ]
-        },
-        {
-          "at": 8,
-          "title": "No OTP",
-          "num": 3,
-          "lines": [
-            "OTP aur paise",
-            "jaldi me mat bhejo"
-          ],
-          "chips": [
-            "Safe"
-          ]
-        }
-      ],
-      "keywords": [
-        "AI",
-        "scam",
-        "awaaz",
-        "OTP",
-        "code",
-        "Follow",
-        "guide"
-      ],
-      "cover": {
-        "lines": [
-          "Awaaz Mummy Ki",
-          "Call AI Ka!",
-          "Ye Scam Jaano",
-          "Family Ko Bhejo"
-        ],
-        "chips": [
-          "Alert",
-          "Safety"
-        ]
-      },
-      "caption": "Awaaz mummy ki... par call AI ka? Ye naya scam jaano.\n\nBachne ke 3 tareeke:\n1. Phone kaato, khud wapas call karo\n2. Family me ek code word rakho\n3. Jaldi me paise ya OTP kabhi mat bhejo\n\nYe video family group me bhejo.\nFree AI guide: bio link me 👆\nFollow @aibhai_hindi – roz 1 AI hack.\n\n#aiscam #cybersafety #scamalert #aiinhindi #aibhai #staysafe"
-    },
-    {
-      "id": "007",
-      "day": 3,
-      "slot": "13:00",
-      "type": "REEL",
-      "status": "queued",
-      "hook_style": "speed",
-      "phrases": [
-        "Kal presentation hai?",
-        "Aur abhi tak ek slide nahi bani?",
-        "Tension mat lo, do minute me banegi.",
-        "Tool hai Gamma.",
-        "Topic likho, jaise digital marketing, aath slides.",
-        "AI poori outline aur slides bana dega.",
-        "Theme chuno, aur PPT ya PDF download karo.",
-        "Free guide bio link me hai, zaroor lena!",
-        "Follow karo AI Bhai ko!"
-      ],
-      "hook": [
-        "PPT 2 Minute Me",
-        "Bina Mehnat"
-      ],
-      "end": [
-        "Free Guide: Bio Link",
-        "Roz 1 AI Hack"
-      ],
-      "hook_phrases": 3,
-      "end_phrases": 2,
-      "cards": [
-        {
-          "at": 3,
-          "title": "Gamma",
-          "num": null,
-          "lines": [
-            "AI presentation tool"
-          ],
-          "chips": [
-            "Free Credits"
-          ]
-        },
-        {
-          "at": 4,
-          "title": "Topic",
-          "num": 1,
-          "lines": [
-            "Topic likho,",
-            "8 slides bolo"
-          ],
-          "chips": [
-            "Step 1"
-          ]
-        },
-        {
-          "at": 5,
-          "title": "AI Slides",
-          "num": 2,
-          "lines": [
-            "Outline + slides",
-            "apne aap"
-          ],
-          "chips": [
-            "Step 2"
-          ]
-        },
-        {
-          "at": 6,
-          "title": "Download",
-          "num": 3,
-          "lines": [
-            "Theme chuno,",
-            "PPT ya PDF"
-          ],
-          "chips": [
-            "Step 3"
-          ]
-        }
-      ],
-      "keywords": [
-        "Gamma",
-        "PPT",
-        "slides",
-        "AI",
-        "Follow",
-        "guide"
-      ],
-      "cover": {
-        "lines": [
-          "PPT",
-          "2 Minute Me",
-          "Bina Mehnat",
-          "AI Tool"
-        ],
-        "chips": [
-          "Students",
-          "Office"
-        ]
-      },
-      "caption": "Kal presentation hai aur ek slide nahi bani? Gamma se 2 minute me banao.\n\nTopic likho, AI slides banayega, theme chuno aur PPT/PDF download karo.\n\nFree AI guide: bio link me 👆\nFollow @aibhai_hindi – roz 1 AI hack.\n\n#presentation #gamma #aitools #studenthacks #aiinhindi #aibhai"
-    },
-    {
-      "id": "008",
-      "day": 3,
-      "slot": "16:00",
-      "type": "REEL",
-      "status": "queued",
-      "hook_style": "warning",
-      "phrases": [
-        "Main AI hoon, phir bhi bol raha hoon...",
-        "ye teen cheezein mujhe kabhi mat batana!",
-        "Pehla, Aadhaar, PAN aur bank ki details.",
-        "Doosra, password aur OTP.",
-        "Teesra, company ka secret data.",
-        "Kuch poochna hai to naam aur number hata ke poocho.",
-        "Smart bano, safe raho!",
-        "Free guide bio link me hai, zaroor lena!",
-        "Follow karo AI Bhai ko!"
-      ],
-      "hook": [
-        "Ye 3 Cheezein AI Ko",
-        "Kabhi Mat Batana!"
-      ],
-      "end": [
-        "Free Guide: Bio Link",
-        "Roz 1 AI Hack"
-      ],
-      "hook_phrases": 2,
-      "end_phrases": 2,
-      "cards": [
-        {
-          "at": 2,
-          "title": "ID & Bank",
-          "num": 1,
-          "lines": [
-            "Aadhaar, PAN,",
-            "bank details nahi"
-          ],
-          "chips": [
-            "Privacy"
-          ]
-        },
-        {
-          "at": 3,
-          "title": "Password",
-          "num": 2,
-          "lines": [
-            "Password aur OTP",
-            "kabhi nahi"
-          ],
-          "chips": [
-            "Privacy"
-          ]
-        },
-        {
-          "at": 4,
-          "title": "Secrets",
-          "num": 3,
-          "lines": [
-            "Company ka",
-            "secret data nahi"
-          ],
-          "chips": [
-            "Privacy"
-          ]
-        },
-        {
-          "at": 5,
-          "title": "Smart Tip",
-          "num": null,
-          "lines": [
-            "Naam aur number hata ke",
-            "sawaal poocho"
-          ],
-          "chips": [
-            "Safe"
-          ]
-        }
-      ],
-      "keywords": [
-        "AI",
-        "Aadhaar",
-        "PAN",
-        "OTP",
-        "password",
-        "Follow",
-        "guide"
-      ],
-      "cover": {
-        "lines": [
-          "Ye 3 Cheezein",
-          "AI Ko Mat Batana",
-          "Main AI Hoon, Sach Bolta Hoon",
-          ""
-        ],
-        "chips": [
-          "Privacy",
-          "Safety"
-        ]
-      },
-      "caption": "Main AI hoon, phir bhi bol raha hoon – ye 3 cheezein AI ko kabhi mat batana:\n\n1. Aadhaar, PAN, bank details\n2. Password aur OTP\n3. Company ka secret data\n\nSave karo aur sabko bhejo.\nFree AI guide: bio link me 👆\nFollow @aibhai_hindi – roz 1 AI hack.\n\n#aisafety #privacy #cybersafety #aiinhindi #aibhai #chatgpt"
-    },
-    {
-      "id": "009",
-      "day": 3,
-      "slot": "20:00",
-      "type": "REEL",
-      "status": "queued",
-      "hook_style": "relatable",
-      "phrases": [
-        "VLOOKUP sun ke darr lagta hai?",
-        "Ab formula yaad karne ki zaroorat nahi!",
-        "Bas AI ko batao kya chahiye.",
-        "Jaise, column B me jahan Paid likha hai, unka total do.",
-        "ChatGPT ya Gemini turant formula de dega.",
-        "Copy karo, sheet me paste karo.",
-        "Ho gaya kaam!",
-        "Free guide bio link me hai, zaroor lena!",
-        "Follow karo AI Bhai ko!"
-      ],
-      "hook": [
-        "Excel Formula",
-        "Yaad Mat Karo!"
-      ],
-      "end": [
-        "Free Guide: Bio Link",
-        "Roz 1 AI Hack"
-      ],
-      "hook_phrases": 2,
-      "end_phrases": 2,
-      "cards": [
-        {
-          "at": 2,
-          "title": "Batao",
-          "num": 1,
-          "lines": [
-            "AI ko batao",
-            "kya chahiye"
-          ],
-          "chips": [
-            "Step 1"
-          ]
-        },
-        {
-          "at": 4,
-          "title": "Formula",
-          "num": 2,
-          "lines": [
-            "ChatGPT ya Gemini",
-            "formula dega"
-          ],
-          "chips": [
-            "Step 2"
-          ]
-        },
-        {
-          "at": 5,
-          "title": "Paste",
-          "num": 3,
-          "lines": [
-            "Sheet me paste,",
-            "kaam khatam"
-          ],
-          "chips": [
-            "Step 3"
-          ]
-        }
-      ],
-      "keywords": [
-        "Excel",
-        "VLOOKUP",
-        "formula",
-        "AI",
-        "ChatGPT",
-        "Gemini",
-        "Follow",
-        "guide"
-      ],
-      "cover": {
-        "lines": [
-          "Excel Formula",
-          "Yaad Mat Karo",
-          "AI Likhega",
-          ""
-        ],
-        "chips": [
-          "Office",
-          "Free"
-        ]
-      },
-      "caption": "VLOOKUP se darr lagta hai? Ab formula yaad karne ki zaroorat nahi.\n\nAI ko simple Hindi me batao kya chahiye – ChatGPT ya Gemini formula de dega. Copy, paste, done.\n\nFree AI guide: bio link me 👆\nFollow @aibhai_hindi – roz 1 AI hack.\n\n#excel #exceltips #officehacks #aitools #aiinhindi #aibhai"
-    },
-    {
-      "id": "010",
-      "day": 4,
-      "slot": "13:00",
-      "type": "REEL",
-      "status": "queued",
-      "hook_style": "fear",
-      "phrases": [
-        "Resume bhejte ho, reply nahi aata?",
-        "Shayad resume har job ke liye same hai.",
-        "AI se use job ke hisaab se badlo.",
-        "Pehle, job description copy karo.",
-        "Phir ChatGPT me resume aur JD paste karo.",
-        "Bolo, JD ke keywords mere resume me daalo.",
-        "Number hata do, jhooth mat likhwana.",
-        "Ab resume job se match karega!",
-        "Free guide bio link me hai, zaroor lena!",
-        "Follow karo AI Bhai ko!"
-      ],
-      "hook": [
-        "Resume Bhejte Ho,",
-        "Reply Nahi Aata?"
-      ],
-      "end": [
-        "Free Guide: Bio Link",
-        "Roz 1 AI Hack"
-      ],
-      "hook_phrases": 2,
-      "end_phrases": 2,
-      "cards": [
-        {
-          "at": 3,
-          "title": "JD Copy",
-          "num": 1,
-          "lines": [
-            "Job description",
-            "copy karo"
-          ],
-          "chips": [
-            "Step 1"
-          ]
-        },
-        {
-          "at": 4,
-          "title": "ChatGPT",
-          "num": 2,
-          "lines": [
-            "Resume + JD",
-            "dono paste karo"
-          ],
-          "chips": [
-            "Step 2"
-          ]
-        },
-        {
-          "at": 5,
-          "title": "Keywords",
-          "num": 3,
-          "lines": [
-            "JD ke keywords",
-            "resume me daalo"
-          ],
-          "chips": [
-            "Step 3"
-          ]
-        },
-        {
-          "at": 6,
-          "title": "Dhyan",
-          "num": null,
-          "lines": [
-            "Number hatao,",
-            "jhooth nahi"
-          ],
-          "chips": [
-            "Tip"
-          ]
-        }
-      ],
-      "keywords": [
-        "Resume",
-        "ChatGPT",
-        "job",
-        "keywords",
-        "AI",
-        "Follow",
-        "guide"
-      ],
-      "cover": {
-        "lines": [
-          "Resume",
-          "Reject?",
-          "AI Se Fix Karo",
-          "Free Trick"
-        ],
-        "chips": [
-          "Jobs",
-          "Free"
-        ]
-      },
-      "caption": "Resume bhejte ho par reply nahi aata? Har job ke liye resume AI se match karo.\n\n1. Job description copy karo\n2. ChatGPT me resume + JD paste karo\n3. Bolo: \"Is job ke keywords mere resume me daalo\"\n4. Phone number hatao, sirf sach likho\n\nSave karo! Free AI guide: bio link me 👆\nFollow @aibhai_hindi – roz 1 AI hack.\n\n#resume #jobsearch #chatgpt #careertips #aiinhindi #aibhai"
-    },
-    {
-      "id": "011",
-      "day": 4,
-      "slot": "16:00",
-      "type": "REEL",
-      "status": "queued",
-      "hook_style": "magic",
-      "phrases": [
-        "Phone camera me chhupa hai AI jaadu!",
-        "Naam hai Google Lens, bilkul free.",
-        "Pehla, English board pe camera rakho, Translate dabao.",
-        "Doosra, kisi paudhe ya cheez ki photo lo, naam pata chalega.",
-        "Teesra, kaagaz ka text copy karo, aur WhatsApp pe paste karo.",
-        "Android aur iPhone, dono pe chalta hai.",
-        "Free guide bio link me hai, zaroor lena!",
-        "Follow karo AI Bhai ko!"
-      ],
-      "hook": [
-        "Phone Camera Ka",
-        "AI Jaadu!"
-      ],
-      "end": [
-        "Free Guide: Bio Link",
-        "Roz 1 AI Hack"
-      ],
-      "hook_phrases": 2,
-      "end_phrases": 2,
-      "cards": [
-        {
-          "at": 2,
-          "title": "Translate",
-          "num": 1,
-          "lines": [
-            "English board?",
-            "Hindi me padho"
-          ],
-          "chips": [
-            "Step 1"
-          ]
-        },
-        {
-          "at": 3,
-          "title": "Pehchano",
-          "num": 2,
-          "lines": [
-            "Paudha ya cheez,",
-            "naam pata karo"
-          ],
-          "chips": [
-            "Step 2"
-          ]
-        },
-        {
-          "at": 4,
-          "title": "Copy Text",
-          "num": 3,
-          "lines": [
-            "Kaagaz ka text",
-            "copy-paste karo"
-          ],
-          "chips": [
-            "Step 3"
-          ]
-        },
-        {
-          "at": 5,
-          "title": "Google Lens",
-          "num": null,
-          "lines": [
-            "Android + iPhone"
-          ],
-          "chips": [
-            "Free"
-          ]
-        }
-      ],
-      "keywords": [
-        "Google",
-        "Lens",
-        "Translate",
-        "Hindi",
-        "AI",
-        "Follow",
-        "guide"
-      ],
-      "cover": {
-        "lines": [
-          "Phone Camera",
-          "Ka AI Jaadu",
-          "Google Lens",
-          "Free"
-        ],
-        "chips": [
-          "Phone",
-          "Free"
-        ]
-      },
-      "caption": "Phone camera me chhupa AI jaadu – Google Lens!\n\n1. English board ya menu ko Hindi me translate karo\n2. Paudhe ya cheez ki photo se naam jaano\n3. Kaagaz ka text copy karke WhatsApp pe bhejo\n\nFree hai, Android aur iPhone dono pe.\nFree AI guide: bio link me 👆\nFollow @aibhai_hindi – roz 1 AI hack.\n\n#googlelens #aitools #phonetricks #aiinhindi #techhindi #aibhai"
-    },
-    {
-      "id": "012",
-      "day": 4,
-      "slot": "20:00",
-      "type": "REEL",
-      "status": "queued",
-      "hook_style": "warning",
-      "phrases": [
-        "Ye photo asli hai ya AI ne banayi?",
-        "WhatsApp pe AI wali fake photos bhi aati hain.",
-        "Pakadne ke teen tareeke.",
-        "Pehla, haath, ungliyan aur chehra dhyan se dekho.",
-        "Doosra, peeche likha text ajeeb ho to shak karo.",
-        "Teesra, photo ko Google pe search karo, asli source dhoondo.",
-        "Shak ho to forward mat karo!",
-        "Free guide bio link me hai, zaroor lena!",
-        "Follow karo AI Bhai ko!"
-      ],
-      "hook": [
-        "Asli Ya AI?",
-        "Fake Photo Pakdo!"
-      ],
-      "end": [
-        "Free Guide: Bio Link",
-        "Roz 1 AI Hack"
-      ],
-      "hook_phrases": 2,
-      "end_phrases": 2,
-      "cards": [
-        {
-          "at": 3,
-          "title": "Haath",
-          "num": 1,
-          "lines": [
-            "Haath, ungliyan,",
-            "chehra dekho"
-          ],
-          "chips": [
-            "Check"
-          ]
-        },
-        {
-          "at": 4,
-          "title": "Text",
-          "num": 2,
-          "lines": [
-            "Ajeeb text",
-            "matlab shak"
-          ],
-          "chips": [
-            "Check"
-          ]
-        },
-        {
-          "at": 5,
-          "title": "Search",
-          "num": 3,
-          "lines": [
-            "Google pe photo search,",
-            "asli source dhoondo"
-          ],
-          "chips": [
-            "Check"
-          ]
-        },
-        {
-          "at": 6,
-          "title": "No Forward",
-          "num": null,
-          "lines": [
-            "Shak ho to",
-            "forward mat karo"
-          ],
-          "chips": [
-            "Safe"
-          ]
-        }
-      ],
-      "keywords": [
-        "AI",
-        "photo",
-        "fake",
-        "Google",
-        "WhatsApp",
-        "Follow",
-        "guide"
-      ],
-      "cover": {
-        "lines": [
-          "Asli Ya AI?",
-          "Fake Photo",
-          "Kaise Pakde",
-          "3 Tarike"
-        ],
-        "chips": [
-          "Alert",
-          "Safety"
-        ]
-      },
-      "caption": "Ye photo asli hai ya AI ki? Forward karne se pehle check karo.\n\n1. Haath, ungliyan aur chehra dhyan se dekho\n2. Background ka text ajeeb ho to shak karo\n3. Photo ko Google pe search karke asli source dhoondo\n\nShak ho to forward mat karo.\nFree AI guide: bio link me 👆\nFollow @aibhai_hindi – roz 1 AI hack.\n\n#fakenews #aiimages #factcheck #cybersafety #aiinhindi #aibhai"
+     "at": 9,
+     "title": "Canva",
+     "num": 3,
+     "lines": [
+      "Poster aur post",
+      "2 minute me ready"
+     ],
+     "chips": [
+      "Design",
+      "2 Min"
+     ]
     }
-  ],
-  "cta": "Free guide bio link me (no comment-to-DM). Guide: guide/AI-Bhai-10-AI-Tools.pdf"
+   ],
+   "keywords": [
+    "AI",
+    "ChatGPT",
+    "Perplexity",
+    "Canva",
+    "Hindi",
+    "free",
+    "Follow",
+    "hack",
+    "source",
+    "ready",
+    "guide"
+   ],
+   "cover": {
+    "lines": [
+     "Main",
+     "AI Hoon.",
+     "Aur Tumhe AI",
+     "Sikhaunga"
+    ],
+    "chips": [
+     "Free",
+     "Hindi",
+     "Roz 1 Hack"
+    ]
+   },
+   "caption": "Main AI Hoon. Aur Tumhe AI Sikhaunga!\n\nShuruaat in 3 free tools se karo:\n1. ChatGPT – email, caption, ideas\n2. Perplexity – jawaab + source\n3. Canva – poster 2 minute me\n\nFree AI guide: bio link me 👆\nSave karo, baad me kaam aayega.\nFollow @aibhai_hindi – roz 1 AI hack.\n\n#aitools #aiinhindi #chatgpt #aitips #learnai #techhindi #aibhai #canva"
+  },
+  {
+   "id": "002",
+   "day": 1,
+   "slot": "13:00",
+   "type": "TRIAL_REEL",
+   "status": "scheduled",
+   "hook_style": "fear",
+   "phrases": [
+    "Kya AI tumhari naukri le lega?",
+    "Sach bataun? Main khud AI hoon.",
+    "AI naukri nahi lega...",
+    "naukri woh lega jo AI use karna jaanta hai!",
+    "Teen kaam aaj se AI se karo.",
+    "Pehla, email aur report likhwao.",
+    "Doosra, lambi PDF ka summary banwao.",
+    "Teesra, Excel ke formula poocho.",
+    "Jo ye seekh gaya, woh aage nikal gaya.",
+    "Free guide bio link me hai, zaroor lena!",
+    "Follow karo AI Bhai ko!"
+   ],
+   "hook": [
+    "Kya AI Naukri Le Lega?",
+    "Sach Ek AI Se Suno"
+   ],
+   "end": [
+    "Free Guide: Bio Link",
+    "Roz 1 AI Hack"
+   ],
+   "hook_phrases": 4,
+   "end_phrases": 3,
+   "cards": [
+    {
+     "at": 4,
+     "title": "AI SE YE 3 KAAM",
+     "num": null,
+     "lines": [
+      "Aaj se shuru karo"
+     ],
+     "chips": [
+      "Office",
+      "Free"
+     ]
+    },
+    {
+     "at": 5,
+     "title": "Email",
+     "num": 1,
+     "lines": [
+      "Email aur report",
+      "AI likhega"
+     ],
+     "chips": [
+      "ChatGPT",
+      "Claude"
+     ]
+    },
+    {
+     "at": 6,
+     "title": "PDF",
+     "num": 2,
+     "lines": [
+      "50 page ki PDF",
+      "1 minute me summary"
+     ],
+     "chips": [
+      "Summary"
+     ]
+    },
+    {
+     "at": 7,
+     "title": "Excel",
+     "num": 3,
+     "lines": [
+      "Formula yaad mat karo",
+      "AI se poocho"
+     ],
+     "chips": [
+      "Formula"
+     ]
+    }
+   ],
+   "keywords": [
+    "AI",
+    "naukri",
+    "Excel",
+    "PDF",
+    "email",
+    "Follow",
+    "guide"
+   ],
+   "cover": {
+    "lines": [
+     "Kya AI",
+     "Naukri",
+     "Le Lega?",
+     "Sach Suno"
+    ],
+    "chips": [
+     "Office",
+     "Hindi"
+    ]
+   },
+   "caption": "Kya AI tumhari naukri le lega? Ek AI se sach suno.\n\nAaj se ye 3 kaam AI se karo:\n1. Email aur report\n2. Lambi PDF ka summary\n3. Excel ke formula\n\nFree AI guide: bio link me 👆\nFollow @aibhai_hindi – roz 1 AI hack.\n\n#aitools #aiinhindi #chatgpt #careertips #officehacks #aibhai #learnai"
+  },
+  {
+   "id": "003",
+   "day": 1,
+   "slot": "16:00",
+   "type": "TRIAL_REEL",
+   "status": "scheduled",
+   "hook_style": "magic",
+   "phrases": [
+    "Product ki photo kharab hai?",
+    "Photographer ko paise mat do!",
+    "Phone ki photo ko studio photo banao.",
+    "Pehle, saaf roshni me photo lo.",
+    "Phir Photoroom ya remove bg kholo.",
+    "Ek click me background gayab.",
+    "Ab safed ya naya background lagao.",
+    "Meesho, Amazon, Instagram, sab ke liye ready!",
+    "Free guide bio link me hai, zaroor lena!",
+    "Follow karo AI Bhai ko!"
+   ],
+   "hook": [
+    "Phone Photo = Studio Photo",
+    "Bina Photographer"
+   ],
+   "end": [
+    "Free Guide: Bio Link",
+    "Roz 1 AI Hack"
+   ],
+   "hook_phrases": 3,
+   "end_phrases": 2,
+   "cards": [
+    {
+     "at": 3,
+     "title": "Roshni",
+     "num": 1,
+     "lines": [
+      "Saaf roshni me",
+      "photo lo"
+     ],
+     "chips": [
+      "Phone"
+     ]
+    },
+    {
+     "at": 4,
+     "title": "Photoroom",
+     "num": 2,
+     "lines": [
+      "Ya remove.bg",
+      "1 click background gayab"
+     ],
+     "chips": [
+      "Free",
+      "1 Click"
+     ]
+    },
+    {
+     "at": 6,
+     "title": "Naya BG",
+     "num": 3,
+     "lines": [
+      "Safed ya naya background",
+      "store ke liye ready"
+     ],
+     "chips": [
+      "Meesho",
+      "Amazon"
+     ]
+    }
+   ],
+   "keywords": [
+    "AI",
+    "Photoroom",
+    "studio",
+    "Meesho",
+    "Amazon",
+    "Follow",
+    "guide"
+   ],
+   "cover": {
+    "lines": [
+     "Phone Photo",
+     "= Studio",
+     "Bina Photographer",
+     "1 Click"
+    ],
+    "chips": [
+     "Business",
+     "Free"
+    ]
+   },
+   "caption": "Phone ki photo ko studio photo banao – 1 click me.\n\nPhotoroom ya remove.bg se background hatao aur naya lagao. Meesho, Amazon, Instagram shop sab ke liye ready.\n\nFree AI guide: bio link me 👆\nFollow @aibhai_hindi – roz 1 AI hack.\n\n#aitools #aiinhindi #productphotography #smallbusinessindia #meesho #aibhai"
+  },
+  {
+   "id": "004",
+   "day": 2,
+   "slot": "13:00",
+   "type": "REEL",
+   "status": "scheduled",
+   "hook_style": "secret",
+   "phrases": [
+    "ChatGPT ka jawaab bekaar aata hai?",
+    "Galti prompt ki hai!",
+    "Ye chaar cheezein likho, jawaab better aayega.",
+    "Pehla, role. Tum ek expert teacher ho.",
+    "Doosra, kaam. Kya chahiye, saaf likho.",
+    "Teesra, context. Kiske liye, kitna lamba.",
+    "Chautha, format. Paanch points me do.",
+    "Bas! Ab dekho jaadu.",
+    "Free guide bio link me hai, zaroor lena!",
+    "Follow karo AI Bhai ko!"
+   ],
+   "hook": [
+    "ChatGPT Ka Jawaab",
+    "Bekaar Aata Hai?"
+   ],
+   "end": [
+    "Free Guide: Bio Link",
+    "Roz 1 AI Hack"
+   ],
+   "hook_phrases": 3,
+   "end_phrases": 2,
+   "cards": [
+    {
+     "at": 3,
+     "title": "Role",
+     "num": 1,
+     "lines": [
+      "Tum ek expert",
+      "teacher ho"
+     ],
+     "chips": [
+      "Step 1"
+     ]
+    },
+    {
+     "at": 4,
+     "title": "Kaam",
+     "num": 2,
+     "lines": [
+      "Kya chahiye,",
+      "saaf likho"
+     ],
+     "chips": [
+      "Step 2"
+     ]
+    },
+    {
+     "at": 5,
+     "title": "Context",
+     "num": 3,
+     "lines": [
+      "Kiske liye,",
+      "kitna lamba"
+     ],
+     "chips": [
+      "Step 3"
+     ]
+    },
+    {
+     "at": 6,
+     "title": "Format",
+     "num": 4,
+     "lines": [
+      "5 points me do",
+      "ya table me"
+     ],
+     "chips": [
+      "Step 4"
+     ]
+    }
+   ],
+   "keywords": [
+    "ChatGPT",
+    "role",
+    "kaam",
+    "context",
+    "format",
+    "AI",
+    "Follow",
+    "guide"
+   ],
+   "cover": {
+    "lines": [
+     "ChatGPT",
+     "Ka Secret",
+     "4 Step Formula",
+     "Better Jawaab"
+    ],
+    "chips": [
+     "Prompt",
+     "Free"
+    ]
+   },
+   "caption": "ChatGPT ka jawaab bekaar aata hai? Galti prompt ki hai. Ye 4 step formula try karo:\n\n1. Role – \"Tum ek expert ___ ho\"\n2. Kaam – kya chahiye, saaf likho\n3. Context – kiske liye, kitna lamba\n4. Format – \"5 points me do\"\n\nSave karo! Free AI guide: bio link me 👆\nFollow @aibhai_hindi – roz 1 AI hack.\n\n#chatgpt #chatgptprompts #aiinhindi #aitips #aibhai #learnai"
+  },
+  {
+   "id": "005",
+   "day": 2,
+   "slot": "16:00",
+   "type": "REEL",
+   "status": "scheduled",
+   "hook_style": "student",
+   "phrases": [
+    "Padhne ka mann nahi karta?",
+    "To apni notes sun lo, podcast jaisa!",
+    "Tool ka naam hai NotebookLM.",
+    "Pehle, apni PDF ya notes upload karo.",
+    "Phir poocho, ye chapter simple Hindi me samjhao.",
+    "Ya bolo, das MCQ banao.",
+    "Aur Audio Overview dabao, notes ka podcast ready!",
+    "Free guide bio link me hai, zaroor lena!",
+    "Follow karo AI Bhai ko!"
+   ],
+   "hook": [
+    "Notes Ko Podcast",
+    "Bana Do!"
+   ],
+   "end": [
+    "Free Guide: Bio Link",
+    "Roz 1 AI Hack"
+   ],
+   "hook_phrases": 2,
+   "end_phrases": 2,
+   "cards": [
+    {
+     "at": 2,
+     "title": "NotebookLM",
+     "num": null,
+     "lines": [
+      "Google ka free tool"
+     ],
+     "chips": [
+      "Free",
+      "Students"
+     ]
+    },
+    {
+     "at": 3,
+     "title": "Upload",
+     "num": 1,
+     "lines": [
+      "PDF ya notes",
+      "upload karo"
+     ],
+     "chips": [
+      "Step 1"
+     ]
+    },
+    {
+     "at": 4,
+     "title": "Poocho",
+     "num": 2,
+     "lines": [
+      "Simple Hindi me samjhao",
+      "ya 10 MCQ banao"
+     ],
+     "chips": [
+      "Step 2"
+     ]
+    },
+    {
+     "at": 6,
+     "title": "Podcast",
+     "num": 3,
+     "lines": [
+      "Audio Overview",
+      "notes suno"
+     ],
+     "chips": [
+      "Step 3"
+     ]
+    }
+   ],
+   "keywords": [
+    "NotebookLM",
+    "podcast",
+    "MCQ",
+    "Hindi",
+    "AI",
+    "Follow",
+    "guide"
+   ],
+   "cover": {
+    "lines": [
+     "Notes Ko",
+     "Podcast",
+     "Bana Do",
+     "Free Tool"
+    ],
+    "chips": [
+     "Students",
+     "Free"
+    ]
+   },
+   "caption": "Padhne ka mann nahi? Apni notes podcast ki tarah suno!\n\nNotebookLM me PDF upload karo, simple Hindi me samjho, MCQ banao, aur Audio Overview se podcast suno.\n\nFree AI guide: bio link me 👆\nFollow @aibhai_hindi – roz 1 AI hack.\n\n#studytips #studenthacks #aiforstudents #notebooklm #aiinhindi #aibhai"
+  },
+  {
+   "id": "006",
+   "day": 2,
+   "slot": "20:00",
+   "type": "REEL",
+   "status": "scheduled",
+   "hook_style": "warning",
+   "phrases": [
+    "Mummy ka phone aaye...",
+    "awaaz bilkul unki ho...",
+    "aur woh paise maange.",
+    "Ruko! Ye AI scam ho sakta hai.",
+    "AI ab kisi ki awaaz copy kar sakta hai.",
+    "Bachne ke teen tareeke.",
+    "Pehla, phone kaato, khud wapas call karo.",
+    "Doosra, ghar me ek code word rakho.",
+    "Teesra, jaldi me paise ya OTP mat bhejo.",
+    "Family ko bhi batao.",
+    "Free guide bio link me hai, zaroor lena!",
+    "Follow karo AI Bhai ko!"
+   ],
+   "hook": [
+    "Awaaz Mummy Ki...",
+    "Par Call AI Ka!"
+   ],
+   "end": [
+    "Free Guide: Bio Link",
+    "Roz 1 AI Hack"
+   ],
+   "hook_phrases": 4,
+   "end_phrases": 2,
+   "cards": [
+    {
+     "at": 4,
+     "title": "AI VOICE SCAM",
+     "num": null,
+     "lines": [
+      "Awaaz copy ho sakti hai"
+     ],
+     "chips": [
+      "Alert"
+     ]
+    },
+    {
+     "at": 6,
+     "title": "Call Back",
+     "num": 1,
+     "lines": [
+      "Phone kaato,",
+      "khud wapas call karo"
+     ],
+     "chips": [
+      "Safe"
+     ]
+    },
+    {
+     "at": 7,
+     "title": "Code Word",
+     "num": 2,
+     "lines": [
+      "Family ka ek",
+      "code word rakho"
+     ],
+     "chips": [
+      "Safe"
+     ]
+    },
+    {
+     "at": 8,
+     "title": "No OTP",
+     "num": 3,
+     "lines": [
+      "OTP aur paise",
+      "jaldi me mat bhejo"
+     ],
+     "chips": [
+      "Safe"
+     ]
+    }
+   ],
+   "keywords": [
+    "AI",
+    "scam",
+    "awaaz",
+    "OTP",
+    "code",
+    "Follow",
+    "guide"
+   ],
+   "cover": {
+    "lines": [
+     "Awaaz Mummy Ki",
+     "Call AI Ka!",
+     "Ye Scam Jaano",
+     "Family Ko Bhejo"
+    ],
+    "chips": [
+     "Alert",
+     "Safety"
+    ]
+   },
+   "caption": "Awaaz mummy ki... par call AI ka? Ye naya scam jaano.\n\nBachne ke 3 tareeke:\n1. Phone kaato, khud wapas call karo\n2. Family me ek code word rakho\n3. Jaldi me paise ya OTP kabhi mat bhejo\n\nYe video family group me bhejo.\nFree AI guide: bio link me 👆\nFollow @aibhai_hindi – roz 1 AI hack.\n\n#aiscam #cybersafety #scamalert #aiinhindi #aibhai #staysafe"
+  },
+  {
+   "id": "007",
+   "day": 3,
+   "slot": "13:00",
+   "type": "REEL",
+   "status": "queued",
+   "hook_style": "speed",
+   "phrases": [
+    "Kal presentation hai?",
+    "Aur abhi tak ek slide nahi bani?",
+    "Tension mat lo, do minute me banegi.",
+    "Tool hai Gamma.",
+    "Topic likho, jaise digital marketing, aath slides.",
+    "AI poori outline aur slides bana dega.",
+    "Theme chuno, aur PPT ya PDF download karo.",
+    "Free guide bio link me hai, zaroor lena!",
+    "Follow karo, kal ka hack miss mat karna!"
+   ],
+   "hook": [
+    "PPT 2 Minute Me",
+    "Bina Mehnat"
+   ],
+   "end": [
+    "Free Guide: Bio Link",
+    "Roz 1 AI Hack"
+   ],
+   "hook_phrases": 3,
+   "end_phrases": 2,
+   "cards": [
+    {
+     "at": 3,
+     "title": "Gamma",
+     "num": null,
+     "lines": [
+      "AI presentation tool"
+     ],
+     "chips": [
+      "Free Credits"
+     ]
+    },
+    {
+     "at": 4,
+     "title": "Topic",
+     "num": 1,
+     "lines": [
+      "Topic likho,",
+      "8 slides bolo"
+     ],
+     "chips": [
+      "Step 1"
+     ]
+    },
+    {
+     "at": 5,
+     "title": "AI Slides",
+     "num": 2,
+     "lines": [
+      "Outline + slides",
+      "apne aap"
+     ],
+     "chips": [
+      "Step 2"
+     ]
+    },
+    {
+     "at": 6,
+     "title": "Download",
+     "num": 3,
+     "lines": [
+      "Theme chuno,",
+      "PPT ya PDF"
+     ],
+     "chips": [
+      "Step 3"
+     ]
+    }
+   ],
+   "keywords": [
+    "Gamma",
+    "PPT",
+    "slides",
+    "AI",
+    "Follow",
+    "guide"
+   ],
+   "cover": {
+    "lines": [
+     "PPT",
+     "2 Minute Me",
+     "Bina Mehnat",
+     "AI Tool"
+    ],
+    "chips": [
+     "Students",
+     "Office"
+    ]
+   },
+   "caption": "Kal presentation hai aur ek slide nahi bani? Gamma se 2 minute me banao.\n\nTopic likho, AI slides banayega, theme chuno aur PPT/PDF download karo.\n\nFree AI guide: bio link me 👆\nFollow @aibhai_hindi – roz 1 AI hack.\n\n#presentation #gamma #aitools #studenthacks #aiinhindi #aibhai"
+  },
+  {
+   "id": "009",
+   "day": 3,
+   "slot": "16:00",
+   "type": "REEL",
+   "status": "queued",
+   "hook_style": "relatable",
+   "phrases": [
+    "VLOOKUP sun ke darr lagta hai?",
+    "Ab formula yaad karne ki zaroorat nahi!",
+    "Bas AI ko batao kya chahiye.",
+    "Jaise, column B me jahan Paid likha hai, unka total do.",
+    "ChatGPT ya Gemini turant formula de dega.",
+    "Copy karo, sheet me paste karo.",
+    "Ho gaya kaam!",
+    "Free guide bio link me hai, zaroor lena!",
+    "Follow karo, kal ka hack miss mat karna!"
+   ],
+   "hook": [
+    "Excel Formula",
+    "Yaad Mat Karo!"
+   ],
+   "end": [
+    "Free Guide: Bio Link",
+    "Roz 1 AI Hack"
+   ],
+   "hook_phrases": 2,
+   "end_phrases": 2,
+   "cards": [
+    {
+     "at": 2,
+     "title": "Batao",
+     "num": 1,
+     "lines": [
+      "AI ko batao",
+      "kya chahiye"
+     ],
+     "chips": [
+      "Step 1"
+     ]
+    },
+    {
+     "at": 4,
+     "title": "Formula",
+     "num": 2,
+     "lines": [
+      "ChatGPT ya Gemini",
+      "formula dega"
+     ],
+     "chips": [
+      "Step 2"
+     ]
+    },
+    {
+     "at": 5,
+     "title": "Paste",
+     "num": 3,
+     "lines": [
+      "Sheet me paste,",
+      "kaam khatam"
+     ],
+     "chips": [
+      "Step 3"
+     ]
+    }
+   ],
+   "keywords": [
+    "Excel",
+    "VLOOKUP",
+    "formula",
+    "AI",
+    "ChatGPT",
+    "Gemini",
+    "Follow",
+    "guide"
+   ],
+   "cover": {
+    "lines": [
+     "Excel Formula",
+     "Yaad Mat Karo",
+     "AI Likhega",
+     ""
+    ],
+    "chips": [
+     "Office",
+     "Free"
+    ]
+   },
+   "caption": "VLOOKUP se darr lagta hai? Ab formula yaad karne ki zaroorat nahi.\n\nAI ko simple Hindi me batao kya chahiye – ChatGPT ya Gemini formula de dega. Copy, paste, done.\n\nFree AI guide: bio link me 👆\nFollow @aibhai_hindi – roz 1 AI hack.\n\n#excel #exceltips #officehacks #aitools #aiinhindi #aibhai"
+  },
+  {
+   "id": "008",
+   "day": 3,
+   "slot": "20:00",
+   "type": "REEL",
+   "status": "queued",
+   "hook_style": "warning",
+   "phrases": [
+    "Main AI hoon, phir bhi bol raha hoon...",
+    "ye teen cheezein mujhe kabhi mat batana!",
+    "Pehla, Aadhaar, PAN aur bank ki details.",
+    "Doosra, password aur OTP.",
+    "Teesra, company ka secret data.",
+    "Kuch poochna hai to naam aur number hata ke poocho.",
+    "Smart bano, safe raho!",
+    "Free guide bio link me hai, zaroor lena!",
+    "Follow karo, kal ka hack miss mat karna!"
+   ],
+   "hook": [
+    "Ye 3 Cheezein AI Ko",
+    "Kabhi Mat Batana!"
+   ],
+   "end": [
+    "Free Guide: Bio Link",
+    "Roz 1 AI Hack"
+   ],
+   "hook_phrases": 2,
+   "end_phrases": 2,
+   "cards": [
+    {
+     "at": 2,
+     "title": "ID & Bank",
+     "num": 1,
+     "lines": [
+      "Aadhaar, PAN,",
+      "bank details nahi"
+     ],
+     "chips": [
+      "Privacy"
+     ]
+    },
+    {
+     "at": 3,
+     "title": "Password",
+     "num": 2,
+     "lines": [
+      "Password aur OTP",
+      "kabhi nahi"
+     ],
+     "chips": [
+      "Privacy"
+     ]
+    },
+    {
+     "at": 4,
+     "title": "Secrets",
+     "num": 3,
+     "lines": [
+      "Company ka",
+      "secret data nahi"
+     ],
+     "chips": [
+      "Privacy"
+     ]
+    },
+    {
+     "at": 5,
+     "title": "Smart Tip",
+     "num": null,
+     "lines": [
+      "Naam aur number hata ke",
+      "sawaal poocho"
+     ],
+     "chips": [
+      "Safe"
+     ]
+    }
+   ],
+   "keywords": [
+    "AI",
+    "Aadhaar",
+    "PAN",
+    "OTP",
+    "password",
+    "Follow",
+    "guide"
+   ],
+   "cover": {
+    "lines": [
+     "Ye 3 Cheezein",
+     "AI Ko Mat Batana",
+     "Main AI Hoon, Sach Bolta Hoon",
+     ""
+    ],
+    "chips": [
+     "Privacy",
+     "Safety"
+    ]
+   },
+   "caption": "Main AI hoon, phir bhi bol raha hoon – ye 3 cheezein AI ko kabhi mat batana:\n\n1. Aadhaar, PAN, bank details\n2. Password aur OTP\n3. Company ka secret data\n\nSave karo aur sabko bhejo.\nFree AI guide: bio link me 👆\nFollow @aibhai_hindi – roz 1 AI hack.\n\n#aisafety #privacy #cybersafety #aiinhindi #aibhai #chatgpt"
+  },
+  {
+   "id": "010",
+   "day": 4,
+   "slot": "13:00",
+   "type": "REEL",
+   "status": "queued",
+   "hook_style": "fear",
+   "phrases": [
+    "Resume bhejte ho, reply nahi aata?",
+    "Shayad resume har job ke liye same hai.",
+    "AI se use job ke hisaab se badlo.",
+    "Pehle, job description copy karo.",
+    "Phir ChatGPT me resume aur JD paste karo.",
+    "Bolo, JD ke keywords mere resume me daalo.",
+    "Number hata do, jhooth mat likhwana.",
+    "Ab resume job se match karega!",
+    "Free guide bio link me hai, zaroor lena!",
+    "Follow karo, kal ka hack miss mat karna!"
+   ],
+   "hook": [
+    "Resume Bhejte Ho,",
+    "Reply Nahi Aata?"
+   ],
+   "end": [
+    "Free Guide: Bio Link",
+    "Roz 1 AI Hack"
+   ],
+   "hook_phrases": 2,
+   "end_phrases": 2,
+   "cards": [
+    {
+     "at": 3,
+     "title": "JD Copy",
+     "num": 1,
+     "lines": [
+      "Job description",
+      "copy karo"
+     ],
+     "chips": [
+      "Step 1"
+     ]
+    },
+    {
+     "at": 4,
+     "title": "ChatGPT",
+     "num": 2,
+     "lines": [
+      "Resume + JD",
+      "dono paste karo"
+     ],
+     "chips": [
+      "Step 2"
+     ]
+    },
+    {
+     "at": 5,
+     "title": "Keywords",
+     "num": 3,
+     "lines": [
+      "JD ke keywords",
+      "resume me daalo"
+     ],
+     "chips": [
+      "Step 3"
+     ]
+    },
+    {
+     "at": 6,
+     "title": "Dhyan",
+     "num": null,
+     "lines": [
+      "Number hatao,",
+      "jhooth nahi"
+     ],
+     "chips": [
+      "Tip"
+     ]
+    }
+   ],
+   "keywords": [
+    "Resume",
+    "ChatGPT",
+    "job",
+    "keywords",
+    "AI",
+    "Follow",
+    "guide"
+   ],
+   "cover": {
+    "lines": [
+     "Resume",
+     "Reject?",
+     "AI Se Fix Karo",
+     "Free Trick"
+    ],
+    "chips": [
+     "Jobs",
+     "Free"
+    ]
+   },
+   "caption": "Resume bhejte ho par reply nahi aata? Har job ke liye resume AI se match karo.\n\n1. Job description copy karo\n2. ChatGPT me resume + JD paste karo\n3. Bolo: \"Is job ke keywords mere resume me daalo\"\n4. Phone number hatao, sirf sach likho\n\nSave karo! Free AI guide: bio link me 👆\nFollow @aibhai_hindi – roz 1 AI hack.\n\n#resume #jobsearch #chatgpt #careertips #aiinhindi #aibhai"
+  },
+  {
+   "id": "011",
+   "day": 4,
+   "slot": "16:00",
+   "type": "REEL",
+   "status": "queued",
+   "hook_style": "magic",
+   "phrases": [
+    "Phone camera me chhupa hai AI jaadu!",
+    "Naam hai Google Lens, bilkul free.",
+    "Pehla, English board pe camera rakho, Translate dabao.",
+    "Doosra, kisi paudhe ya cheez ki photo lo, naam pata chalega.",
+    "Teesra, kaagaz ka text copy karo, aur WhatsApp pe paste karo.",
+    "Android aur iPhone, dono pe chalta hai.",
+    "Free guide bio link me hai, zaroor lena!",
+    "Follow karo, kal ka hack miss mat karna!"
+   ],
+   "hook": [
+    "Phone Camera Ka",
+    "AI Jaadu!"
+   ],
+   "end": [
+    "Free Guide: Bio Link",
+    "Roz 1 AI Hack"
+   ],
+   "hook_phrases": 2,
+   "end_phrases": 2,
+   "cards": [
+    {
+     "at": 2,
+     "title": "Translate",
+     "num": 1,
+     "lines": [
+      "English board?",
+      "Hindi me padho"
+     ],
+     "chips": [
+      "Step 1"
+     ]
+    },
+    {
+     "at": 3,
+     "title": "Pehchano",
+     "num": 2,
+     "lines": [
+      "Paudha ya cheez,",
+      "naam pata karo"
+     ],
+     "chips": [
+      "Step 2"
+     ]
+    },
+    {
+     "at": 4,
+     "title": "Copy Text",
+     "num": 3,
+     "lines": [
+      "Kaagaz ka text",
+      "copy-paste karo"
+     ],
+     "chips": [
+      "Step 3"
+     ]
+    },
+    {
+     "at": 5,
+     "title": "Google Lens",
+     "num": null,
+     "lines": [
+      "Android + iPhone"
+     ],
+     "chips": [
+      "Free"
+     ]
+    }
+   ],
+   "keywords": [
+    "Google",
+    "Lens",
+    "Translate",
+    "Hindi",
+    "AI",
+    "Follow",
+    "guide"
+   ],
+   "cover": {
+    "lines": [
+     "Phone Camera",
+     "Ka AI Jaadu",
+     "Google Lens",
+     "Free"
+    ],
+    "chips": [
+     "Phone",
+     "Free"
+    ]
+   },
+   "caption": "Phone camera me chhupa AI jaadu – Google Lens!\n\n1. English board ya menu ko Hindi me translate karo\n2. Paudhe ya cheez ki photo se naam jaano\n3. Kaagaz ka text copy karke WhatsApp pe bhejo\n\nFree hai, Android aur iPhone dono pe.\nFree AI guide: bio link me 👆\nFollow @aibhai_hindi – roz 1 AI hack.\n\n#googlelens #aitools #phonetricks #aiinhindi #techhindi #aibhai"
+  },
+  {
+   "id": "012",
+   "day": 4,
+   "slot": "20:00",
+   "type": "REEL",
+   "status": "queued",
+   "hook_style": "warning",
+   "phrases": [
+    "Ye photo asli hai ya AI ne banayi?",
+    "WhatsApp pe AI wali fake photos bhi aati hain.",
+    "Pakadne ke teen tareeke.",
+    "Pehla, haath, ungliyan aur chehra dhyan se dekho.",
+    "Doosra, peeche likha text ajeeb ho to shak karo.",
+    "Teesra, photo ko Google pe search karo, asli source dhoondo.",
+    "Shak ho to forward mat karo!",
+    "Free guide bio link me hai, zaroor lena!",
+    "Follow karo, kal ka hack miss mat karna!"
+   ],
+   "hook": [
+    "Asli Ya AI?",
+    "Fake Photo Pakdo!"
+   ],
+   "end": [
+    "Free Guide: Bio Link",
+    "Roz 1 AI Hack"
+   ],
+   "hook_phrases": 2,
+   "end_phrases": 2,
+   "cards": [
+    {
+     "at": 3,
+     "title": "Haath",
+     "num": 1,
+     "lines": [
+      "Haath, ungliyan,",
+      "chehra dekho"
+     ],
+     "chips": [
+      "Check"
+     ]
+    },
+    {
+     "at": 4,
+     "title": "Text",
+     "num": 2,
+     "lines": [
+      "Ajeeb text",
+      "matlab shak"
+     ],
+     "chips": [
+      "Check"
+     ]
+    },
+    {
+     "at": 5,
+     "title": "Search",
+     "num": 3,
+     "lines": [
+      "Google pe photo search,",
+      "asli source dhoondo"
+     ],
+     "chips": [
+      "Check"
+     ]
+    },
+    {
+     "at": 6,
+     "title": "No Forward",
+     "num": null,
+     "lines": [
+      "Shak ho to",
+      "forward mat karo"
+     ],
+     "chips": [
+      "Safe"
+     ]
+    }
+   ],
+   "keywords": [
+    "AI",
+    "photo",
+    "fake",
+    "Google",
+    "WhatsApp",
+    "Follow",
+    "guide"
+   ],
+   "cover": {
+    "lines": [
+     "Asli Ya AI?",
+     "Fake Photo",
+     "Kaise Pakde",
+     "3 Tarike"
+    ],
+    "chips": [
+     "Alert",
+     "Safety"
+    ]
+   },
+   "caption": "Ye photo asli hai ya AI ki? Forward karne se pehle check karo.\n\n1. Haath, ungliyan aur chehra dhyan se dekho\n2. Background ka text ajeeb ho to shak karo\n3. Photo ko Google pe search karke asli source dhoondo\n\nShak ho to forward mat karo.\nFree AI guide: bio link me 👆\nFollow @aibhai_hindi – roz 1 AI hack.\n\n#fakenews #aiimages #factcheck #cybersafety #aiinhindi #aibhai"
+  }
+ ],
+ "cta": "Free guide bio link me (no comment-to-DM). Guide: guide/AI-Bhai-10-AI-Tools.pdf | From day 3: last phrase 'Follow karo, kal ka hack miss mat karna!' (gives a reason to follow). Warning/fear hooks win (day 1-2): put one in the 20:00 slot daily."
 }
