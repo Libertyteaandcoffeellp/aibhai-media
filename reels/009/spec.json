@@ -1,0 +1,84 @@
+{
+ "phrases": [
+  "VLOOKUP sun ke darr lagta hai?",
+  "Ab formula yaad karne ki zaroorat nahi!",
+  "Bas AI ko batao kya chahiye.",
+  "Jaise, column B me jahan Paid likha hai, unka total do.",
+  "ChatGPT ya Gemini turant formula de dega.",
+  "Copy karo, sheet me paste karo.",
+  "Ho gaya kaam!",
+  "Free guide bio link me hai, zaroor lena!",
+  "Follow karo, kal ka hack miss mat karna!"
+ ],
+ "hook": [
+  "Excel Formula",
+  "Yaad Mat Karo!"
+ ],
+ "end": [
+  "Free Guide: Bio Link",
+  "Roz 1 AI Hack"
+ ],
+ "hook_phrases": 2,
+ "end_phrases": 2,
+ "cards": [
+  {
+   "at": 2,
+   "title": "Batao",
+   "num": 1,
+   "lines": [
+    "AI ko batao",
+    "kya chahiye"
+   ],
+   "chips": [
+    "Step 1"
+   ]
+  },
+  {
+   "at": 4,
+   "title": "Formula",
+   "num": 2,
+   "lines": [
+    "ChatGPT ya Gemini",
+    "formula dega"
+   ],
+   "chips": [
+    "Step 2"
+   ]
+  },
+  {
+   "at": 5,
+   "title": "Paste",
+   "num": 3,
+   "lines": [
+    "Sheet me paste,",
+    "kaam khatam"
+   ],
+   "chips": [
+    "Step 3"
+   ]
+  }
+ ],
+ "keywords": [
+  "Excel",
+  "VLOOKUP",
+  "formula",
+  "AI",
+  "ChatGPT",
+  "Gemini",
+  "Follow",
+  "guide"
+ ],
+ "cover": {
+  "lines": [
+   "Excel Formula",
+   "Yaad Mat Karo",
+   "AI Likhega",
+   ""
+  ],
+  "chips": [
+   "Office",
+   "Free"
+  ]
+ },
+ "id": "009"
+}

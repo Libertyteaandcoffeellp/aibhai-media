@@ -1,0 +1,93 @@
+{
+ "phrases": [
+  "Kal presentation hai?",
+  "Aur abhi tak ek slide nahi bani?",
+  "Tension mat lo, do minute me banegi.",
+  "Tool hai Gamma.",
+  "Topic likho, jaise digital marketing, aath slides.",
+  "AI poori outline aur slides bana dega.",
+  "Theme chuno, aur PPT ya PDF download karo.",
+  "Free guide bio link me hai, zaroor lena!",
+  "Follow karo, kal ka hack miss mat karna!"
+ ],
+ "hook": [
+  "PPT 2 Minute Me",
+  "Bina Mehnat"
+ ],
+ "end": [
+  "Free Guide: Bio Link",
+  "Roz 1 AI Hack"
+ ],
+ "hook_phrases": 3,
+ "end_phrases": 2,
+ "cards": [
+  {
+   "at": 3,
+   "title": "Gamma",
+   "num": null,
+   "lines": [
+    "AI presentation tool"
+   ],
+   "chips": [
+    "Free Credits"
+   ]
+  },
+  {
+   "at": 4,
+   "title": "Topic",
+   "num": 1,
+   "lines": [
+    "Topic likho,",
+    "8 slides bolo"
+   ],
+   "chips": [
+    "Step 1"
+   ]
+  },
+  {
+   "at": 5,
+   "title": "AI Slides",
+   "num": 2,
+   "lines": [
+    "Outline + slides",
+    "apne aap"
+   ],
+   "chips": [
+    "Step 2"
+   ]
+  },
+  {
+   "at": 6,
+   "title": "Download",
+   "num": 3,
+   "lines": [
+    "Theme chuno,",
+    "PPT ya PDF"
+   ],
+   "chips": [
+    "Step 3"
+   ]
+  }
+ ],
+ "keywords": [
+  "Gamma",
+  "PPT",
+  "slides",
+  "AI",
+  "Follow",
+  "guide"
+ ],
+ "cover": {
+  "lines": [
+   "PPT",
+   "2 Minute Me",
+   "Bina Mehnat",
+   "AI Tool"
+  ],
+  "chips": [
+   "Students",
+   "Office"
+  ]
+ },
+ "id": "007"
+}

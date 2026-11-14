@@ -1,0 +1,95 @@
+{
+ "phrases": [
+  "Main AI hoon, phir bhi bol raha hoon...",
+  "ye teen cheezein mujhe kabhi mat batana!",
+  "Pehla, Aadhaar, PAN aur bank ki details.",
+  "Doosra, password aur OTP.",
+  "Teesra, company ka secret data.",
+  "Kuch poochna hai to naam aur number hata ke poocho.",
+  "Smart bano, safe raho!",
+  "Free guide bio link me hai, zaroor lena!",
+  "Follow karo, kal ka hack miss mat karna!"
+ ],
+ "hook": [
+  "Ye 3 Cheezein AI Ko",
+  "Kabhi Mat Batana!"
+ ],
+ "end": [
+  "Free Guide: Bio Link",
+  "Roz 1 AI Hack"
+ ],
+ "hook_phrases": 2,
+ "end_phrases": 2,
+ "cards": [
+  {
+   "at": 2,
+   "title": "ID & Bank",
+   "num": 1,
+   "lines": [
+    "Aadhaar, PAN,",
+    "bank details nahi"
+   ],
+   "chips": [
+    "Privacy"
+   ]
+  },
+  {
+   "at": 3,
+   "title": "Password",
+   "num": 2,
+   "lines": [
+    "Password aur OTP",
+    "kabhi nahi"
+   ],
+   "chips": [
+    "Privacy"
+   ]
+  },
+  {
+   "at": 4,
+   "title": "Secrets",
+   "num": 3,
+   "lines": [
+    "Company ka",
+    "secret data nahi"
+   ],
+   "chips": [
+    "Privacy"
+   ]
+  },
+  {
+   "at": 5,
+   "title": "Smart Tip",
+   "num": null,
+   "lines": [
+    "Naam aur number hata ke",
+    "sawaal poocho"
+   ],
+   "chips": [
+    "Safe"
+   ]
+  }
+ ],
+ "keywords": [
+  "AI",
+  "Aadhaar",
+  "PAN",
+  "OTP",
+  "password",
+  "Follow",
+  "guide"
+ ],
+ "cover": {
+  "lines": [
+   "Ye 3 Cheezein",
+   "AI Ko Mat Batana",
+   "Main AI Hoon, Sach Bolta Hoon",
+   ""
+  ],
+  "chips": [
+   "Privacy",
+   "Safety"
+  ]
+ },
+ "id": "008"
+}
