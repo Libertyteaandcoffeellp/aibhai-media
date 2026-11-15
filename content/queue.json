@@ -914,7 +914,7 @@
    "day": 4,
    "slot": "13:00",
    "type": "REEL",
-   "status": "queued",
+   "status": "rendered",
    "hook_style": "fear",
    "phrases": [
     "Resume bhejte ho, reply nahi aata?",
@@ -1016,7 +1016,7 @@
    "day": 4,
    "slot": "16:00",
    "type": "REEL",
-   "status": "queued",
+   "status": "rendered",
    "hook_style": "magic",
    "phrases": [
     "Phone camera me chhupa hai AI jaadu!",
@@ -1115,7 +1115,7 @@
    "day": 4,
    "slot": "20:00",
    "type": "REEL",
-   "status": "queued",
+   "status": "rendered",
    "hook_style": "warning",
    "phrases": [
     "Ye photo asli hai ya AI ne banayi?",

@@ -1,0 +1,95 @@
+{
+ "phrases": [
+  "Ye photo asli hai ya AI ne banayi?",
+  "WhatsApp pe AI wali fake photos bhi aati hain.",
+  "Pakadne ke teen tareeke.",
+  "Pehla, haath, ungliyan aur chehra dhyan se dekho.",
+  "Doosra, peeche likha text ajeeb ho to shak karo.",
+  "Teesra, photo ko Google pe search karo, asli source dhoondo.",
+  "Shak ho to forward mat karo!",
+  "Free guide bio link me hai, zaroor lena!",
+  "Follow karo, kal ka hack miss mat karna!"
+ ],
+ "hook": [
+  "Asli Ya AI?",
+  "Fake Photo Pakdo!"
+ ],
+ "end": [
+  "Free Guide: Bio Link",
+  "Roz 1 AI Hack"
+ ],
+ "hook_phrases": 2,
+ "end_phrases": 2,
+ "cards": [
+  {
+   "at": 3,
+   "title": "Haath",
+   "num": 1,
+   "lines": [
+    "Haath, ungliyan,",
+    "chehra dekho"
+   ],
+   "chips": [
+    "Check"
+   ]
+  },
+  {
+   "at": 4,
+   "title": "Text",
+   "num": 2,
+   "lines": [
+    "Ajeeb text",
+    "matlab shak"
+   ],
+   "chips": [
+    "Check"
+   ]
+  },
+  {
+   "at": 5,
+   "title": "Search",
+   "num": 3,
+   "lines": [
+    "Google pe photo search,",
+    "asli source dhoondo"
+   ],
+   "chips": [
+    "Check"
+   ]
+  },
+  {
+   "at": 6,
+   "title": "No Forward",
+   "num": null,
+   "lines": [
+    "Shak ho to",
+    "forward mat karo"
+   ],
+   "chips": [
+    "Safe"
+   ]
+  }
+ ],
+ "keywords": [
+  "AI",
+  "photo",
+  "fake",
+  "Google",
+  "WhatsApp",
+  "Follow",
+  "guide"
+ ],
+ "cover": {
+  "lines": [
+   "Asli Ya AI?",
+   "Fake Photo",
+   "Kaise Pakde",
+   "3 Tarike"
+  ],
+  "chips": [
+   "Alert",
+   "Safety"
+  ]
+ },
+ "id": "012"
+}

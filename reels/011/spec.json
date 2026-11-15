@@ -1,0 +1,93 @@
+{
+ "phrases": [
+  "Phone camera me chhupa hai AI jaadu!",
+  "Naam hai Google Lens, bilkul free.",
+  "Pehla, English board pe camera rakho, Translate dabao.",
+  "Doosra, kisi paudhe ya cheez ki photo lo, naam pata chalega.",
+  "Teesra, kaagaz ka text copy karo, aur WhatsApp pe paste karo.",
+  "Android aur iPhone, dono pe chalta hai.",
+  "Free guide bio link me hai, zaroor lena!",
+  "Follow karo, kal ka hack miss mat karna!"
+ ],
+ "hook": [
+  "Phone Camera Ka",
+  "AI Jaadu!"
+ ],
+ "end": [
+  "Free Guide: Bio Link",
+  "Roz 1 AI Hack"
+ ],
+ "hook_phrases": 2,
+ "end_phrases": 2,
+ "cards": [
+  {
+   "at": 2,
+   "title": "Translate",
+   "num": 1,
+   "lines": [
+    "English board?",
+    "Hindi me padho"
+   ],
+   "chips": [
+    "Step 1"
+   ]
+  },
+  {
+   "at": 3,
+   "title": "Pehchano",
+   "num": 2,
+   "lines": [
+    "Paudha ya cheez,",
+    "naam pata karo"
+   ],
+   "chips": [
+    "Step 2"
+   ]
+  },
+  {
+   "at": 4,
+   "title": "Copy Text",
+   "num": 3,
+   "lines": [
+    "Kaagaz ka text",
+    "copy-paste karo"
+   ],
+   "chips": [
+    "Step 3"
+   ]
+  },
+  {
+   "at": 5,
+   "title": "Google Lens",
+   "num": null,
+   "lines": [
+    "Android + iPhone"
+   ],
+   "chips": [
+    "Free"
+   ]
+  }
+ ],
+ "keywords": [
+  "Google",
+  "Lens",
+  "Translate",
+  "Hindi",
+  "AI",
+  "Follow",
+  "guide"
+ ],
+ "cover": {
+  "lines": [
+   "Phone Camera",
+   "Ka AI Jaadu",
+   "Google Lens",
+   "Free"
+  ],
+  "chips": [
+   "Phone",
+   "Free"
+  ]
+ },
+ "id": "011"
+}
