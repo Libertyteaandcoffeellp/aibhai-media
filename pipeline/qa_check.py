@@ -10,8 +10,8 @@ Checks (pass 1, automatic):
   audio   : AAC present, not silent, not clipped, voice length matches script
   lipsync : mouth moves on speech, closes in pauses, enough shape changes
   text    : on-screen text Latin only (no Gujarati/Devanagari), fits the screen, cards valid
-  CTA     : "bio link" CTA + Follow line in script, no "comment karo" style CTA
-  caption : bio-link line, @aibhai_hindi, 3-10 hashtags, < 2200 chars, Latin/emoji only
+  CTA     : guide CTA (comment "AI" for DM via LinkPlease, or bio link) + Follow line in script
+  caption : comment-AI line + bio-link fallback, @aibhai_hindi, 3-10 hashtags, < 2200 chars, Latin/emoji only
   cover   : cover.jpg exists, 1080x1920
 Pass 2 (human-style): writes contact_sheet.jpg (12 frames) that must be looked at.
 Writes qa_report.json next to the reel.
@@ -23,7 +23,10 @@ from PIL import Image, ImageDraw, ImageFont
 HERE = os.path.dirname(os.path.abspath(__file__))
 FONT = os.path.join(HERE, "assets", "Poppins-Bold.ttf")
 NON_LATIN = re.compile(r"[ऀ-෿]")  # Devanagari, Bengali, Gurmukhi, Gujarati, Tamil, Telugu, Kannada, Malayalam...
-BAD_CTA = re.compile(r"comment\s*(karo|kare|kijiye|me|mein|below)|comment\s+['\"]?[A-Z]{2,}|dm\s+karo", re.I)
+# Comment-to-DM is live via LinkPlease (keywords AI, GUIDE) since 16 Nov 2026.
+COMMENT_CTA = re.compile(r"comment\s*karo[^.!?\n]{0,15}\bAI\b", re.I)
+# a comment CTA with any keyword other than AI/GUIDE would promise a DM that never comes
+BAD_CTA = re.compile(r"(?i:comment)\s+(?:(?i:karo)\s+)?['\"]?(?!AI\b|GUIDE\b)[A-Z]{2,}['\"]?(?:[\s,.!]|$)|(?i:dm\s+karo)")
 
 
 def sh(cmd):
@@ -140,20 +143,21 @@ def main(reel_dir, caption):
 
     # ---------- CTA ----------
     script = " ".join(spec["phrases"])
-    (ok if re.search(r"bio\s*link", script, re.I) else fail)("cta", "voice CTA 'bio link'")
+    (ok if (COMMENT_CTA.search(script) or re.search(r"bio\s*link", script, re.I)) else fail)("cta", "voice guide CTA (comment AI / bio link)")
     (ok if re.search(r"follow", script, re.I) else fail)("cta", "voice 'Follow' line")
-    (fail if BAD_CTA.search(script) else ok)("cta", "no comment/DM CTA in voice (automation not live yet)")
+    (fail if BAD_CTA.search(script) else ok)("cta", "no CTA keyword other than AI/GUIDE")
 
     # ---------- caption ----------
     if caption is not None:
         tags = re.findall(r"#\w+", caption)
-        (ok if re.search(r"bio link", caption, re.I) else fail)("caption", "bio-link line")
+        (ok if COMMENT_CTA.search(caption) or re.search(r"bio link", caption, re.I) else fail)("caption", "guide CTA line")
+        (ok if re.search(r"bio link", caption, re.I) else fail)("caption", "bio-link fallback line")
         (ok if "@aibhai_hindi" in caption else fail)("caption", "@aibhai_hindi mention")
         (ok if 3 <= len(tags) <= 10 else fail)("caption", f"{len(tags)} hashtags")
         (ok if len(tags) == len(set(t.lower() for t in tags)) else fail)("caption", "no duplicate hashtags")
         (ok if len(caption) < 2200 else fail)("caption", f"length {len(caption)}")
         (fail if NON_LATIN.search(caption) else ok)("caption", "Roman script only")
-        (fail if BAD_CTA.search(caption) else ok)("caption", "no comment/DM CTA")
+        (fail if BAD_CTA.search(caption) else ok)("caption", "no CTA keyword other than AI/GUIDE")
         (fail if re.search(r"\{|\}|TODO|lorem|xxx", caption, re.I) else ok)("caption", "no placeholders")
         first = caption.strip().split("\n")[0]
         (ok if 10 <= len(first) <= 125 else warn)("caption", f"first line {len(first)} chars")

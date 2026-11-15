@@ -1,0 +1,98 @@
+{
+ "phrases": [
+  "Resume bhejte ho, reply nahi aata?",
+  "Shayad resume har job ke liye same hai.",
+  "AI se use job ke hisaab se badlo.",
+  "Pehle, job description copy karo.",
+  "Phir ChatGPT me resume aur JD paste karo.",
+  "Bolo, JD ke keywords mere resume me daalo.",
+  "Number hata do, jhooth mat likhwana.",
+  "Ab resume job se match karega!",
+  "Comment karo AI, free guide DM me milegi!",
+  "Follow karo, kal ka hack miss mat karna!"
+ ],
+ "hook": [
+  "Resume Bhejte Ho,",
+  "Reply Nahi Aata?"
+ ],
+ "end": [
+  "Comment: AI",
+  "Free Guide DM Me"
+ ],
+ "hook_phrases": 2,
+ "end_phrases": 2,
+ "cards": [
+  {
+   "at": 3,
+   "title": "JD Copy",
+   "num": 1,
+   "lines": [
+    "Job description",
+    "copy karo"
+   ],
+   "chips": [
+    "Step 1"
+   ]
+  },
+  {
+   "at": 4,
+   "title": "ChatGPT",
+   "num": 2,
+   "lines": [
+    "Resume + JD",
+    "dono paste karo"
+   ],
+   "chips": [
+    "Step 2"
+   ]
+  },
+  {
+   "at": 5,
+   "title": "Keywords",
+   "num": 3,
+   "lines": [
+    "JD ke keywords",
+    "resume me daalo"
+   ],
+   "chips": [
+    "Step 3"
+   ]
+  },
+  {
+   "at": 6,
+   "title": "Dhyan",
+   "num": null,
+   "lines": [
+    "Number hatao,",
+    "jhooth nahi"
+   ],
+   "chips": [
+    "Tip"
+   ]
+  }
+ ],
+ "keywords": [
+  "Resume",
+  "ChatGPT",
+  "job",
+  "keywords",
+  "AI",
+  "Follow",
+  "guide",
+  "Comment",
+  "DM"
+ ],
+ "cover": {
+  "lines": [
+   "Resume",
+   "Reject?",
+   "AI Se Fix Karo",
+   "Free Trick"
+  ],
+  "chips": [
+   "Jobs",
+   "Free"
+  ]
+ },
+ "id": "010b"
+}
