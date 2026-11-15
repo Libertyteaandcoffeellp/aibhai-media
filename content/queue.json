@@ -1210,6 +1210,282 @@
     ]
    },
    "caption": "Ye photo asli hai ya AI ki? Forward karne se pehle check karo.\n\n1. Haath, ungliyan aur chehra dhyan se dekho\n2. Background ka text ajeeb ho to shak karo\n3. Photo ko Google pe search karke asli source dhoondo\n\nShak ho to forward mat karo.\nFree AI guide: bio link me 👆\nFollow @aibhai_hindi – roz 1 AI hack.\n\n#fakenews #aiimages #factcheck #cybersafety #aiinhindi #aibhai"
+  },
+  {
+   "id": "013",
+   "day": 5,
+   "slot": "13:00",
+   "type": "REEL",
+   "status": "queued",
+   "hook_style": "fear",
+   "phrases": [
+    "ChatGPT ki har baat sach mat maanna!",
+    "AI galat jawaab bhi confidence se de deta hai.",
+    "ChatGPT khud likhta hai, galti ho sakti hai.",
+    "Pehla, poocho, iska source kya hai?",
+    "Doosra, important baat Google pe khud check karo.",
+    "Teesra, paisa, dawai ya legal sawaal pe expert se poocho.",
+    "Free guide bio link me hai, zaroor lena!",
+    "Follow karo, kal ka hack miss mat karna!"
+   ],
+   "hook": [
+    "ChatGPT Ki Har Baat",
+    "Sach Mat Maanna!"
+   ],
+   "end": [
+    "Free Guide: Bio Link",
+    "Roz 1 AI Hack"
+   ],
+   "hook_phrases": 2,
+   "end_phrases": 2,
+   "cards": [
+    {
+     "at": 3,
+     "title": "Source",
+     "num": 1,
+     "lines": [
+      "Poocho: iska",
+      "source kya hai?"
+     ],
+     "chips": [
+      "Check"
+     ]
+    },
+    {
+     "at": 4,
+     "title": "Google",
+     "num": 2,
+     "lines": [
+      "Important baat",
+      "khud check karo"
+     ],
+     "chips": [
+      "Check"
+     ]
+    },
+    {
+     "at": 5,
+     "title": "Expert",
+     "num": 3,
+     "lines": [
+      "Paisa, dawai, legal?",
+      "Expert se poocho"
+     ],
+     "chips": [
+      "Safe"
+     ]
+    }
+   ],
+   "keywords": [
+    "ChatGPT",
+    "galat",
+    "source",
+    "Google",
+    "expert",
+    "Follow",
+    "guide"
+   ],
+   "cover": {
+    "lines": [
+     "ChatGPT Galat",
+     "Bhi Bolta Hai!",
+     "Kaise Pakdo",
+     "3 Tarike"
+    ],
+    "chips": [
+     "Alert",
+     "AI Tips"
+    ]
+   },
+   "caption": "ChatGPT ki har baat sach mat maanna! AI galat jawaab bhi confidence se de sakta hai.\n\nCheck karne ke 3 tareeke:\n1. Poocho: \"Iska source kya hai?\"\n2. Important baat Google pe khud check karo\n3. Paisa, dawai ya legal sawaal pe expert se poocho\n\nSave karo aur dosto ko bhejo.\nFree AI guide: bio link me 👆\nFollow @aibhai_hindi – roz 1 AI hack.\n\n#chatgpt #aitips #factcheck #aiinhindi #aibhai #learnai"
+  },
+  {
+   "id": "014",
+   "day": 5,
+   "slot": "16:00",
+   "type": "REEL",
+   "status": "queued",
+   "hook_style": "relatable",
+   "phrases": [
+    "English bolne me atak jaate ho?",
+    "ChatGPT ko apna English teacher bana lo.",
+    "Pehla, ChatGPT app me voice mode chalu karo.",
+    "Doosra, bolo, mujhse English me baat karo, galti sudhaarna.",
+    "Teesra, roz das minute interview ya office ki baat practice karo.",
+    "Koi judge nahi karega!",
+    "Free guide bio link me hai, zaroor lena!",
+    "Follow karo, kal ka hack miss mat karna!"
+   ],
+   "hook": [
+    "English Me",
+    "Atak Jaate Ho?"
+   ],
+   "end": [
+    "Free Guide: Bio Link",
+    "Roz 1 AI Hack"
+   ],
+   "hook_phrases": 2,
+   "end_phrases": 2,
+   "cards": [
+    {
+     "at": 2,
+     "title": "Voice Mode",
+     "num": 1,
+     "lines": [
+      "ChatGPT app me",
+      "voice mode on"
+     ],
+     "chips": [
+      "Step 1"
+     ]
+    },
+    {
+     "at": 3,
+     "title": "Teacher",
+     "num": 2,
+     "lines": [
+      "Bolo: meri galti",
+      "sudhaaro"
+     ],
+     "chips": [
+      "Step 2"
+     ]
+    },
+    {
+     "at": 4,
+     "title": "Practice",
+     "num": 3,
+     "lines": [
+      "Roz 10 minute",
+      "English baat"
+     ],
+     "chips": [
+      "Step 3"
+     ]
+    }
+   ],
+   "keywords": [
+    "English",
+    "ChatGPT",
+    "voice",
+    "teacher",
+    "practice",
+    "Follow",
+    "guide"
+   ],
+   "cover": {
+    "lines": [
+     "English Me",
+     "Atakte Ho?",
+     "AI Teacher Banao",
+     "Roz 10 Minute"
+    ],
+    "chips": [
+     "English",
+     "AI Tips"
+    ]
+   },
+   "caption": "English bolne me atak jaate ho? ChatGPT ko apna English speaking partner bana lo.\n\n1. ChatGPT app me voice mode chalu karo\n2. Bolo: \"Mujhse English me baat karo, galti sudhaarna\"\n3. Roz 10 minute interview ya office ki baat practice karo\n\nSave karo! Free AI guide: bio link me 👆\nFollow @aibhai_hindi – roz 1 AI hack.\n\n#englishspeaking #spokenenglish #chatgpt #aitips #aiinhindi #aibhai"
+  },
+  {
+   "id": "015",
+   "day": 5,
+   "slot": "20:00",
+   "type": "REEL",
+   "status": "queued",
+   "hook_style": "warning",
+   "phrases": [
+    "Ruko! Ye ChatGPT app asli hai?",
+    "AI ke naam pe nakli apps bhi hote hain.",
+    "Pehla, developer ka naam dekho, ChatGPT ka asli app OpenAI ka hai.",
+    "Doosra, contacts ya SMS ki faltu permission mat do.",
+    "Teesra, anjaan app me card ya UPI se paise mat bharo.",
+    "Shak ho to delete karo!",
+    "Free guide bio link me hai, zaroor lena!",
+    "Follow karo, kal ka hack miss mat karna!"
+   ],
+   "hook": [
+    "Ye ChatGPT App",
+    "Asli Hai?"
+   ],
+   "end": [
+    "Free Guide: Bio Link",
+    "Roz 1 AI Hack"
+   ],
+   "hook_phrases": 2,
+   "end_phrases": 2,
+   "cards": [
+    {
+     "at": 2,
+     "title": "Developer",
+     "num": 1,
+     "lines": [
+      "Asli ChatGPT app:",
+      "OpenAI"
+     ],
+     "chips": [
+      "Check"
+     ]
+    },
+    {
+     "at": 3,
+     "title": "Permission",
+     "num": 2,
+     "lines": [
+      "Contacts, SMS?",
+      "Mat do"
+     ],
+     "chips": [
+      "Check"
+     ]
+    },
+    {
+     "at": 4,
+     "title": "Paise",
+     "num": 3,
+     "lines": [
+      "Anjaan app me",
+      "card/UPI nahi"
+     ],
+     "chips": [
+      "Check"
+     ]
+    },
+    {
+     "at": 5,
+     "title": "Delete",
+     "num": null,
+     "lines": [
+      "Shak ho to",
+      "delete karo"
+     ],
+     "chips": [
+      "Safe"
+     ]
+    }
+   ],
+   "keywords": [
+    "ChatGPT",
+    "app",
+    "nakli",
+    "OpenAI",
+    "UPI",
+    "Follow",
+    "guide"
+   ],
+   "cover": {
+    "lines": [
+     "Nakli AI App",
+     "Se Bacho!",
+     "Asli Kaise Pehchano",
+     "3 Tarike"
+    ],
+    "chips": [
+     "Alert",
+     "Safety"
+    ]
+   },
+   "caption": "Ruko! Ye ChatGPT app asli hai ya nakli? AI ke naam pe fake apps se bacho.\n\n1. Developer ka naam dekho – ChatGPT ka asli app OpenAI ka hai\n2. Contacts ya SMS jaisi faltu permission mat do\n3. Anjaan app me card ya UPI se paise mat bharo\n\nShak ho to delete karo. Family ko bhi bhejo.\nFree AI guide: bio link me 👆\nFollow @aibhai_hindi – roz 1 AI hack.\n\n#cybersafety #fakeapps #scamalert #chatgpt #aiinhindi #aibhai"
   }
  ],
  "cta": "Free guide bio link me (no comment-to-DM). Guide: guide/AI-Bhai-10-AI-Tools.pdf | From day 3: last phrase 'Follow karo, kal ka hack miss mat karna!' (gives a reason to follow). Warning/fear hooks win (day 1-2): put one in the 20:00 slot daily."
