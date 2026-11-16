@@ -13,6 +13,10 @@
 | 2026-11-14 | 2 | 005 (16:02, REEL) | student | 50 | 3* |
 | 2026-11-14 | 2 | 006 (20:02, REEL) | warning | 89 | 3* |
 
+| 2026-11-15 | 3 | 007 (13:01, REEL) | speed | 115 | 3* |
+| 2026-11-15 | 3 | 009 (16:01, REEL) | relatable | 36 | 3* |
+| 2026-11-15 | 3 | 008 (20:01, REEL) | warning | 11 (partial) | 3* |
+
 Day 1 detail (read 14 Nov ~10:30 IST): 002 reach 130, 3 likes, 1 share, skip rate 77%; 003 reach 33, 1 like, skip 73.5%; 001 reach 114, 3 likes, 3 saves, skip 72.6%. All 3 day-1 stories published.
 
 ## Notes
@@ -27,3 +31,4 @@ Day 1 detail (read 14 Nov ~10:30 IST): 002 reach 130, 3 likes, 1 share, skip rat
 - 2026-11-16 01:47: Day 4 (16 Nov) made early for owner preview: 010 fear 13:00, 011 magic 16:00, 012 warning 20:00 + stories; QA PASS both passes; scheduled + verified. Day 4 run: slots filled, do analytics + scripts only. LinkPlease (dash.linkplease.co) comment-to-DM automation created by owner 16 Nov ~01:41 (keywords AI, GUIDE; guide link in DM) - NOT yet tested; keep bio-link CTA until owner confirms a test DM arrived.
 - 2026-11-16 01:56: Owner asked to use the LinkPlease CTA now. Switched CTA to 'Comment karo AI, free guide DM me milegi!' (end screen 'Comment: AI / Free Guide DM Me', caption keeps bio-link fallback). Re-voiced/rendered 010b/011b/012b, QA PASS both passes, today's 6 posts updated in Metricool. Queue 013-015 updated to the new CTA. LinkDM no longer needed.
 - 2026-11-16 02:10: Owner asked for 'follow first, then comment' CTA. Voice end now 'Pehle follow karo, phir comment karo AI! / Free guide turant DM me aa jayegi!', end screen 'Follow Karo / Comment: AI', caption 'Follow karo + comment karo "AI"...' + bio-link fallback. Re-voiced 010c/011c/012c, QA PASS both passes, today's 6 posts updated. Queue 013-015 updated.
+- 2026-11-16 10:40 (day 4 run, Metricool read): Day 2 final-ish 303 reel views (004 secret 132, 006 warning 114 – up from 89, 005 student 57). Day 3 = 162 so far, PARTIAL (008 only ~1h old at last sync): 007 speed (Gamma PPT) 115 views/reach 99 but skip 90.2% (worst hold – views came from reach, not hook); 009 relatable (Excel) 36, skip 81.3%; 008 warning 11. Best day-3 reel: 007. Overall best hooks still fear/secret/warning (skip 68-78%). Comments = 0 on all 9 reels so far (old bio-link CTA); follow+comment-AI CTA starts with today's reels, compare from tomorrow. Followers: Metricool still shows 3 (no follower sync since 14 Nov) – not reliable. Day 4 slots (010c/011c/012c + 3 stories) confirmed PENDING in Metricool, captions carry follow+comment AI lines. Script review of 013-015 OK. Added 016 secret (ask-me-3-questions prompt), 017 speed (Gemini YouTube summary), 018 warning (AI-written bank phishing SMS, helpline 1930 on card). Queue: 6 queued (013-018). n8n connector did not connect in this run (no voiceover needed today).
