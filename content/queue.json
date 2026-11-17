@@ -1222,7 +1222,7 @@
    "day": 5,
    "slot": "13:00",
    "type": "REEL",
-   "status": "queued",
+   "status": "scheduled",
    "hook_style": "fear",
    "phrases": [
     "ChatGPT ki har baat sach mat maanna!",
@@ -1312,7 +1312,7 @@
    "day": 5,
    "slot": "16:00",
    "type": "REEL",
-   "status": "queued",
+   "status": "scheduled",
    "hook_style": "relatable",
    "phrases": [
     "English bolne me atak jaate ho?",
@@ -1402,7 +1402,7 @@
    "day": 5,
    "slot": "20:00",
    "type": "REEL",
-   "status": "queued",
+   "status": "scheduled",
    "hook_style": "warning",
    "phrases": [
     "Ruko! Ye ChatGPT app asli hai?",
@@ -1782,6 +1782,290 @@
     ]
    },
    "caption": "Perfect English wala bank message bhi fake ho sakta hai! Scammer ab AI se perfect message likhte hain.\n\n1. Link pe click mat karo – bank ka app khud kholo\n2. Account band hone ka darr = scam ka sign\n3. OTP ya PIN kabhi kisi ko mat do\n\nFraud ho to turant cyber helpline 1930 pe call karo. Family group me bhejo.\nFollow karo + comment karo \"AI\" – free guide turant DM me 📩\n(DM na aaye to bio link me bhi hai 👆)\nFollow @aibhai_hindi – roz 1 AI hack.\n\n#scamalert #cybersafety #onlinefraud #banking #aiinhindi #aibhai"
+  },
+  {
+   "id": "019",
+   "day": 7,
+   "slot": "13:00",
+   "type": "REEL",
+   "status": "queued",
+   "hook_style": "fear",
+   "phrases": [
+    "Interview me dimaag blank hua, to job gayi!",
+    "Isliye pehle ChatGPT se mock interview do.",
+    "Pehla, likho, mera mock interview lo, ek ek sawaal poocho.",
+    "Doosra, apni job aur experience ki detail do.",
+    "Teesra, har jawaab ke baad bolo, feedback do.",
+    "Asli interview me darr kam lagega!",
+    "Pehle follow karo, phir comment karo AI!",
+    "Free guide turant DM me aa jayegi!"
+   ],
+   "hook": [
+    "Interview Me",
+    "Dimaag Blank?"
+   ],
+   "end": [
+    "Follow Karo",
+    "Comment: AI"
+   ],
+   "hook_phrases": 2,
+   "end_phrases": 2,
+   "cards": [
+    {
+     "at": 2,
+     "title": "Interview",
+     "num": 1,
+     "lines": [
+      "Bolo: mera mock",
+      "interview lo"
+     ],
+     "chips": [
+      "Step 1"
+     ]
+    },
+    {
+     "at": 3,
+     "title": "Detail",
+     "num": 2,
+     "lines": [
+      "Job aur experience",
+      "batao"
+     ],
+     "chips": [
+      "Step 2"
+     ]
+    },
+    {
+     "at": 4,
+     "title": "Feedback",
+     "num": 3,
+     "lines": [
+      "Har jawaab ke baad",
+      "feedback lo"
+     ],
+     "chips": [
+      "Step 3"
+     ]
+    }
+   ],
+   "keywords": [
+    "Interview",
+    "ChatGPT",
+    "mock",
+    "job",
+    "feedback",
+    "Follow",
+    "guide",
+    "Comment",
+    "DM"
+   ],
+   "cover": {
+    "lines": [
+     "Interview Ka",
+     "Darr Khatam!",
+     "ChatGPT Se",
+     "Practice"
+    ],
+    "chips": [
+     "Career",
+     "AI Tips"
+    ]
+   },
+   "caption": "Interview me dimaag blank ho jaata hai? Pehle ChatGPT se mock interview do.\n\n1. Likho: \"Mera mock interview lo, ek ek sawaal poocho\"\n2. Apni job aur experience ki detail do\n3. Har jawaab ke baad bolo: \"Feedback do\"\n\nAsli interview me darr kam lagega. Save karo!\nFollow karo + comment karo \"AI\" – free guide turant DM me 📩\n(DM na aaye to bio link me bhi hai 👆)\nFollow @aibhai_hindi – roz 1 AI hack.\n\n#interviewtips #jobsearch #chatgpt #careertips #aiinhindi #aibhai"
+  },
+  {
+   "id": "020",
+   "day": 7,
+   "slot": "16:00",
+   "type": "REEL",
+   "status": "queued",
+   "hook_style": "secret",
+   "phrases": [
+    "Secret! ChatGPT photo dekh ke bhi samjhata hai!",
+    "Bas photo lo aur sawaal poocho.",
+    "Pehla, ChatGPT app me plus button dabao, camera chuno.",
+    "Doosra, maths ka sawaal, English notice ya form ki photo lo.",
+    "Teesra, bolo, isse step by step Hindi me samjhao.",
+    "Homework ho ya form, sab aasaan!",
+    "Pehle follow karo, phir comment karo AI!",
+    "Free guide turant DM me aa jayegi!"
+   ],
+   "hook": [
+    "Secret ChatGPT",
+    "Photo Trick!"
+   ],
+   "end": [
+    "Follow Karo",
+    "Comment: AI"
+   ],
+   "hook_phrases": 2,
+   "end_phrases": 2,
+   "cards": [
+    {
+     "at": 2,
+     "title": "Camera",
+     "num": 1,
+     "lines": [
+      "Plus button,",
+      "camera chuno"
+     ],
+     "chips": [
+      "Step 1"
+     ]
+    },
+    {
+     "at": 3,
+     "title": "Photo",
+     "num": 2,
+     "lines": [
+      "Sawaal, notice",
+      "ya form"
+     ],
+     "chips": [
+      "Step 2"
+     ]
+    },
+    {
+     "at": 4,
+     "title": "Samjhao",
+     "num": 3,
+     "lines": [
+      "Step by step",
+      "Hindi me"
+     ],
+     "chips": [
+      "Step 3"
+     ]
+    }
+   ],
+   "keywords": [
+    "Secret",
+    "ChatGPT",
+    "photo",
+    "camera",
+    "Hindi",
+    "Follow",
+    "guide",
+    "Comment",
+    "DM"
+   ],
+   "cover": {
+    "lines": [
+     "Secret ChatGPT",
+     "Photo Trick!",
+     "Photo Dikhao",
+     "Samjho"
+    ],
+    "chips": [
+     "Secret",
+     "AI Tips"
+    ]
+   },
+   "caption": "Secret! ChatGPT photo dekh ke bhi samjhata hai.\n\n1. ChatGPT app me plus (+) button dabao, camera chuno\n2. Maths ka sawaal, English notice ya form ki photo lo\n3. Bolo: \"Isse step by step Hindi me samjhao\"\n\nHomework ho ya form – sab aasaan. Save karo!\nFollow karo + comment karo \"AI\" – free guide turant DM me 📩\n(DM na aaye to bio link me bhi hai 👆)\nFollow @aibhai_hindi – roz 1 AI hack.\n\n#chatgpt #chatgpttips #studenthacks #aitips #aiinhindi #aibhai"
+  },
+  {
+   "id": "021",
+   "day": 7,
+   "slot": "20:00",
+   "type": "REEL",
+   "status": "queued",
+   "hook_style": "warning",
+   "phrases": [
+    "AI se roz hazaaron kamao? Ye ad scam ho sakta hai!",
+    "AI ke naam pe kamai wale fake offers bhi aate hain.",
+    "Pehla, pakki kamai ka wada matlab red flag.",
+    "Doosra, joining fee ya task ke naam pe paise mat bhejo.",
+    "Teesra, kisi group me OTP ya UPI PIN mat do.",
+    "Fraud ho to 1930 pe call karo!",
+    "Pehle follow karo, phir comment karo AI!",
+    "Free guide turant DM me aa jayegi!"
+   ],
+   "hook": [
+    "AI Se Roz Kamai?",
+    "Scam Ho Sakta Hai!"
+   ],
+   "end": [
+    "Follow Karo",
+    "Comment: AI"
+   ],
+   "hook_phrases": 2,
+   "end_phrases": 2,
+   "cards": [
+    {
+     "at": 2,
+     "title": "Red Flag",
+     "num": 1,
+     "lines": [
+      "Pakki kamai",
+      "ka wada?"
+     ],
+     "chips": [
+      "Check"
+     ]
+    },
+    {
+     "at": 3,
+     "title": "Fee",
+     "num": 2,
+     "lines": [
+      "Joining fee?",
+      "Paise mat bhejo"
+     ],
+     "chips": [
+      "Check"
+     ]
+    },
+    {
+     "at": 4,
+     "title": "OTP",
+     "num": 3,
+     "lines": [
+      "OTP ya UPI PIN",
+      "kabhi mat do"
+     ],
+     "chips": [
+      "Check"
+     ]
+    },
+    {
+     "at": 5,
+     "title": "Helpline",
+     "num": null,
+     "lines": [
+      "Fraud ho to",
+      "call 1930"
+     ],
+     "chips": [
+      "Safe"
+     ]
+    }
+   ],
+   "keywords": [
+    "AI",
+    "scam",
+    "fake",
+    "fee",
+    "OTP",
+    "UPI",
+    "1930",
+    "Follow",
+    "guide",
+    "Comment",
+    "DM"
+   ],
+   "cover": {
+    "lines": [
+     "AI Kamai Scam",
+     "Se Bacho!",
+     "Kaise Pehchano",
+     "3 Tarike"
+    ],
+    "chips": [
+     "Alert",
+     "Safety"
+    ]
+   },
+   "caption": "\"AI se roz hazaaron kamao\" – aisa ad scam ho sakta hai!\n\n1. Pakki kamai ka wada = red flag\n2. Joining fee ya task ke naam pe paise mat bhejo\n3. Kisi bhi group me OTP ya UPI PIN mat do\n\nFraud ho to turant cyber helpline 1930 pe call karo. Family ko bhi bhejo.\nFollow karo + comment karo \"AI\" – free guide turant DM me 📩\n(DM na aaye to bio link me bhi hai 👆)\nFollow @aibhai_hindi – roz 1 AI hack.\n\n#scamalert #cybersafety #onlinefraud #jobscam #aiinhindi #aibhai"
   }
  ],
  "cta": "From 16 Nov 2026 (owner's choice): ask to FOLLOW first, then comment AI. Comment-to-DM is LIVE via LinkPlease (keywords AI, GUIDE). Voice last two phrases: 'Pehle follow karo, phir comment karo AI!' then 'Free guide turant DM me aa jayegi!'. End screen [\"Follow Karo\", \"Comment: AI\"] (keep lines this short - sparkles sit near the right edge). Caption lines: 'Follow karo + comment karo \"AI\" – free guide turant DM me 📩' and '(DM na aaye to bio link me bhi hai 👆)'. Warning/fear reel in the 20:00 slot daily."
