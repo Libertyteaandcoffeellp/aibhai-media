@@ -1,0 +1,96 @@
+{
+ "phrases": [
+  "Ruko! Ye ChatGPT app asli hai?",
+  "AI ke naam pe nakli apps bhi hote hain.",
+  "Pehla, developer ka naam dekho, ChatGPT ka asli app OpenAI ka hai.",
+  "Doosra, contacts ya SMS ki faltu permission mat do.",
+  "Teesra, anjaan app me card ya UPI se paise mat bharo.",
+  "Shak ho to delete karo!",
+  "Pehle follow karo, phir comment karo AI!",
+  "Free guide turant DM me aa jayegi!"
+ ],
+ "hook": [
+  "Ye ChatGPT App",
+  "Asli Hai?"
+ ],
+ "end": [
+  "Follow Karo",
+  "Comment: AI"
+ ],
+ "hook_phrases": 2,
+ "end_phrases": 2,
+ "cards": [
+  {
+   "at": 2,
+   "title": "Developer",
+   "num": 1,
+   "lines": [
+    "Asli ChatGPT app:",
+    "OpenAI"
+   ],
+   "chips": [
+    "Check"
+   ]
+  },
+  {
+   "at": 3,
+   "title": "Permission",
+   "num": 2,
+   "lines": [
+    "Contacts, SMS?",
+    "Mat do"
+   ],
+   "chips": [
+    "Check"
+   ]
+  },
+  {
+   "at": 4,
+   "title": "Paise",
+   "num": 3,
+   "lines": [
+    "Anjaan app me",
+    "card/UPI nahi"
+   ],
+   "chips": [
+    "Check"
+   ]
+  },
+  {
+   "at": 5,
+   "title": "Delete",
+   "num": null,
+   "lines": [
+    "Shak ho to",
+    "delete karo"
+   ],
+   "chips": [
+    "Safe"
+   ]
+  }
+ ],
+ "keywords": [
+  "ChatGPT",
+  "app",
+  "nakli",
+  "OpenAI",
+  "UPI",
+  "Follow",
+  "guide",
+  "Comment",
+  "DM"
+ ],
+ "cover": {
+  "lines": [
+   "Nakli AI App",
+   "Se Bacho!",
+   "Asli Kaise Pehchano",
+   "3 Tarike"
+  ],
+  "chips": [
+   "Alert",
+   "Safety"
+  ]
+ },
+ "id": "015"
+}

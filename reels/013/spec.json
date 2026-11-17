@@ -1,0 +1,84 @@
+{
+ "phrases": [
+  "ChatGPT ki har baat sach mat maanna!",
+  "AI galat jawaab bhi confidence se de deta hai.",
+  "ChatGPT khud neeche likhta hai, galti ho sakti hai.",
+  "Pehla, poocho, iska source kya hai?",
+  "Doosra, important baat Google pe khud check karo.",
+  "Teesra, paisa, dawai ya legal sawaal pe expert se poocho.",
+  "Pehle follow karo, phir comment karo AI!",
+  "Free guide turant DM me aa jayegi!"
+ ],
+ "hook": [
+  "ChatGPT Ki Har Baat",
+  "Sach Mat Maanna!"
+ ],
+ "end": [
+  "Follow Karo",
+  "Comment: AI"
+ ],
+ "hook_phrases": 2,
+ "end_phrases": 2,
+ "cards": [
+  {
+   "at": 3,
+   "title": "Source",
+   "num": 1,
+   "lines": [
+    "Poocho: iska",
+    "source kya hai?"
+   ],
+   "chips": [
+    "Check"
+   ]
+  },
+  {
+   "at": 4,
+   "title": "Google",
+   "num": 2,
+   "lines": [
+    "Important baat",
+    "khud check karo"
+   ],
+   "chips": [
+    "Check"
+   ]
+  },
+  {
+   "at": 5,
+   "title": "Expert",
+   "num": 3,
+   "lines": [
+    "Paisa, dawai, legal?",
+    "Expert se poocho"
+   ],
+   "chips": [
+    "Safe"
+   ]
+  }
+ ],
+ "keywords": [
+  "ChatGPT",
+  "galat",
+  "source",
+  "Google",
+  "expert",
+  "Follow",
+  "guide",
+  "Comment",
+  "DM"
+ ],
+ "cover": {
+  "lines": [
+   "ChatGPT Galat",
+   "Bhi Bolta Hai!",
+   "Kaise Pakdo",
+   "3 Tarike"
+  ],
+  "chips": [
+   "Alert",
+   "AI Tips"
+  ]
+ },
+ "id": "013"
+}

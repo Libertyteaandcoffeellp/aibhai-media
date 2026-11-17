@@ -1,0 +1,84 @@
+{
+ "phrases": [
+  "English bolne me atak jaate ho?",
+  "ChatGPT ko apna English teacher bana lo.",
+  "Pehla, ChatGPT app me voice mode chalu karo.",
+  "Doosra, bolo, mujhse English me baat karo, galti sudhaarna.",
+  "Teesra, roz das minute interview ya office ki baat practice karo.",
+  "Koi judge nahi karega!",
+  "Pehle follow karo, phir comment karo AI!",
+  "Free guide turant DM me aa jayegi!"
+ ],
+ "hook": [
+  "English Me",
+  "Atak Jaate Ho?"
+ ],
+ "end": [
+  "Follow Karo",
+  "Comment: AI"
+ ],
+ "hook_phrases": 2,
+ "end_phrases": 2,
+ "cards": [
+  {
+   "at": 2,
+   "title": "Voice Mode",
+   "num": 1,
+   "lines": [
+    "ChatGPT app me",
+    "voice mode on"
+   ],
+   "chips": [
+    "Step 1"
+   ]
+  },
+  {
+   "at": 3,
+   "title": "Teacher",
+   "num": 2,
+   "lines": [
+    "Bolo: meri galti",
+    "sudhaaro"
+   ],
+   "chips": [
+    "Step 2"
+   ]
+  },
+  {
+   "at": 4,
+   "title": "Practice",
+   "num": 3,
+   "lines": [
+    "Roz 10 minute",
+    "English baat"
+   ],
+   "chips": [
+    "Step 3"
+   ]
+  }
+ ],
+ "keywords": [
+  "English",
+  "ChatGPT",
+  "voice",
+  "teacher",
+  "practice",
+  "Follow",
+  "guide",
+  "Comment",
+  "DM"
+ ],
+ "cover": {
+  "lines": [
+   "English Me",
+   "Atakte Ho?",
+   "AI Teacher Banao",
+   "Roz 10 Minute"
+  ],
+  "chips": [
+   "English",
+   "AI Tips"
+  ]
+ },
+ "id": "014"
+}
