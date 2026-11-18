@@ -1504,7 +1504,7 @@
    "day": 6,
    "slot": "13:00",
    "type": "REEL",
-   "status": "queued",
+   "status": "scheduled",
    "hook_style": "secret",
    "phrases": [
     "Ye secret ChatGPT prompt koi nahi batata!",
@@ -1594,7 +1594,7 @@
    "day": 6,
    "slot": "16:00",
    "type": "REEL",
-   "status": "queued",
+   "status": "scheduled",
    "hook_style": "speed",
    "phrases": [
     "Ek ghante ka video, do minute me samjho!",
@@ -1684,7 +1684,7 @@
    "day": 6,
    "slot": "20:00",
    "type": "REEL",
-   "status": "queued",
+   "status": "scheduled",
    "hook_style": "warning",
    "phrases": [
     "Perfect English wala bank message bhi fake ho sakta hai!",
@@ -1692,7 +1692,7 @@
     "Pehla, link pe click mat karo, bank ka app khud kholo.",
     "Doosra, account band hone ka darr scam ka sign hai.",
     "Teesra, OTP ya PIN kisi ko mat do.",
-    "Fraud ho to cyber helpline pe call karo!",
+    "Fraud ho to 1930 pe call karo!",
     "Pehle follow karo, phir comment karo AI!",
     "Free guide turant DM me aa jayegi!"
    ],
@@ -1763,7 +1763,7 @@
     "scam",
     "OTP",
     "PIN",
-    "helpline",
+    "1930",
     "Follow",
     "guide",
     "Comment",
@@ -1781,7 +1781,8 @@
      "Safety"
     ]
    },
-   "caption": "Perfect English wala bank message bhi fake ho sakta hai! Scammer ab AI se perfect message likhte hain.\n\n1. Link pe click mat karo – bank ka app khud kholo\n2. Account band hone ka darr = scam ka sign\n3. OTP ya PIN kabhi kisi ko mat do\n\nFraud ho to turant cyber helpline 1930 pe call karo. Family group me bhejo.\nFollow karo + comment karo \"AI\" – free guide turant DM me 📩\n(DM na aaye to bio link me bhi hai 👆)\nFollow @aibhai_hindi – roz 1 AI hack.\n\n#scamalert #cybersafety #onlinefraud #banking #aiinhindi #aibhai"
+   "caption": "Perfect English wala bank message bhi fake ho sakta hai! Scammer ab AI se perfect message likhte hain.\n\n1. Link pe click mat karo – bank ka app khud kholo\n2. Account band hone ka darr = scam ka sign\n3. OTP ya PIN kabhi kisi ko mat do\n\nFraud ho to turant cyber helpline 1930 pe call karo. Family group me bhejo.\nFollow karo + comment karo \"AI\" – free guide turant DM me 📩\n(DM na aaye to bio link me bhi hai 👆)\nFollow @aibhai_hindi – roz 1 AI hack.\n\n#scamalert #cybersafety #onlinefraud #banking #aiinhindi #aibhai",
+   "media_id": "018b"
   },
   {
    "id": "019",
@@ -2066,6 +2067,290 @@
     ]
    },
    "caption": "\"AI se roz hazaaron kamao\" – aisa ad scam ho sakta hai!\n\n1. Pakki kamai ka wada = red flag\n2. Joining fee ya task ke naam pe paise mat bhejo\n3. Kisi bhi group me OTP ya UPI PIN mat do\n\nFraud ho to turant cyber helpline 1930 pe call karo. Family ko bhi bhejo.\nFollow karo + comment karo \"AI\" – free guide turant DM me 📩\n(DM na aaye to bio link me bhi hai 👆)\nFollow @aibhai_hindi – roz 1 AI hack.\n\n#scamalert #cybersafety #onlinefraud #jobscam #aiinhindi #aibhai"
+  },
+  {
+   "id": "022",
+   "day": 8,
+   "slot": "13:00",
+   "type": "REEL",
+   "status": "queued",
+   "hook_style": "fear",
+   "phrases": [
+    "Ek galat email, aur boss ka mood kharab!",
+    "Isliye bhejne se pehle ChatGPT se check karao.",
+    "Pehla, apna email ChatGPT me paste karo.",
+    "Doosra, bolo, isse polite aur professional banao.",
+    "Teesra, naam, date aur number khud check karo.",
+    "Ab email bhejo, full confidence se!",
+    "Pehle follow karo, phir comment karo AI!",
+    "Free guide turant DM me aa jayegi!"
+   ],
+   "hook": [
+    "Ek Galat Email,",
+    "Boss Naraz!"
+   ],
+   "end": [
+    "Follow Karo",
+    "Comment: AI"
+   ],
+   "hook_phrases": 2,
+   "end_phrases": 2,
+   "cards": [
+    {
+     "at": 2,
+     "title": "Paste",
+     "num": 1,
+     "lines": [
+      "Email ChatGPT",
+      "me paste karo"
+     ],
+     "chips": [
+      "Step 1"
+     ]
+    },
+    {
+     "at": 3,
+     "title": "Polite",
+     "num": 2,
+     "lines": [
+      "Bolo: polite aur",
+      "professional banao"
+     ],
+     "chips": [
+      "Step 2"
+     ]
+    },
+    {
+     "at": 4,
+     "title": "Check",
+     "num": 3,
+     "lines": [
+      "Naam, date, number",
+      "khud check"
+     ],
+     "chips": [
+      "Step 3"
+     ]
+    }
+   ],
+   "keywords": [
+    "email",
+    "boss",
+    "ChatGPT",
+    "polite",
+    "professional",
+    "Follow",
+    "guide",
+    "Comment",
+    "DM"
+   ],
+   "cover": {
+    "lines": [
+     "Email Ki Galti",
+     "Ab Nahi!",
+     "ChatGPT Se",
+     "Check Karo"
+    ],
+    "chips": [
+     "Office",
+     "AI Tips"
+    ]
+   },
+   "caption": "Ek galat email aur boss ka mood kharab? Bhejne se pehle ChatGPT se check karao.\n\n1. Apna email ChatGPT me paste karo\n2. Bolo: \"Isse polite aur professional banao\"\n3. Naam, date aur number khud check karo\n\nCompany ka secret data paste mat karna. Save karo!\nFollow karo + comment karo \"AI\" – free guide turant DM me 📩\n(DM na aaye to bio link me bhi hai 👆)\nFollow @aibhai_hindi – roz 1 AI hack.\n\n#officetips #email #chatgpt #careertips #aiinhindi #aibhai"
+  },
+  {
+   "id": "023",
+   "day": 8,
+   "slot": "16:00",
+   "type": "REEL",
+   "status": "queued",
+   "hook_style": "secret",
+   "phrases": [
+    "Ye secret line se mushkil topic bhi aasaan!",
+    "ChatGPT ya Gemini, dono pe kaam karti hai.",
+    "Pehla, apna mushkil topic likho.",
+    "Doosra, end me jodo, mujhe das saal ke bachche ki tarah samjhao.",
+    "Teesra, phir bolo, ek real life example do.",
+    "Padhai ho ya naya kaam, sab samajh aayega!",
+    "Pehle follow karo, phir comment karo AI!",
+    "Free guide turant DM me aa jayegi!"
+   ],
+   "hook": [
+    "Secret Line,",
+    "Topic Aasaan!"
+   ],
+   "end": [
+    "Follow Karo",
+    "Comment: AI"
+   ],
+   "hook_phrases": 2,
+   "end_phrases": 2,
+   "cards": [
+    {
+     "at": 2,
+     "title": "Topic",
+     "num": 1,
+     "lines": [
+      "Mushkil topic",
+      "likho"
+     ],
+     "chips": [
+      "Step 1"
+     ]
+    },
+    {
+     "at": 3,
+     "title": "Secret Line",
+     "num": 2,
+     "lines": [
+      "10 saal ke bachche",
+      "ki tarah samjhao"
+     ],
+     "chips": [
+      "Step 2"
+     ]
+    },
+    {
+     "at": 4,
+     "title": "Example",
+     "num": 3,
+     "lines": [
+      "Real life",
+      "example do"
+     ],
+     "chips": [
+      "Step 3"
+     ]
+    }
+   ],
+   "keywords": [
+    "secret",
+    "ChatGPT",
+    "Gemini",
+    "topic",
+    "example",
+    "Follow",
+    "guide",
+    "Comment",
+    "DM"
+   ],
+   "cover": {
+    "lines": [
+     "Secret AI Line!",
+     "Mushkil Topic",
+     "Bhi Aasaan",
+     "3 Steps"
+    ],
+    "chips": [
+     "Secret",
+     "AI Tips"
+    ]
+   },
+   "caption": "Ye secret line se mushkil topic bhi aasaan! ChatGPT ya Gemini – dono pe kaam karti hai.\n\n1. Apna mushkil topic likho\n2. End me jodo: \"Mujhe 10 saal ke bachche ki tarah samjhao\"\n3. Phir bolo: \"Ek real life example do\"\n\nPadhai ho ya naya kaam – sab samajh aayega. Save karo!\nFollow karo + comment karo \"AI\" – free guide turant DM me 📩\n(DM na aaye to bio link me bhi hai 👆)\nFollow @aibhai_hindi – roz 1 AI hack.\n\n#chatgpt #gemini #studytips #aitips #aiinhindi #aibhai"
+  },
+  {
+   "id": "024",
+   "day": 8,
+   "slot": "20:00",
+   "type": "REEL",
+   "status": "queued",
+   "hook_style": "warning",
+   "phrases": [
+    "Ruko! Customer care number AI se mat lo!",
+    "AI galat number bhi de sakta hai.",
+    "Pehla, number sirf official app ya website se lo.",
+    "Doosra, screen share wala app download karne ko bole, to call kaato.",
+    "Teesra, refund ke liye UPI PIN kabhi nahi lagta.",
+    "Fraud ho to 1930 pe call karo!",
+    "Pehle follow karo, phir comment karo AI!",
+    "Free guide turant DM me aa jayegi!"
+   ],
+   "hook": [
+    "Customer Care",
+    "Number Fake?"
+   ],
+   "end": [
+    "Follow Karo",
+    "Comment: AI"
+   ],
+   "hook_phrases": 2,
+   "end_phrases": 2,
+   "cards": [
+    {
+     "at": 2,
+     "title": "Official",
+     "num": 1,
+     "lines": [
+      "Number sirf",
+      "official app se"
+     ],
+     "chips": [
+      "Check"
+     ]
+    },
+    {
+     "at": 3,
+     "title": "Screen Share",
+     "num": 2,
+     "lines": [
+      "App download bole?",
+      "Call kaato"
+     ],
+     "chips": [
+      "Check"
+     ]
+    },
+    {
+     "at": 4,
+     "title": "UPI PIN",
+     "num": 3,
+     "lines": [
+      "Refund me PIN",
+      "kabhi nahi lagta"
+     ],
+     "chips": [
+      "Check"
+     ]
+    },
+    {
+     "at": 5,
+     "title": "Helpline",
+     "num": null,
+     "lines": [
+      "Fraud ho to",
+      "call 1930"
+     ],
+     "chips": [
+      "Safe"
+     ]
+    }
+   ],
+   "keywords": [
+    "Customer care",
+    "AI",
+    "fake",
+    "scam",
+    "UPI",
+    "PIN",
+    "1930",
+    "Follow",
+    "guide",
+    "Comment",
+    "DM"
+   ],
+   "cover": {
+    "lines": [
+     "Fake Customer",
+     "Care Se Bacho!",
+     "Kaise Pehchano",
+     "3 Tarike"
+    ],
+    "chips": [
+     "Alert",
+     "Safety"
+    ]
+   },
+   "caption": "Ruko! Customer care ka number AI ya search se mat lo – fake number ho sakta hai.\n\n1. Number sirf official app ya website se lo\n2. Screen share wala app download karne ko bole – call kaato\n3. Refund ke liye UPI PIN kabhi nahi lagta\n\nFraud ho to turant cyber helpline 1930 pe call karo. Family ko bhi bhejo.\nFollow karo + comment karo \"AI\" – free guide turant DM me 📩\n(DM na aaye to bio link me bhi hai 👆)\nFollow @aibhai_hindi – roz 1 AI hack.\n\n#scamalert #cybersafety #onlinefraud #customercare #aiinhindi #aibhai"
   }
  ],
  "cta": "From 16 Nov 2026 (owner's choice): ask to FOLLOW first, then comment AI. Comment-to-DM is LIVE via LinkPlease (keywords AI, GUIDE). Voice last two phrases: 'Pehle follow karo, phir comment karo AI!' then 'Free guide turant DM me aa jayegi!'. End screen [\"Follow Karo\", \"Comment: AI\"] (keep lines this short - sparkles sit near the right edge). Caption lines: 'Follow karo + comment karo \"AI\" – free guide turant DM me 📩' and '(DM na aaye to bio link me bhi hai 👆)'. Warning/fear reel in the 20:00 slot daily."
