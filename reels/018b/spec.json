@@ -1,0 +1,98 @@
+{
+ "phrases": [
+  "Perfect English wala bank message bhi fake ho sakta hai!",
+  "Scammer ab AI se perfect message likhte hain.",
+  "Pehla, link pe click mat karo, bank ka app khud kholo.",
+  "Doosra, account band hone ka darr scam ka sign hai.",
+  "Teesra, OTP ya PIN kisi ko mat do.",
+  "Fraud ho to 1930 pe call karo!",
+  "Pehle follow karo, phir comment karo AI!",
+  "Free guide turant DM me aa jayegi!"
+ ],
+ "hook": [
+  "Bank Ka Message",
+  "Fake Ho Sakta Hai!"
+ ],
+ "end": [
+  "Follow Karo",
+  "Comment: AI"
+ ],
+ "hook_phrases": 2,
+ "end_phrases": 2,
+ "cards": [
+  {
+   "at": 2,
+   "title": "Link",
+   "num": 1,
+   "lines": [
+    "Link pe click nahi,",
+    "app khud kholo"
+   ],
+   "chips": [
+    "Check"
+   ]
+  },
+  {
+   "at": 3,
+   "title": "Darr",
+   "num": 2,
+   "lines": [
+    "Account band hoga?",
+    "Scam ka sign"
+   ],
+   "chips": [
+    "Check"
+   ]
+  },
+  {
+   "at": 4,
+   "title": "OTP",
+   "num": 3,
+   "lines": [
+    "OTP ya PIN",
+    "kabhi mat do"
+   ],
+   "chips": [
+    "Check"
+   ]
+  },
+  {
+   "at": 5,
+   "title": "Helpline",
+   "num": null,
+   "lines": [
+    "Fraud ho to",
+    "call 1930"
+   ],
+   "chips": [
+    "Safe"
+   ]
+  }
+ ],
+ "keywords": [
+  "fake",
+  "AI",
+  "link",
+  "scam",
+  "OTP",
+  "PIN",
+  "1930",
+  "Follow",
+  "guide",
+  "Comment",
+  "DM"
+ ],
+ "cover": {
+  "lines": [
+   "AI Wale Scam",
+   "Message!",
+   "Kaise Pehchano",
+   "3 Tarike"
+  ],
+  "chips": [
+   "Alert",
+   "Safety"
+  ]
+ },
+ "id": "018b"
+}
