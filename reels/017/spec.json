@@ -1,0 +1,84 @@
+{
+ "phrases": [
+  "Ek ghante ka video, do minute me samjho!",
+  "Gemini lambi YouTube video ka summary bana deta hai.",
+  "Pehla, YouTube video ka link copy karo.",
+  "Doosra, Gemini me paste karke bolo, iska summary do.",
+  "Teesra, poocho, iske main points Hindi me batao.",
+  "Padhai aur kaam, dono me time bachega!",
+  "Pehle follow karo, phir comment karo AI!",
+  "Free guide turant DM me aa jayegi!"
+ ],
+ "hook": [
+  "1 Ghante Ka Video",
+  "2 Minute Me!"
+ ],
+ "end": [
+  "Follow Karo",
+  "Comment: AI"
+ ],
+ "hook_phrases": 2,
+ "end_phrases": 2,
+ "cards": [
+  {
+   "at": 2,
+   "title": "Link Copy",
+   "num": 1,
+   "lines": [
+    "YouTube video",
+    "ka link copy"
+   ],
+   "chips": [
+    "Step 1"
+   ]
+  },
+  {
+   "at": 3,
+   "title": "Gemini",
+   "num": 2,
+   "lines": [
+    "Paste karo, bolo:",
+    "summary do"
+   ],
+   "chips": [
+    "Step 2"
+   ]
+  },
+  {
+   "at": 4,
+   "title": "Hindi",
+   "num": 3,
+   "lines": [
+    "Main points",
+    "Hindi me"
+   ],
+   "chips": [
+    "Step 3"
+   ]
+  }
+ ],
+ "keywords": [
+  "video",
+  "Gemini",
+  "YouTube",
+  "summary",
+  "Hindi",
+  "Follow",
+  "guide",
+  "Comment",
+  "DM"
+ ],
+ "cover": {
+  "lines": [
+   "1 Ghante Ka Video",
+   "2 Minute Me!",
+   "Gemini Summary",
+   "3 Steps"
+  ],
+  "chips": [
+   "Speed",
+   "AI Tips"
+  ]
+ },
+ "id": "017"
+}

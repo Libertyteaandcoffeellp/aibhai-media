@@ -1,0 +1,84 @@
+{
+ "phrases": [
+  "Ye secret ChatGPT prompt koi nahi batata!",
+  "Apne sawaal ke end me bas ye line jodo.",
+  "Jawaab dene se pehle mujhse teen sawaal poocho.",
+  "Ab ChatGPT pehle tumhari zaroorat samjhega.",
+  "Phir jawaab ekdum tumhare hisaab se milega.",
+  "Email, trip plan, business idea, sab pe try karo!",
+  "Pehle follow karo, phir comment karo AI!",
+  "Free guide turant DM me aa jayegi!"
+ ],
+ "hook": [
+  "Secret ChatGPT",
+  "Prompt!"
+ ],
+ "end": [
+  "Follow Karo",
+  "Comment: AI"
+ ],
+ "hook_phrases": 2,
+ "end_phrases": 2,
+ "cards": [
+  {
+   "at": 2,
+   "title": "Secret Line",
+   "num": null,
+   "lines": [
+    "Pehle mujhse 3",
+    "sawaal poocho"
+   ],
+   "chips": [
+    "Copy"
+   ]
+  },
+  {
+   "at": 4,
+   "title": "Result",
+   "num": null,
+   "lines": [
+    "Jawaab tumhare",
+    "hisaab se"
+   ],
+   "chips": [
+    "Smart"
+   ]
+  },
+  {
+   "at": 5,
+   "title": "Try Karo",
+   "num": null,
+   "lines": [
+    "Email, trip plan,",
+    "business idea"
+   ],
+   "chips": [
+    "Try"
+   ]
+  }
+ ],
+ "keywords": [
+  "secret",
+  "ChatGPT",
+  "prompt",
+  "teen",
+  "sawaal",
+  "Follow",
+  "guide",
+  "Comment",
+  "DM"
+ ],
+ "cover": {
+  "lines": [
+   "Secret ChatGPT",
+   "Prompt!",
+   "Ek Line Jodo",
+   "Better Jawaab"
+  ],
+  "chips": [
+   "Secret",
+   "AI Tips"
+  ]
+ },
+ "id": "016"
+}
