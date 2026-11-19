@@ -1,0 +1,84 @@
+{
+ "phrases": [
+  "Secret! ChatGPT photo dekh ke bhi samjhata hai!",
+  "Bas photo lo aur sawaal poocho.",
+  "Pehla, ChatGPT app me plus button dabao, camera chuno.",
+  "Doosra, maths ka sawaal, English notice ya form ki photo lo.",
+  "Teesra, bolo, isse step by step Hindi me samjhao.",
+  "Homework ho ya form, sab aasaan!",
+  "Pehle follow karo, phir comment karo AI!",
+  "Free guide turant DM me aa jayegi!"
+ ],
+ "hook": [
+  "Secret ChatGPT",
+  "Photo Trick!"
+ ],
+ "end": [
+  "Follow Karo",
+  "Comment: AI"
+ ],
+ "hook_phrases": 2,
+ "end_phrases": 2,
+ "cards": [
+  {
+   "at": 2,
+   "title": "Camera",
+   "num": 1,
+   "lines": [
+    "Plus button,",
+    "camera chuno"
+   ],
+   "chips": [
+    "Step 1"
+   ]
+  },
+  {
+   "at": 3,
+   "title": "Photo",
+   "num": 2,
+   "lines": [
+    "Sawaal, notice",
+    "ya form"
+   ],
+   "chips": [
+    "Step 2"
+   ]
+  },
+  {
+   "at": 4,
+   "title": "Samjhao",
+   "num": 3,
+   "lines": [
+    "Step by step",
+    "Hindi me"
+   ],
+   "chips": [
+    "Step 3"
+   ]
+  }
+ ],
+ "keywords": [
+  "Secret",
+  "ChatGPT",
+  "photo",
+  "camera",
+  "Hindi",
+  "Follow",
+  "guide",
+  "Comment",
+  "DM"
+ ],
+ "cover": {
+  "lines": [
+   "Secret ChatGPT",
+   "Photo Trick!",
+   "Photo Dikhao",
+   "Samjho"
+  ],
+  "chips": [
+   "Secret",
+   "AI Tips"
+  ]
+ },
+ "id": "020b"
+}

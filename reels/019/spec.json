@@ -1,0 +1,84 @@
+{
+ "phrases": [
+  "Interview me dimaag blank hua, to job gayi!",
+  "Isliye pehle ChatGPT se mock interview do.",
+  "Pehla, likho, mera mock interview lo, ek ek sawaal poocho.",
+  "Doosra, apni job aur experience ki detail do.",
+  "Teesra, har jawaab ke baad bolo, feedback do.",
+  "Asli interview me darr kam lagega!",
+  "Pehle follow karo, phir comment karo AI!",
+  "Free guide turant DM me aa jayegi!"
+ ],
+ "hook": [
+  "Interview Me",
+  "Dimaag Blank?"
+ ],
+ "end": [
+  "Follow Karo",
+  "Comment: AI"
+ ],
+ "hook_phrases": 2,
+ "end_phrases": 2,
+ "cards": [
+  {
+   "at": 2,
+   "title": "Interview",
+   "num": 1,
+   "lines": [
+    "Bolo: mera mock",
+    "interview lo"
+   ],
+   "chips": [
+    "Step 1"
+   ]
+  },
+  {
+   "at": 3,
+   "title": "Detail",
+   "num": 2,
+   "lines": [
+    "Job aur experience",
+    "batao"
+   ],
+   "chips": [
+    "Step 2"
+   ]
+  },
+  {
+   "at": 4,
+   "title": "Feedback",
+   "num": 3,
+   "lines": [
+    "Har jawaab ke baad",
+    "feedback lo"
+   ],
+   "chips": [
+    "Step 3"
+   ]
+  }
+ ],
+ "keywords": [
+  "Interview",
+  "ChatGPT",
+  "mock",
+  "job",
+  "feedback",
+  "Follow",
+  "guide",
+  "Comment",
+  "DM"
+ ],
+ "cover": {
+  "lines": [
+   "Interview Ka",
+   "Darr Khatam!",
+   "ChatGPT Se",
+   "Practice"
+  ],
+  "chips": [
+   "Career",
+   "AI Tips"
+  ]
+ },
+ "id": "019"
+}

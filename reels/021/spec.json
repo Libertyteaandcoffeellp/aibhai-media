@@ -1,0 +1,98 @@
+{
+ "phrases": [
+  "AI se roz hazaaron kamao? Ye ad scam ho sakta hai!",
+  "AI ke naam pe kamai wale fake offers bhi aate hain.",
+  "Pehla, pakki kamai ka wada matlab red flag.",
+  "Doosra, joining fee ya task ke naam pe paise mat bhejo.",
+  "Teesra, kisi group me OTP ya UPI PIN mat do.",
+  "Fraud ho to 1930 pe call karo!",
+  "Pehle follow karo, phir comment karo AI!",
+  "Free guide turant DM me aa jayegi!"
+ ],
+ "hook": [
+  "AI Se Roz Kamai?",
+  "Scam Ho Sakta Hai!"
+ ],
+ "end": [
+  "Follow Karo",
+  "Comment: AI"
+ ],
+ "hook_phrases": 2,
+ "end_phrases": 2,
+ "cards": [
+  {
+   "at": 2,
+   "title": "Red Flag",
+   "num": 1,
+   "lines": [
+    "Pakki kamai",
+    "ka wada?"
+   ],
+   "chips": [
+    "Check"
+   ]
+  },
+  {
+   "at": 3,
+   "title": "Fee",
+   "num": 2,
+   "lines": [
+    "Joining fee?",
+    "Paise mat bhejo"
+   ],
+   "chips": [
+    "Check"
+   ]
+  },
+  {
+   "at": 4,
+   "title": "OTP",
+   "num": 3,
+   "lines": [
+    "OTP ya UPI PIN",
+    "kabhi mat do"
+   ],
+   "chips": [
+    "Check"
+   ]
+  },
+  {
+   "at": 5,
+   "title": "Helpline",
+   "num": null,
+   "lines": [
+    "Fraud ho to",
+    "call 1930"
+   ],
+   "chips": [
+    "Safe"
+   ]
+  }
+ ],
+ "keywords": [
+  "AI",
+  "scam",
+  "fake",
+  "fee",
+  "OTP",
+  "UPI",
+  "1930",
+  "Follow",
+  "guide",
+  "Comment",
+  "DM"
+ ],
+ "cover": {
+  "lines": [
+   "AI Kamai Scam",
+   "Se Bacho!",
+   "Kaise Pehchano",
+   "3 Tarike"
+  ],
+  "chips": [
+   "Alert",
+   "Safety"
+  ]
+ },
+ "id": "021"
+}
