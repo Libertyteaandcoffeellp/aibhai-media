@@ -19,15 +19,19 @@
 
 | 2026-11-16 | 4 | 010c (13:01, REEL) | fear | 36 (partial) | 3* |
 | 2026-11-16 | 4 | 011c (16:01, REEL) | magic | 11 (partial) | 3* |
-| 2026-11-16 | 4 | 012c (20:01, REEL) | warning | not synced yet (18 Nov) | 3* |
+| 2026-11-16 | 4 | 012c (20:00, REEL) | warning | NOT PUBLISHED (Metricool limit) | 3* |
 
-| 2026-11-17 | 5 | 013 (13:00, REEL) | fear | not synced yet (18 Nov) | 3* |
-| 2026-11-17 | 5 | 014 (16:00, REEL) | relatable | not synced yet (18 Nov) | 3* |
-| 2026-11-17 | 5 | 015 (20:00, REEL) | warning | not synced yet (18 Nov) | 3* |
+| 2026-11-17 | 5 | 013 (13:00, REEL) | fear | NOT PUBLISHED (Metricool limit) | 3* |
+| 2026-11-17 | 5 | 014 (16:00, REEL) | relatable | NOT PUBLISHED (Metricool limit) | 3* |
+| 2026-11-17 | 5 | 015 (20:00, REEL) | warning | NOT PUBLISHED (Metricool limit) | 3* |
 
-| 2026-11-18 | 6 | 016 (13:00, REEL) | secret | scheduled | – |
-| 2026-11-18 | 6 | 017 (16:00, REEL) | speed | scheduled | – |
-| 2026-11-18 | 6 | 018b (20:00, REEL) | warning | scheduled | – |
+| 2026-11-18 | 6 | 016 (13:00, REEL) | secret | NOT PUBLISHED (Metricool limit) | – |
+| 2026-11-18 | 6 | 017 (16:00, REEL) | speed | NOT PUBLISHED (Metricool limit) | – |
+| 2026-11-18 | 6 | 018b (20:00, REEL) | warning | NOT PUBLISHED (Metricool limit) | – |
+
+| 2026-11-19 | 7 | 019 (13:00, REEL) | fear | scheduled (publishes only if Metricool limit fixed) | – |
+| 2026-11-19 | 7 | 020b (16:00, REEL) | secret | scheduled (same) | – |
+| 2026-11-19 | 7 | 021 (20:00, REEL) | warning | scheduled (same) | – |
 
 Day 1 detail (read 14 Nov ~10:30 IST): 002 reach 130, 3 likes, 1 share, skip rate 77%; 003 reach 33, 1 like, skip 73.5%; 001 reach 114, 3 likes, 3 saves, skip 72.6%. All 3 day-1 stories published.
 
@@ -48,3 +52,6 @@ Day 1 detail (read 14 Nov ~10:30 IST): 002 reach 130, 3 likes, 1 share, skip rat
 - 2026-11-17: Day 5 – slots were empty. Script review: 013 phrase 3 clarified ('ChatGPT khud neeche likhta hai, galti ho sakti hai'). Voiced 013/014/015 (n8n exec 24/25/26, text = spec phrases word for word), rendered, QA PASS 33/0/0 each + contact sheets checked. Scheduled 013 fear 13:00, 014 relatable 16:00, 015 warning 20:00 + stories 13:15/16:15/20:15 (media pinned to bb33185); verified PENDING, REEL/STORY, AI label on, captions = QA'd captions. Added 019 fear (ChatGPT mock interview), 020 secret (ChatGPT photo/camera explain), 021 warning (fake 'AI se kamai' ads, 1930). Queue: 6 queued (016-021). Day 7 has no weak-style reel.
 - 2026-11-18 10:25 (day 6 run, Metricool read): Metricool sync is lagging – nothing from 17 Nov yet and 012c (16 Nov 20:00) still missing. Day 4 updated: 010c fear 36 views/reach 30, 2 comments, skip 81.3%; 011c magic 15 views (up from 11), skip 72.7%. Evolution: 13 Nov 349, 14 Nov 303, 15 Nov 277, 16 Nov 51 (partial) reel views; reel comments 16 Nov = 2 (first comments, first day of follow+comment-AI CTA). Followers still 3 in Metricool (no follower sync since 14 Nov) – not reliable. No day-5 numbers to compare yet.
 - 2026-11-18: Day 6 – slots were empty. Script review: 018 phrase 6 now says '1930' (matches card, 351 chars). Voiced 016/017/018 (n8n exec 27/28/29). QA pass 1 PASS for all, but Pass 2 caught 018: silence-split gave 8 segments that did not match the 8 phrases (phrase 3 and 6 got 0.3-0.4 s, end screen showed while steps were still spoken) – held back. Re-voiced as 018b (exec 30), timings even (5-7 s/100 chars), QA PASS 33/0/0 + contact sheet OK. NEW manual check: per-phrase seconds per 100 chars must be ~4-9 for every phrase. Same check on 015 (posted 17 Nov) shows the same glitch (end phrases 12-15, steps 2-3) – cards/end screen were out of sync in that reel. Scheduled 016 secret 13:00, 017 speed 16:00, 018b warning 20:00 + stories 13:15/16:15/20:15 (media pinned to 539426e); verified PENDING, REEL/STORY, AI label on, captions = QA'd captions. Added 022 fear (office email check with ChatGPT), 023 secret ('10 saal ke bachche ki tarah samjhao' line), 024 warning (fake customer care numbers, 1930). Queue: 6 queued (019-024).
+- 2026-11-19 10:25 (day 7 run): **ROOT CAUSE of 'missing' data found** – every post from 16 Nov 20:00 to 18 Nov 20:15 (012c, 013, 014, 015, 016, 017, 018b + their 7 stories) has status ERROR in Metricool: "You have reached your Metricool account limit." Nothing reached Instagram for 2.5 days; earlier runs only checked future posts. Last published post: 011c story 16 Nov 16:15 (22 posts published in total). Owner notified at ~10:30 IST to upgrade the Metricool plan. NEW RULE: every run checks the last 3 days of posts for ERROR status, not only future ones.
+- 2026-11-19 analytics (Metricool, 11 published reels): totals unchanged since 16 Nov because nothing new went out. 13 Nov 352, 14 Nov 303, 15 Nov 277, 16 Nov 51 reel views. Best hooks overall: secret 004 (skip 67.9%), warning 006 (68.3%), warning 008 (72.5%), intro 001 (72.4%). Worst: speed 007 (90.2%). Comments: 2 (010c, first day of follow+comment-AI CTA). Followers: 3 (no follower sync since 14 Nov; gained/lost show 0). No day-to-day comparison possible for 17-18 Nov.
+- 2026-11-19: Day 7 – slots were empty. Script review of 019-021 OK (no weak-style reel today). Voiced 019/020/021 (n8n exec 31/32/33). 020 held at Pass 2: 8 silence segments = 8 phrases by chance but wrong split (phrase 1 8.6 s, phrase 2 0.45 s). Re-voiced 020b (exec 34) – timings even. 019/020b/021 QA PASS 33/0/0, contact sheets + 021 helpline frame checked. Scheduled 019 fear 13:00, 020b secret 16:00, 021 warning 20:00 + stories (media pinned to 6b4dd3e); verified PENDING, REEL/STORY, AI label on, captions = QA'd captions. These will ERROR too unless the Metricool limit is fixed before slot time. Added 025 fear (ChatGPT 'Improve the model' setting), 026 secret (Perplexity sources), 027 warning (deepfake investment videos, 1930). Queue: 6 queued (022-027). Backlog of QA-passed but never-published reels for re-use once Metricool works: 013, 014, 016, 017, 018b, 012c (not 015 – timing glitch).
