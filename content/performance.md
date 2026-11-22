@@ -37,9 +37,13 @@
 | 2026-11-20 | 8 | 016 retry (16:00, REEL) | secret | NOT PUBLISHED (Metricool limit) | – |
 | 2026-11-20 | 8 | 018b retry (20:00, REEL) | warning | NOT PUBLISHED (Metricool limit) | – |
 
-| 2026-11-21 | 9 | 013 retry (13:00, REEL) | fear | scheduled (publishes only if Metricool limit fixed) | – |
-| 2026-11-21 | 9 | 020b retry (16:00, REEL) | secret | scheduled (same) | – |
-| 2026-11-21 | 9 | 021 retry (20:00, REEL) | warning | scheduled (same) | – |
+| 2026-11-21 | 9 | 013 retry (13:00, REEL) | fear | NOT PUBLISHED (Metricool limit) | – |
+| 2026-11-21 | 9 | 020b retry (16:00, REEL) | secret | NOT PUBLISHED (Metricool limit) | – |
+| 2026-11-21 | 9 | 021 retry (20:00, REEL) | warning | NOT PUBLISHED (Metricool limit) | – |
+
+| 2026-11-22 | 10 | 019 retry (13:00, REEL) | fear | scheduled (publishes only if Metricool limit fixed) | – |
+| 2026-11-22 | 10 | 016 retry (16:00, REEL) | secret | scheduled (same) | – |
+| 2026-11-22 | 10 | 018b retry (20:00, REEL) | warning | scheduled (same) | – |
 
 Day 1 detail (read 14 Nov ~10:30 IST): 002 reach 130, 3 likes, 1 share, skip rate 77%; 003 reach 33, 1 like, skip 73.5%; 001 reach 114, 3 likes, 3 saves, skip 72.6%. All 3 day-1 stories published.
 
@@ -67,3 +71,5 @@ Day 1 detail (read 14 Nov ~10:30 IST): 002 reach 130, 3 likes, 1 share, skip rat
 - 2026-11-20: Day 8 - slots were empty. Decision: no new voiceovers today (ElevenLabs credits would be spent on reels that cannot publish). Filled today's slots from the QA-passed, never-published backlog: 019 fear 13:00, 016 secret 16:00, 018b warning 20:00 + stories 13:15/16:15/20:15 (media pinned to 6b4dd3e / 00e0261 / 539426e). Re-ran QA pass 1 (33/0/0 each, caption.txt = queue caption = posted caption) and re-checked contact sheets. Verified PENDING, REEL/STORY, AI label on, captions identical. Owner notified again. Queue unchanged: 6 queued (022-027). Backlog still unpublished: 012c, 013, 014, 017, 020b, 021.
 - 2026-11-21 10:25 (day 9 run): Metricool limit still NOT fixed - all 6 posts of 20 Nov (019/016/018b + stories) ERROR "You have reached your Metricool account limit." Nothing has reached Instagram since 16 Nov 16:15 (5 days). Analytics unchanged: 11 published reels, 13 Nov 352, 14 Nov 303, 15 Nov 277, 16 Nov 51 reel views; reel comments 2 (010c); followers 3 (no follower sync since 14 Nov). No new data to compare.
 - 2026-11-21: Day 9 - slots were empty. Again no new voiceovers (credits would be wasted while posts cannot publish). Filled today's slots from the QA-passed backlog: 013 fear 13:00, 020b secret 16:00, 021 warning 20:00 + stories 13:15/16:15/20:15 (media pinned to bb33185 / 6b4dd3e). Re-ran QA pass 1 (33/0/0 each, caption.txt = queue caption = posted caption), per-phrase timing 5.1-7.3 s/100 chars, contact sheets re-checked (end screen Follow Karo / Comment: AI). Verified PENDING, REEL/STORY, AI label on, captions identical. Owner notified again. Queue unchanged: 6 queued (022-027). Backlog still unpublished: 012c, 014, 016, 017, 018b, 019. Tomorrow (22 Nov) = day 10, last sprint day; after that a sprint report instead of new reels.
+- 2026-11-22 10:30 (day 10 run, last sprint day): Metricool limit still NOT fixed - all 6 posts of 21 Nov (013/020b/021 + stories) ERROR "You have reached your Metricool account limit." Nothing has reached Instagram since 16 Nov 16:15 (6 days). Analytics unchanged except tiny drift: 11 published reels, 13 Nov 352, 14 Nov 303, 15 Nov 277, 16 Nov 51 reel views (983 total); reel comments 2 (010c); followers 3 (no follower sync since 14 Nov). Best hooks overall: secret 004 (skip 67.9%), warning 006 (68.3%), intro 001 (72.4%), warning 008 (72.5%); worst speed 007 (90.2%).
+- 2026-11-22: Day 10 - slots were empty. No new voiceovers (credits would be wasted). Filled from QA-passed backlog: 019 fear 13:00, 016 secret 16:00, 018b warning 20:00 + stories 13:15/16:15/20:15 (media pinned to 6b4dd3e / 00e0261 / 539426e). Re-ran QA pass 1 (33/0/0 each, caption.txt = queue caption = posted caption), per-phrase timing 4.8-7.9 s/100 chars, spec phrases = queue phrases, contact sheets re-checked. Verified PENDING, REEL/STORY, AI label on, captions identical. Sprint scheduling ends today; next run = sprint report only. Queue unchanged: 6 queued (022-027).
