@@ -41,8 +41,8 @@
 | 2026-11-21 | 9 | 020b retry (16:00, REEL) | secret | NOT PUBLISHED (Metricool limit) | – |
 | 2026-11-21 | 9 | 021 retry (20:00, REEL) | warning | NOT PUBLISHED (Metricool limit) | – |
 
-| 2026-11-22 | 10 | 019 retry (13:00, REEL) | fear | scheduled (publishes only if Metricool limit fixed) | – |
-| 2026-11-22 | 10 | 016 retry (16:00, REEL) | secret | scheduled (same) | – |
+| 2026-11-22 | 10 | 019 retry (13:00, REEL) | fear | NOT PUBLISHED (Metricool limit) | – |
+| 2026-11-22 | 10 | 016 retry (16:00, REEL) | secret | NOT PUBLISHED (Metricool limit) | – |
 | 2026-11-22 | 10 | 018b retry (20:00, REEL) | warning | scheduled (same) | – |
 
 Day 1 detail (read 14 Nov ~10:30 IST): 002 reach 130, 3 likes, 1 share, skip rate 77%; 003 reach 33, 1 like, skip 73.5%; 001 reach 114, 3 likes, 3 saves, skip 72.6%. All 3 day-1 stories published.
@@ -73,3 +73,13 @@ Day 1 detail (read 14 Nov ~10:30 IST): 002 reach 130, 3 likes, 1 share, skip rat
 - 2026-11-21: Day 9 - slots were empty. Again no new voiceovers (credits would be wasted while posts cannot publish). Filled today's slots from the QA-passed backlog: 013 fear 13:00, 020b secret 16:00, 021 warning 20:00 + stories 13:15/16:15/20:15 (media pinned to bb33185 / 6b4dd3e). Re-ran QA pass 1 (33/0/0 each, caption.txt = queue caption = posted caption), per-phrase timing 5.1-7.3 s/100 chars, contact sheets re-checked (end screen Follow Karo / Comment: AI). Verified PENDING, REEL/STORY, AI label on, captions identical. Owner notified again. Queue unchanged: 6 queued (022-027). Backlog still unpublished: 012c, 014, 016, 017, 018b, 019. Tomorrow (22 Nov) = day 10, last sprint day; after that a sprint report instead of new reels.
 - 2026-11-22 10:30 (day 10 run, last sprint day): Metricool limit still NOT fixed - all 6 posts of 21 Nov (013/020b/021 + stories) ERROR "You have reached your Metricool account limit." Nothing has reached Instagram since 16 Nov 16:15 (6 days). Analytics unchanged except tiny drift: 11 published reels, 13 Nov 352, 14 Nov 303, 15 Nov 277, 16 Nov 51 reel views (983 total); reel comments 2 (010c); followers 3 (no follower sync since 14 Nov). Best hooks overall: secret 004 (skip 67.9%), warning 006 (68.3%), intro 001 (72.4%), warning 008 (72.5%); worst speed 007 (90.2%).
 - 2026-11-22: Day 10 - slots were empty. No new voiceovers (credits would be wasted). Filled from QA-passed backlog: 019 fear 13:00, 016 secret 16:00, 018b warning 20:00 + stories 13:15/16:15/20:15 (media pinned to 6b4dd3e / 00e0261 / 539426e). Re-ran QA pass 1 (33/0/0 each, caption.txt = queue caption = posted caption), per-phrase timing 4.8-7.9 s/100 chars, spec phrases = queue phrases, contact sheets re-checked. Verified PENDING, REEL/STORY, AI label on, captions identical. Sprint scheduling ends today; next run = sprint report only. Queue unchanged: 6 queued (022-027).
+- 2026-11-23 10:30 (day 11, sprint over): Metricool limit still NOT fixed - all 6 posts of 22 Nov (019/016/018b + stories) ERROR "You have reached your Metricool account limit." Nothing has reached Instagram since 16 Nov 16:15 (7 days). No posts scheduled for 23 Nov onward. Analytics unchanged: 11 published reels, 13 Nov 352, 14 Nov 303, 15 Nov 277, 16 Nov 51 reel views (983 total); reel comments 2 (010c); followers 3 (Metricool follower data not updating since 14 Nov - not reliable). No new reels made (sprint ended day 10); sprint report sent to owner.
+
+## Sprint report (13-22 Nov 2026)
+- Planned 30 reels + 30 stories. Published: 11 reels + 11 stories (13 Nov to 16 Nov 16:15). From 16 Nov 20:00 every post failed in Metricool with "account limit reached" (owner notified 19, 20, 21, 22 Nov). Effectively a 3.5-day sprint.
+- Reel views: 983 total from 11 reels (avg ~89/reel, almost all non-followers). Best: 001 intro/fear (AI naukri) 154, 004 secret prompt 132, 008 warning (AI privacy) 120, 006 warning (AI voice scam) 114, 007 speed (Gamma) 115.
+- Hook hold (skip rate, lower = better): secret 004 67.9%, warning 006 68.3%, intro 001 72.4%, warning 008 72.5% = best. Worst: speed 007 90.2%, fear-resume 010c 81.3%, student/Excel ~79%. Magic/product-photo topics weakest on views (15-59).
+- CTA: follow+comment-AI started 16 Nov; only 2 reels with it went live -> 2 comments (010c). Too little data to judge LinkPlease or follows.
+- Followers: 3 in Metricool (follower sync stuck since 14 Nov - check in Instagram app for the real number).
+- Ready to post once Metricool works: QA-passed, never-published reels 012c, 013, 014, 016, 017, 018b, 019, 020b, 021 (9 reels = 3 days) + 6 queued scripts 022-027.
+- Recommendation: fix Metricool limit (upgrade plan or free a slot), then run a fresh 10-day sprint starting with the 9-reel backlog; keep warning/secret hooks at 20:00 and 13:00, drop speed/magic topics.
